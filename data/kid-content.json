@@ -1,0 +1,382 @@
+{
+  "$comment": "Rich, kid-facing content for featured elements. 'facts' must be scientifically true (verify before release); 'imagine' is clearly-labeled playful metaphor and must never contradict the facts. props: hardness=Mohs scale, density=g/cm3 (gases at room conditions), meltC=melting point Celsius, conduct=qualitative electrical conductivity 0-10 for kid-facing bars only.",
+  "featured": {
+    "1": {
+      "superpower": "Lightest of them all",
+      "facts": [
+        "Hydrogen is the lightest element and the most common one in the whole universe.",
+        "Stars like our Sun shine by squeezing hydrogen atoms together — that's called fusion.",
+        "Two hydrogen atoms plus one oxygen atom make a water molecule: H₂O."
+      ],
+      "imagine": "If elements were balloons, hydrogen would be the one that escapes your hand first and floats highest.",
+      "origin": "Almost all hydrogen was made in the Big Bang, nearly 14 billion years ago. It's the original element!",
+      "trivia": [
+        "Rockets can burn hydrogen as fuel — the exhaust is mostly water vapor.",
+        "About 9 out of every 10 atoms in the universe are hydrogen."
+      ],
+      "uses": ["Water (H₂O)", "Rocket fuel", "Inside every star"],
+      "props": {"hardness": null, "density": 0.00009, "meltC": -259, "conduct": 0},
+      "state": "gas"
+    },
+    "2": {
+      "superpower": "The great floater",
+      "facts": [
+        "Helium is lighter than air, so helium balloons float up.",
+        "It's a noble gas: it almost never reacts or joins with other elements.",
+        "Liquid helium is the coldest liquid there is — close to −269 °C. It cools the giant magnets inside MRI machines at hospitals."
+      ],
+      "imagine": "Helium is the calm loner of the periodic table — it floats above everything and doesn't team up with anyone.",
+      "origin": "Helium was discovered in the Sun before it was found on Earth — scientists spotted it in sunlight in 1868. Its name comes from 'helios', Greek for Sun.",
+      "trivia": [
+        "Airships and blimps float using helium because it can't catch fire.",
+        "Earth's helium slowly escapes to space — once a balloon's helium gets out, it's gone for good."
+      ],
+      "uses": ["Party balloons", "Blimps", "Cooling MRI machines"],
+      "props": {"hardness": null, "density": 0.00018, "meltC": -272, "conduct": 0},
+      "state": "gas"
+    },
+    "6": {
+      "superpower": "Shape-shifter",
+      "facts": [
+        "Carbon atoms can arrange themselves as diamond (the hardest natural material) or as graphite (so soft it rubs off as pencil marks). Same atoms, different arrangement!",
+        "Every living thing — you, trees, dogs, mushrooms — is built around carbon.",
+        "How atoms are arranged changes what a material can do. That's a big idea in material science."
+      ],
+      "imagine": "Carbon is like building blocks: stack them one way and you get an unbreakable castle (diamond); stack them in flat sheets and they slide apart (graphite).",
+      "origin": "Carbon is made inside stars. The carbon in your body was forged in a star that existed before the Sun.",
+      "trivia": [
+        "A pencil 'lead' has no lead in it — it's graphite, a form of carbon.",
+        "Diamond is a 10 out of 10 on the hardness scale — nothing in nature scratches it."
+      ],
+      "uses": ["Pencils (graphite)", "Diamonds", "Every living thing", "Charcoal"],
+      "props": {"hardness": 10, "density": 2.27, "meltC": 3550, "conduct": 3},
+      "state": "solid",
+      "crystals": ["diamond", "graphite"]
+    },
+    "7": {
+      "superpower": "The invisible giant",
+      "facts": [
+        "About 78% of the air you're breathing right now is nitrogen.",
+        "Plants need nitrogen to grow — it's a main ingredient in fertilizer.",
+        "Liquid nitrogen is extremely cold: about −196 °C."
+      ],
+      "imagine": "Nitrogen is the quiet crowd filling the stadium of the sky — it's most of the air, but you never notice it.",
+      "origin": "Made inside stars, like carbon and oxygen. Earth's thick nitrogen atmosphere has been here for billions of years.",
+      "trivia": [
+        "Scientists use liquid nitrogen to freeze things in seconds.",
+        "Some race cars fill tires with nitrogen instead of regular air."
+      ],
+      "uses": ["Most of the air", "Plant fertilizer", "Super-cold liquid for science"],
+      "props": {"hardness": null, "density": 0.00125, "meltC": -210, "conduct": 0},
+      "state": "gas"
+    },
+    "8": {
+      "superpower": "The life-giver",
+      "facts": [
+        "You breathe oxygen to stay alive — about 21% of air is oxygen.",
+        "Fire needs oxygen to burn. No oxygen, no flame.",
+        "Oxygen is the most common element in Earth's rocky crust, locked inside rocks, sand, and water."
+      ],
+      "imagine": "Oxygen is the friendliest element at the party — it grabs hands with almost everyone (that's why so many materials contain it).",
+      "origin": "Made inside big stars. Earth's breathable oxygen came from tiny ocean life and plants making it for billions of years.",
+      "trivia": [
+        "Rust is what happens when oxygen slowly 'grabs' iron.",
+        "Water is one oxygen atom holding two hydrogens."
+      ],
+      "uses": ["Breathing!", "Fire and engines", "Water", "Hospital oxygen tanks"],
+      "props": {"hardness": null, "density": 0.00143, "meltC": -218, "conduct": 0},
+      "state": "gas"
+    },
+    "10": {
+      "superpower": "The glow master",
+      "facts": [
+        "When electricity zaps through neon gas, it glows a bright red-orange.",
+        "Neon is a noble gas — it doesn't react with other elements.",
+        "Neon is rare on Earth; it's collected from air a tiny bit at a time."
+      ],
+      "imagine": "Neon is a shy element that only shows off when you plug it in — then it becomes the brightest sign on the street.",
+      "origin": "Discovered in 1898 by chilling air until it turned to liquid and separating out the gases. Its name means 'new' in Greek.",
+      "trivia": [
+        "Only the red-orange glowing signs are true neon — other colors use different gases.",
+        "There's more neon in stars than on Earth."
+      ],
+      "uses": ["Glowing signs", "Special lamps"],
+      "props": {"hardness": null, "density": 0.0009, "meltC": -249, "conduct": 0},
+      "state": "gas"
+    },
+    "11": {
+      "superpower": "The explosive teammate",
+      "facts": [
+        "Sodium is a metal so soft you could cut it with a butter knife.",
+        "Pure sodium reacts violently with water — scientists keep it under oil. (Never touch pure sodium — this is a lab-only fact!)",
+        "Team it up with chlorine and it calms down completely: together they make table salt, which is safe to eat."
+      ],
+      "imagine": "Sodium alone is a wild firecracker; with its buddy chlorine it becomes the salt on your fries. Teamwork changes everything.",
+      "origin": "Its symbol Na comes from 'natrium', an old Latin word. It was first separated from salt compounds in 1807 using electricity.",
+      "trivia": [
+        "Salt crystals are tiny cubes — sodium and chlorine atoms stack in a perfect cube pattern.",
+        "Some streetlights glow yellow-orange because of sodium inside."
+      ],
+      "uses": ["Table salt (with chlorine)", "Yellow streetlights", "Baking soda"],
+      "props": {"hardness": 0.5, "density": 0.97, "meltC": 98, "conduct": 7},
+      "state": "solid",
+      "crystals": ["salt"]
+    },
+    "13": {
+      "superpower": "Light as a feather, tough as a plane",
+      "facts": [
+        "Aluminum is a strong metal that weighs about a third as much as iron.",
+        "It doesn't rust away like iron — it instantly grows an invisible protective skin of aluminum oxide.",
+        "It's the most common metal in Earth's crust."
+      ],
+      "imagine": "Aluminum is the gymnast of metals — light, quick, and surprisingly strong.",
+      "origin": "Long ago aluminum was harder to get than gold — Emperor Napoleon III served special guests with aluminum forks! In 1886 a cheap way to make it with electricity was invented, and now it's everywhere.",
+      "trivia": [
+        "Recycling one aluminum can saves enough energy to run a TV for hours.",
+        "Aluminum can be recycled over and over without wearing out."
+      ],
+      "uses": ["Soda cans", "Airplanes", "Kitchen foil", "Bikes"],
+      "props": {"hardness": 2.75, "density": 2.7, "meltC": 660, "conduct": 8},
+      "state": "solid"
+    },
+    "14": {
+      "superpower": "The thinking sand",
+      "facts": [
+        "Beach sand is mostly silicon and oxygen (silicon dioxide, also called quartz).",
+        "Silicon is a 'semiconductor': it can switch electricity on and off, which is how computer chips think.",
+        "It's the second most common element in Earth's crust, after oxygen."
+      ],
+      "imagine": "Silicon went from lazing on the beach to running every computer, phone, and game console — the greatest career change of any element.",
+      "origin": "Made in stars. Humans learned to purify it into shiny gray crystals for electronics in the 1900s.",
+      "trivia": [
+        "'Silicon Valley' is named after this element because computer chips are made from it.",
+        "Glass is made by melting sand — so windows are mostly silicon and oxygen too."
+      ],
+      "uses": ["Computer chips", "Glass", "Sand", "Solar panels"],
+      "props": {"hardness": 6.5, "density": 2.33, "meltC": 1414, "conduct": 4},
+      "state": "solid"
+    },
+    "16": {
+      "superpower": "The stinky protector",
+      "facts": [
+        "Sulfur is a yellow solid found near volcanoes.",
+        "Many smelly things — rotten eggs, skunk spray — get their stink from sulfur compounds.",
+        "Adding sulfur to rubber makes it strong and bouncy — that's how car tires are made (it's called vulcanization)."
+      ],
+      "imagine": "Sulfur is the smelly superhero: nobody wants to sit next to it, but your bike tires wouldn't survive without it.",
+      "origin": "Known since ancient times — it's one of the few elements found pure in nature, often near volcanoes.",
+      "trivia": [
+        "Pure sulfur is bright lemon-yellow.",
+        "Match heads contain sulfur to help them ignite."
+      ],
+      "uses": ["Car and bike tires", "Matches", "Fertilizer"],
+      "props": {"hardness": 2, "density": 2.07, "meltC": 115, "conduct": 0},
+      "state": "solid"
+    },
+    "17": {
+      "superpower": "The germ zapper",
+      "facts": [
+        "Chlorine keeps swimming pools and drinking water safe by destroying germs.",
+        "Pure chlorine is a green-yellow gas that is dangerous to breathe — that's why only trained adults handle pool chemicals.",
+        "With sodium it makes table salt — completely safe to eat."
+      ],
+      "imagine": "Chlorine is a fierce guard dog: scary on its own, but leashed up with sodium it's as gentle as the salt on your popcorn.",
+      "origin": "Discovered in 1774. Its name comes from 'chloros', Greek for green-yellow, because of the gas's color.",
+      "trivia": [
+        "That 'pool smell' is chlorine doing its germ-fighting job.",
+        "The ocean is salty largely thanks to chloride."
+      ],
+      "uses": ["Clean pool water", "Safe drinking water", "Table salt (with sodium)"],
+      "props": {"hardness": null, "density": 0.0032, "meltC": -101, "conduct": 0},
+      "state": "gas"
+    },
+    "20": {
+      "superpower": "The skeleton builder",
+      "facts": [
+        "Your bones and teeth get their strength from calcium.",
+        "Chalk, limestone cliffs, and seashells are all made of calcium carbonate.",
+        "Milk, cheese, and yogurt are famous for having lots of calcium."
+      ],
+      "imagine": "Calcium is the construction crew inside your body, building your skeleton a little stronger every day.",
+      "origin": "Its name comes from 'calx', Latin for lime (the rock, not the fruit). It was first separated as a pure metal in 1808.",
+      "trivia": [
+        "The white cliffs of Dover in England are giant walls of calcium carbonate made from ancient sea creatures.",
+        "Eggshells are mostly calcium carbonate too."
+      ],
+      "uses": ["Bones and teeth", "Chalk", "Cement", "Seashells"],
+      "props": {"hardness": 1.75, "density": 1.55, "meltC": 842, "conduct": 6},
+      "state": "solid"
+    },
+    "22": {
+      "superpower": "The space-age armor",
+      "facts": [
+        "Titanium is as strong as many steels but almost half the weight.",
+        "It doesn't rust, even in seawater.",
+        "Doctors use it for replacement hips and dental implants because the body accepts it well."
+      ],
+      "imagine": "Titanium is the knight in featherweight armor — tough enough for battle, light enough to run.",
+      "origin": "Named after the Titans, the giant gods of Greek myths, because it's so strong. Discovered in 1791.",
+      "trivia": [
+        "Fighter jets and spacecraft use titanium parts.",
+        "Some bike frames and glasses frames are titanium — strong, light, and they last forever."
+      ],
+      "uses": ["Jet planes", "Replacement hips", "Fancy bikes", "Spacecraft"],
+      "props": {"hardness": 6, "density": 4.51, "meltC": 1668, "conduct": 4},
+      "state": "solid"
+    },
+    "26": {
+      "superpower": "The world builder",
+      "facts": [
+        "Iron is the most-used metal on Earth. Mixed with a little carbon it becomes steel.",
+        "Earth's core is mostly iron — it's what gives our planet its magnetic field.",
+        "Your blood is red because of iron inside a molecule called hemoglobin, which carries oxygen."
+      ],
+      "imagine": "Iron is the strong, dependable builder of the element world — skyscrapers, bridges, and even your blood count on it.",
+      "origin": "Before people learned to melt iron from rocks, the first iron tools were made from meteorites — metal that literally fell from the sky!",
+      "trivia": [
+        "Magnets stick to iron — try it on a steel fridge.",
+        "Rust is iron slowly combining with oxygen and water."
+      ],
+      "uses": ["Steel buildings", "Bridges", "Cars", "Your blood"],
+      "props": {"hardness": 4, "density": 7.87, "meltC": 1538, "conduct": 6},
+      "state": "solid",
+      "crystals": ["iron"]
+    },
+    "29": {
+      "superpower": "The electricity highway",
+      "facts": [
+        "Copper carries electricity extremely well — the wires in your walls are copper.",
+        "Copper starts shiny orange-brown and slowly turns green outdoors. The Statue of Liberty is copper — that's why she's green!",
+        "Germs have a hard time surviving on copper surfaces."
+      ],
+      "imagine": "Copper is the delivery driver of the element world, rushing electric charge from the power plant to your game console.",
+      "origin": "One of the first metals humans ever used — copper tools are over 9,000 years old. Mixed with tin it made bronze and kicked off the Bronze Age.",
+      "trivia": [
+        "Old pennies look brown because of copper on the outside.",
+        "Copper + zinc = brass, the metal of trumpets and door handles."
+      ],
+      "uses": ["Electrical wires", "Pipes", "Statue of Liberty", "Coins"],
+      "props": {"hardness": 3, "density": 8.96, "meltC": 1085, "conduct": 9},
+      "state": "solid"
+    },
+    "30": {
+      "superpower": "The rust bodyguard",
+      "facts": [
+        "Coating steel with zinc protects it from rust — it's called galvanizing.",
+        "Zinc mixed with copper makes brass.",
+        "Your body needs a tiny bit of zinc to heal cuts and fight germs."
+      ],
+      "imagine": "Zinc is the bodyguard that jumps in front of iron and takes the rust hit itself.",
+      "origin": "Used for thousands of years in brass, but only recognized as its own element in Europe in the 1700s.",
+      "trivia": [
+        "Many coins are mostly zinc inside with a thin coating outside.",
+        "Sunscreen sometimes contains zinc oxide — the white kind lifeguards wear on their noses."
+      ],
+      "uses": ["Rust-proof coatings", "Brass instruments", "Sunscreen", "Batteries"],
+      "props": {"hardness": 2.5, "density": 7.13, "meltC": 420, "conduct": 6},
+      "state": "solid"
+    },
+    "47": {
+      "superpower": "The champion conductor",
+      "facts": [
+        "Silver conducts electricity better than any other element — even better than copper.",
+        "It's too expensive for everyday wires, so we save it for special jobs.",
+        "Mirrors get their perfect shine from a super-thin layer of silver or aluminum."
+      ],
+      "imagine": "Silver is the Olympic gold medalist of conducting electricity — copper does the daily work, but silver holds the record.",
+      "origin": "Treasured for thousands of years. Its symbol Ag comes from 'argentum', Latin for silver — the country Argentina is named after it.",
+      "trivia": [
+        "Silver slowly darkens ('tarnishes') as it reacts with tiny traces of sulfur in the air.",
+        "Some bandages contain silver because it slows germ growth."
+      ],
+      "uses": ["Jewelry", "Mirrors", "Fancy electronics", "Special bandages"],
+      "props": {"hardness": 2.5, "density": 10.5, "meltC": 962, "conduct": 10},
+      "state": "solid"
+    },
+    "50": {
+      "superpower": "The team-up legend",
+      "facts": [
+        "Around 5,000 years ago, people mixed tin with copper to make bronze — a metal much harder than either one alone. A mixture of metals is called an alloy.",
+        "\"Tin cans\" are actually steel cans wearing a thin tin jacket to stop rust.",
+        "When you bend a bar of pure tin, it makes a crackling sound called the 'tin cry'."
+      ],
+      "imagine": "Tin is the ultimate teammate — average alone, but team it with copper and together they started the Bronze Age.",
+      "origin": "One of the oldest known metals. Bronze tools and weapons were so important that a whole age of history is named after the alloy.",
+      "trivia": [
+        "The 'tin cry' crackle is the sound of crystals inside the metal twinning as they bend.",
+        "Solder, the metal glue of electronics, often contains tin."
+      ],
+      "uses": ["Bronze statues", "Food can coatings", "Solder in electronics"],
+      "props": {"hardness": 1.5, "density": 7.31, "meltC": 232, "conduct": 5},
+      "state": "solid"
+    },
+    "74": {
+      "superpower": "The unmeltable",
+      "facts": [
+        "Tungsten has the highest melting point of all metals: 3,422 °C.",
+        "That's why old-style light bulbs used a tungsten wire — it glows white-hot without melting.",
+        "Tungsten is also incredibly dense — a small block feels shockingly heavy."
+      ],
+      "imagine": "If elements had a 'survive a volcano' contest, tungsten would win without breaking a sweat.",
+      "origin": "Its name means 'heavy stone' in Swedish. Its symbol W comes from its other name, wolfram.",
+      "trivia": [
+        "Tungsten is about as dense as gold.",
+        "Drill tips and rocket parts use tungsten because it laughs at heat."
+      ],
+      "uses": ["Light bulb filaments", "Drill bits", "Rocket engine parts"],
+      "props": {"hardness": 7.5, "density": 19.25, "meltC": 3422, "conduct": 5},
+      "state": "solid"
+    },
+    "79": {
+      "superpower": "The forever-shiny",
+      "facts": [
+        "Gold never rusts or tarnishes — ancient gold treasures are still shiny today.",
+        "It's so soft and stretchy you can hammer it into sheets thinner than paper (gold leaf).",
+        "Scientists think Earth's gold was made in gigantic space events like colliding neutron stars."
+      ],
+      "imagine": "Gold is the element that never ages — a pirate's coin from 300 years ago still gleams like new.",
+      "origin": "Every atom of gold on Earth is older than the planet itself, forged in dying stars and star collisions, then gathered into the forming Earth.",
+      "trivia": [
+        "Your phone contains a tiny amount of gold in its circuits, because gold never corrodes.",
+        "One gram of gold can be stretched into a wire more than a kilometer long."
+      ],
+      "uses": ["Jewelry", "Phone and computer circuits", "Astronaut visors"],
+      "props": {"hardness": 2.75, "density": 19.3, "meltC": 1064, "conduct": 8},
+      "state": "solid"
+    },
+    "80": {
+      "superpower": "The liquid metal",
+      "facts": [
+        "Mercury is the only metal that is liquid at room temperature.",
+        "It's poisonous, so modern thermometers use safe liquids or electronics instead.",
+        "It's so dense that a chunk of iron would float on it like a boat."
+      ],
+      "imagine": "Mercury is a metal that decided to be a puddle — shiny, silvery, and always on the move. Look, but never touch!",
+      "origin": "Known to ancient civilizations, who found it dripping from a red rock called cinnabar. Its symbol Hg comes from 'hydrargyrum' — Greek for 'water-silver'.",
+      "trivia": [
+        "Mercury the element is named after the speedy Roman messenger god, just like the planet.",
+        "Old-time hat makers were poisoned by mercury fumes — that's where 'mad as a hatter' may come from."
+      ],
+      "uses": ["Old thermometers (not anymore!)", "Some special lamps", "Science labs"],
+      "props": {"hardness": null, "density": 13.53, "meltC": -39, "conduct": 2},
+      "state": "liquid"
+    },
+    "82": {
+      "superpower": "The heavyweight shield",
+      "facts": [
+        "Lead is very dense and soft — a lead brick is astonishingly heavy for its size.",
+        "It blocks X-rays, which is why the dentist's protective apron has lead inside.",
+        "Lead is toxic if it gets into the body, so it's been removed from paint, gasoline, and water pipes."
+      ],
+      "imagine": "Lead is the heavyweight bouncer of the elements — even X-rays can't get past it.",
+      "origin": "The ancient Romans made water pipes from lead. Their word for it, 'plumbum', gives lead its symbol Pb — and gives us the word 'plumber'!",
+      "trivia": [
+        "Pencil 'lead' was never lead — it's graphite (carbon). People long ago mixed the two up.",
+        "Car batteries still use lead safely sealed inside."
+      ],
+      "uses": ["X-ray shields", "Car batteries", "Diving weights"],
+      "props": {"hardness": 1.5, "density": 11.34, "meltC": 327, "conduct": 3},
+      "state": "solid"
+    }
+  }
+}

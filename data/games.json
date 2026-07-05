@@ -1,0 +1,238 @@
+{
+  "$comment": "Material Detective cases, Material Match pairs, and parent-approved experiments. Every clue must be scientifically true. answers reference element atomic numbers where relevant.",
+  "detective": [
+    {
+      "id": "copper-wire",
+      "material": "Copper wire",
+      "emoji": "🔌",
+      "clues": [
+        "I hide inside the walls of your house.",
+        "I'm a shiny orange-brown metal.",
+        "Electricity zooms through me to power your lights."
+      ],
+      "options": ["Copper wire", "Steel nail", "Gold ring", "Plastic straw"],
+      "reveal": "Copper (Cu, element 29) conducts electricity brilliantly and is cheap enough to wire every house on Earth.",
+      "element": 29
+    },
+    {
+      "id": "helium-balloon",
+      "material": "Helium balloon",
+      "emoji": "🎈",
+      "clues": [
+        "I'm invisible, but I love going UP.",
+        "I'm lighter than air and I never catch fire.",
+        "You'll find me at birthday parties, tied to a string."
+      ],
+      "options": ["Steam", "Helium balloon", "Bubble wrap", "A kite"],
+      "reveal": "Helium (He, element 2) is lighter than air, so balloons filled with it float — and being a noble gas, it can't burn.",
+      "element": 2
+    },
+    {
+      "id": "pencil-graphite",
+      "material": "Pencil graphite",
+      "emoji": "✏️",
+      "clues": [
+        "People call me 'lead', but that's not what I am at all.",
+        "I'm made of carbon in soft, slippery layers.",
+        "I leave a gray trail when you drag me across paper."
+      ],
+      "options": ["Chalk", "Crayon wax", "Pencil graphite", "Charcoal briquette"],
+      "reveal": "Graphite is carbon (C, element 6) arranged in flat sheets that slide off onto paper. Diamond is the same carbon arranged differently!",
+      "element": 6
+    },
+    {
+      "id": "table-salt",
+      "material": "Table salt",
+      "emoji": "🧂",
+      "clues": [
+        "I'm made of two dangerous elements that become harmless together.",
+        "My crystals are tiny perfect cubes — check with a magnifying glass!",
+        "You shake me onto french fries."
+      ],
+      "options": ["Sugar", "Baking soda", "Sand", "Table salt"],
+      "reveal": "Salt is sodium (Na, 11) + chlorine (Cl, 17). Alone they're hazardous; bonded together they're dinner-table safe.",
+      "element": 11
+    },
+    {
+      "id": "aluminum-foil",
+      "material": "Aluminum foil",
+      "emoji": "🍫",
+      "clues": [
+        "I'm a metal, but I'm so thin you can tear me with your fingers.",
+        "I wrap sandwiches and cover leftovers.",
+        "My big brothers are soda cans and airplane wings."
+      ],
+      "options": ["Plastic wrap", "Aluminum foil", "Paper", "Tin can"],
+      "reveal": "Aluminum (Al, element 13) is soft enough to roll into super-thin foil, yet strong enough to build planes from.",
+      "element": 13
+    },
+    {
+      "id": "steel-nail",
+      "material": "Steel nail",
+      "emoji": "🔨",
+      "clues": [
+        "A magnet grabs me instantly.",
+        "Leave me out in the rain and I slowly turn orange and crumbly.",
+        "A hammer is my best friend."
+      ],
+      "options": ["Aluminum can", "Copper coin", "Steel nail", "Glass marble"],
+      "reveal": "Steel is mostly iron (Fe, element 26). Iron is magnetic, and rust is iron reacting with oxygen and water.",
+      "element": 26
+    },
+    {
+      "id": "silicon-chip",
+      "material": "Computer chip",
+      "emoji": "💻",
+      "clues": [
+        "I started life as ordinary sand.",
+        "I'm a 'semiconductor' — I can switch electricity on and off super fast.",
+        "Every phone, tablet, and game console has me as its brain."
+      ],
+      "options": ["Battery", "Computer chip", "Magnet", "LED light"],
+      "reveal": "Chips are made from silicon (Si, element 14), purified from sand into perfect crystals that do billions of on/off switches per second.",
+      "element": 14
+    },
+    {
+      "id": "gold-ring",
+      "material": "Gold ring",
+      "emoji": "💍",
+      "clues": [
+        "I've been shiny for a thousand years and I'll stay shiny for a thousand more.",
+        "I'm soft for a metal — you could dent me with a good bite.",
+        "Pirates buried chests full of me."
+      ],
+      "options": ["Silver spoon", "Gold ring", "Brass button", "Copper coin"],
+      "reveal": "Gold (Au, element 79) never rusts or tarnishes — that's why treasure stays treasure.",
+      "element": 79
+    },
+    {
+      "id": "tungsten-filament",
+      "material": "Light bulb filament",
+      "emoji": "💡",
+      "clues": [
+        "I'm a tiny coiled wire that glows white-hot.",
+        "I survive temperatures that would melt almost any other metal.",
+        "Flip a switch and I light up the room (in old-style bulbs)."
+      ],
+      "options": ["Candle wick", "Light bulb filament", "Neon tube", "Match head"],
+      "reveal": "Filaments are tungsten (W, element 74) — the metal with the highest melting point of all: 3,422 °C.",
+      "element": 74
+    },
+    {
+      "id": "glass-window",
+      "material": "Glass window",
+      "emoji": "🪟",
+      "clues": [
+        "I'm made by melting beach sand until it flows like honey.",
+        "Light passes straight through me.",
+        "You look through me every day, but please don't throw balls at me."
+      ],
+      "options": ["Ice", "Clear plastic", "Glass window", "Diamond"],
+      "reveal": "Glass is melted sand — mostly silicon (Si, 14) and oxygen (O, 8). Cooled fast, the atoms freeze in place before forming crystals.",
+      "element": 14
+    }
+  ],
+  "match": [
+    {"element": 26, "symbol": "Fe", "name": "Iron", "object": "Nail", "emoji": "🔨"},
+    {"element": 29, "symbol": "Cu", "name": "Copper", "object": "Electric wire", "emoji": "🔌"},
+    {"element": 14, "symbol": "Si", "name": "Silicon", "object": "Computer chip", "emoji": "💻"},
+    {"element": 2, "symbol": "He", "name": "Helium", "object": "Party balloon", "emoji": "🎈"},
+    {"element": 79, "symbol": "Au", "name": "Gold", "object": "Ring", "emoji": "💍"},
+    {"element": 6, "symbol": "C", "name": "Carbon", "object": "Pencil", "emoji": "✏️"},
+    {"element": 74, "symbol": "W", "name": "Tungsten", "object": "Light bulb", "emoji": "💡"},
+    {"element": 13, "symbol": "Al", "name": "Aluminum", "object": "Soda can", "emoji": "🥤"},
+    {"element": 20, "symbol": "Ca", "name": "Calcium", "object": "Bones", "emoji": "🦴"},
+    {"element": 10, "symbol": "Ne", "name": "Neon", "object": "Glowing sign", "emoji": "🪧"},
+    {"element": 47, "symbol": "Ag", "name": "Silver", "object": "Mirror", "emoji": "🪞"},
+    {"element": 8, "symbol": "O", "name": "Oxygen", "object": "Air you breathe", "emoji": "🌬️"}
+  ],
+  "experiments": [
+    {
+      "id": "density-tower",
+      "title": "Liquid Rainbow Tower",
+      "emoji": "🌈",
+      "teaches": "Density — why heavy liquids sink and light ones float",
+      "safety": "Kitchen ingredients only. Ask a grown-up to help pour.",
+      "materials": ["A tall clear glass", "Honey", "Water (add food coloring if you like)", "Cooking oil"],
+      "steps": [
+        "Pour honey slowly into the middle of the glass.",
+        "Gently pour water on top — pour it over the back of a spoon so it lands softly.",
+        "Now gently pour the oil the same way.",
+        "Watch: three layers! Honey is the densest so it sinks; oil is the least dense so it floats."
+      ],
+      "science": "Density means how much stuff is packed into a space. Elements work the same way: lead is super dense, aluminum is not — that's why planes are aluminum!"
+    },
+    {
+      "id": "salt-crystals",
+      "title": "Grow Your Own Crystals",
+      "emoji": "🔷",
+      "teaches": "Crystal structures — atoms stacking in patterns",
+      "safety": "Hot water needs a grown-up. Don't drink the salt water.",
+      "materials": ["Warm water (grown-up helps)", "Table salt", "A jar", "String and a pencil", "Patience (a few days!)"],
+      "steps": [
+        "Have a grown-up fill the jar with warm water.",
+        "Stir in salt, one spoon at a time, until no more dissolves.",
+        "Tie a string to a pencil and rest the pencil across the jar so the string hangs in the water.",
+        "Wait a few days. Tiny cube-shaped crystals will grow on the string!"
+      ],
+      "science": "Salt crystals are cubes because sodium and chlorine atoms stack in a cubic pattern — the same pattern shown in the app's crystal viewer!"
+    },
+    {
+      "id": "static-balloon",
+      "title": "Balloon Hair Magic",
+      "emoji": "🎈",
+      "teaches": "Static electricity — electrons jumping between materials",
+      "safety": "Totally safe. Just a balloon.",
+      "materials": ["A blown-up balloon", "Your hair (clean and dry works best)", "Small bits of paper"],
+      "steps": [
+        "Rub the balloon on your hair about 10 times.",
+        "Slowly lift the balloon — your hair reaches up toward it!",
+        "Hold the balloon near tiny paper bits and watch them jump."
+      ],
+      "science": "Rubbing moves tiny particles called electrons onto the balloon. Electrons are part of every atom of every element — and moving electrons are what electricity is!"
+    },
+    {
+      "id": "shiny-pennies",
+      "title": "Penny Polish Lab",
+      "emoji": "🪙",
+      "teaches": "Chemical reactions — copper oxide dissolving",
+      "safety": "Vinegar is safe but don't drink the mixture. Wash hands after.",
+      "materials": ["Dull brown pennies (or copper coins)", "Vinegar", "Salt", "A small bowl", "Paper towel"],
+      "steps": [
+        "Mix a splash of vinegar and a teaspoon of salt in the bowl.",
+        "Drop in the dull pennies and count to 30.",
+        "Take them out, rinse with water, and dry them. Shiny!"
+      ],
+      "science": "Dull pennies are coated in copper oxide — copper that grabbed oxygen from the air. Vinegar + salt dissolves that layer, uncovering the bright copper underneath."
+    },
+    {
+      "id": "cereal-iron",
+      "title": "Iron in Your Breakfast",
+      "emoji": "🥣",
+      "teaches": "Real iron is really in your food",
+      "safety": "Safe. Don't eat the mushed cereal afterward.",
+      "materials": ["Iron-fortified breakfast cereal (check the label for iron)", "A zip bag", "Water", "A strong magnet"],
+      "steps": [
+        "Crush a cup of cereal into powder in the bag.",
+        "Add water and squish it into a soup. Let it sit 20 minutes.",
+        "Hold the magnet against the outside of the bag and swirl slowly.",
+        "Look closely at the magnet spot: tiny dark specks — that's real iron!"
+      ],
+      "science": "Cereal makers add tiny particles of actual iron (Fe, element 26) because your blood needs it to carry oxygen. Iron is magnetic, so a magnet can pull it out."
+    },
+    {
+      "id": "rust-race",
+      "title": "The Great Rust Race",
+      "emoji": "🏁",
+      "teaches": "Corrosion — and how engineers stop it",
+      "safety": "Handle nails carefully. Ask a grown-up to set it up.",
+      "materials": ["3 steel nails", "3 cups", "Water", "Cooking oil"],
+      "steps": [
+        "Cup 1: nail in water. Cup 2: nail coated in oil, then in water. Cup 3: dry nail, no water.",
+        "Check the nails every day for a week.",
+        "Which nail rusts first? Which stays shiny?"
+      ],
+      "science": "Rust needs iron + water + oxygen. The oil coat blocks water and oxygen — exactly like the zinc coating engineers put on real steel (galvanizing). This is material engineering: stopping nature from eating your bridge!"
+    }
+  ]
+}
