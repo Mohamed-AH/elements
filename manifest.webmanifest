@@ -1,0 +1,16 @@
+{
+  "name": "Elements — Material Science for Kids",
+  "short_name": "Elements",
+  "description": "Explore the periodic table and the materials of the real world. A science playground for kids.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0e1230",
+  "theme_color": "#0e1230",
+  "categories": ["education", "kids"],
+  "icons": [
+    { "src": "assets/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/icon-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
