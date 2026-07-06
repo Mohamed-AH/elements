@@ -1,5 +1,5 @@
 {
-  "$comment": "Material Detective cases, Material Match pairs, and parent-approved experiments. Every clue must be scientifically true. answers reference element atomic numbers where relevant.",
+  "$comment": "Material Detective cases, Material Match pairs, and parent-approved experiments. Every clue must be scientifically true. answers reference element atomic numbers where relevant. Claims verified 2026-07-06; citations in docs/SOURCES.md.",
   "detective": [
     {
       "id": "copper-wire",

@@ -78,10 +78,32 @@ for (const exp of games.experiments) {
   check(typeof exp.science === 'string' && exp.science.length > 0, `${where}: missing science note`);
 }
 
+// --- journey.json ---
+const journey = read('data/journey.json');
+const featuredNums = new Set(Object.keys(featured).map(Number));
+const seenInJourney = new Set();
+check(Array.isArray(journey.chapters) && journey.chapters.length >= 2, 'journey needs >= 2 chapters');
+for (const ch of journey.chapters) {
+  const where = `journey[${ch.id}]`;
+  check(typeof ch.title === 'string' && ch.title.length > 0, `${where}: missing title`);
+  check(typeof ch.tagline === 'string' && ch.tagline.length > 0, `${where}: missing tagline`);
+  check(typeof ch.emoji === 'string' && ch.emoji.length > 0, `${where}: missing emoji`);
+  check(Array.isArray(ch.elements) && ch.elements.length >= 2, `${where}: needs >= 2 elements`);
+  for (const n of ch.elements) {
+    check(featuredNums.has(n), `${where}: element ${n} is not featured (journey cards need kid content)`);
+    check(!seenInJourney.has(n), `${where}: element ${n} appears in more than one chapter`);
+    seenInJourney.add(n);
+  }
+}
+for (const n of featuredNums) {
+  check(seenInJourney.has(n), `featured element ${n} is missing from the journey`);
+}
+
 if (errors.length) {
   console.error(`✗ ${errors.length} problem(s):`);
   for (const e of errors) console.error('  -', e);
   process.exit(1);
 }
 console.log(`✓ Data valid: ${elements.length} elements, ${Object.keys(featured).length} featured, ` +
-  `${games.detective.length} detective cases, ${games.match.length} match pairs, ${games.experiments.length} experiments.`);
+  `${games.detective.length} detective cases, ${games.match.length} match pairs, ${games.experiments.length} experiments, ` +
+  `${journey.chapters.length} journey chapters.`);
