@@ -1,81 +1,104 @@
 # Project: Periodic Table Material Science PWA ("Elements")
 
 Read this file at the start of every work session — it is the source of truth
-for goals, constraints, and active tasks. Update it at the end of each major
-step (state, decisions + rationale, next 2–3 concrete actions).
+for goals, constraints, and active tasks. Update it at the end of each phase
+(state, decisions + rationale, next 2–3 concrete actions).
 
 ## Current goal
 
-MVP is built and verified. Next objective: content verification and beta
-polish (see **Next steps**).
+**Task: data verification + citations + redesign** (started 2026-07-06).
+Verify all data, add citations (separate file — JSON schema must NOT change),
+add missing featured elements, and redesign the experience: polished visuals,
+an intro section (atoms → atomic number → why the table matters), and a
+phased "journey" that unlocks element cards gradually.
+
+## Current phase
+
+- [x] Phase 1 — Audit: validator green; all 118 masses match IUPAC abridged
+      values; featured props match CRC within rounding. Caveats to flag in
+      SOURCES.md: Ar conventional weight, C allotrope mix (hardness=diamond,
+      density=graphite, melt=sublimation), He melts only under pressure,
+      Sn/K density ranges, Hs/Lr mass numbers, Mohs-for-metals approximate.
+      NOTE: external fetches (CIAAW/PubChem/Wikipedia) blocked by network
+      policy — verification is against model knowledge of IUPAC/CRC, stated
+      honestly in SOURCES.md.
+- [ ] Phase 2 — Citations: write docs/SOURCES.md (per-element values + refs +
+      uncertainty flags). Update `$comment` in data JSONs to point at it
+      ($comment is ignored by app+validator, safe).
+- [ ] Phase 3 — Add 6 featured elements (Li 3, F 9, Mg 12, P 15, K 19, Ni 28)
+      to data/kid-content.json using the EXACT existing schema. Run validator.
+- [ ] Phase 4 — data/journey.json (NEW additive file, existing schemas
+      untouched): 6 chapters over the 28 featured elements. Extend validator
+      to cover it (each ref featured, no dupes, full coverage).
+- [ ] Phase 5 — Redesign: new intro view (#/intro: atoms, protons=atomic
+      number w/ interactive proton counter, why the table matters), new Learn
+      view (#/learn: unlockable chapter cards, default landing), Compare moves
+      into Play hub, CSS polish pass. Table itself unchanged (#/home).
+      Bump sw.js CACHE_VERSION to v2 + precache journey.json.
+- [ ] Phase 6 — Verify: validator + Chromium smoke test (all tabs, intro flow,
+      journey unlock, offline) + screenshots; update README; final push.
 
 ## Constraints
 
-- **Kid safety first:** audience is ~9 years old. Experiments must be
-  household-benign with "Ask a grown-up first" gates. Hazard facts are stated
-  as facts with "never do this" framing, never as activities.
-- **Factual accuracy:** science facts must be true; playful metaphors live
-  only in clearly-labeled `imagine` fields and may never contradict facts.
-  Numeric data needs verification against IUPAC/CRC before public release.
-- **Tech:** zero dependencies, no build step, browser-native only. Must work
-  fully offline after first load (service worker precache). Performance
-  budget: < 200 KB, interactive < 1s on a 2018 iPad, 60fps animations.
-- **Privacy:** no accounts, no analytics, no network calls after install.
-  Progress in localStorage only.
-- **Process:** plan before coding; run `node tools/validate-data.mjs` after
-  any data edit; smoke-test all tabs + offline mode before pushing.
+- **JSON schema is frozen:** do not change field names/structure of
+  elements.json / kid-content.json / games.json — the app depends on them.
+  Citations live in docs/SOURCES.md only. New data goes in NEW files.
+- **Kid safety first:** audience ~9. Experiments household-benign with "Ask a
+  grown-up first" gates. Hazard facts framed "never do this", never activities.
+- **Factual accuracy:** facts true; metaphors only in `imagine` fields; flag
+  uncertain values in SOURCES.md rather than guessing.
+- **Tech:** zero dependencies, no build step, offline-first (SW precache),
+  < 200 KB, 60fps on a 2018 iPad. No external fonts/CDNs (offline + privacy).
+- **Privacy:** no accounts/analytics/network-after-install. localStorage only.
+- **Process:** run `node tools/validate-data.mjs` after any data edit;
+  commit + push after EVERY phase so work survives a crash; smoke-test all
+  tabs + offline before finishing.
 
-## Active tasks
+## Journey design (preserved decision — implement exactly this)
 
-- [x] Design doc (docs/DESIGN.md)
-- [x] 118-element dataset + 22 featured element stories
-- [x] App shell, router, periodic table, element profiles
-- [x] Compare Lab, Material Detective, Material Match
-- [x] Experiments, badges, mascot, crystal viewer
-- [x] Service worker + manifest (verified offline in headless Chromium)
-- [x] Data validator (tools/validate-data.mjs)
-- [x] README.md
-- [ ] External fact-check of all numeric data (IUPAC atomic weights, CRC
-      densities/melting points) — owner: any agent; output: corrections PR
-      + a `verified: true` note per element in kid-content.json
-- [ ] PNG icons (192/512 + apple-touch-icon) — iOS home-screen icons don't
-      support SVG; owner: any agent; output: assets/*.png + manifest update
-- [ ] Grow featured elements from 22 toward 40 (candidates: Li, Mg, K, P, F,
-      Ni, Cr, Pt, U, I) — follow content rules in README
+Chapters unlock in order; a chapter unlocks when every element in the
+previous chapter has been visited. Table stays freely explorable.
+1. The Air Around You 🌬️ — H, He, N, O
+2. The Stuff of Life 🌱 — C, Ca, P, K, S
+3. Kitchen Chemistry 🧂 — Na, Cl, Mg, F
+4. The Metal Workshop 🔧 — Fe, Al, Cu, Zn, Ni, Ti
+5. The Tech Lab 💡 — Si, W, Ne, Li
+6. The Treasure Vault 👑 — Au, Ag, Sn, Pb, Hg
 
-## Decisions and rationale
+Tabs after redesign: Learn (#/learn, default) · Explore (#/home, table as-is)
+· Play (#/play: detective, match, + compare) · Lab · Badges. First run with no
+progress → #/intro once (localStorage flag `elements-intro-seen`).
 
-- **No framework / no build step.** ~8 views over static JSON; browser-native
-  keeps payload tiny, avoids toolchain rot, and meets the tablet perf budget.
-- **Hash routing.** Static-host friendly; keeps SW precache to one HTML file.
-- **Canvas 2D crystal viewer, not WebGL/WebXR.** A ~100-line orthographic
-  projector is smooth on old iPads; WebXR deferred to polish phase behind a
-  capability check.
-- **Fact/metaphor separation enforced in the data schema** (`facts` vs
-  `imagine`) and in the UI (differently-styled cards) — this is the content
-  safety mechanism, keep it.
-- **Featured-elements model.** Rich stories for elements kids can actually
-  meet (22 now); honest "still writing this story" state for the rest. Better
-  than thin auto-generated content for all 118.
-- **Games never punish.** Wrong detective guesses unlock clues; wrong matches
-  shake and reset. Retrieval practice works best low-stakes.
-- **Single-agent execution this session.** Delegation-ready structure exists
-  (data files + validator), but cold-start subagents cost more than they save
-  at this size. Delegate content expansion once the schema is stable (it is).
+## Decisions and rationale (carried + new)
+
+- No framework / no build step; hash routing; Canvas 2D crystals; fact vs
+  `imagine` separation enforced in schema+UI; games never punish.
+- **Citations separate from JSON** (docs/SOURCES.md): schema frozen by
+  requirement; `$comment` fields may reference the doc but carry no data.
+- **Journey as additive JSON file**: existing files keep exact schema; app
+  code reads the new file. Unlock state derives from existing `visited`
+  progress — no new progress schema needed.
+- **Verification method honesty:** network egress blocked except GitHub, so
+  numeric verification = model knowledge of IUPAC CIAAW abridged weights +
+  CRC Handbook, disclosed in SOURCES.md with per-value uncertainty flags.
+
+## Open questions / risks
+
+- Sn density: published values 7.26–7.31 g/cm³ (white tin) — kept 7.31,
+  flagged in SOURCES.md. K density: 0.86–0.89 — using 0.89 (CRC), flagged.
+- Hs [269] vs [277]: IUPAC table value [269] kept, flagged.
+- Live source verification still recommended before public release (blocked
+  in this environment); SOURCES.md is structured to make that pass fast.
 
 ## Progress log
 
-- 2026-07-05 — MVP built end-to-end: design doc, all data files, app shell,
-  7 views, 4 crystal lattices, SW + manifest, validator, README. Verified in
-  headless Chromium: 118 tiles render, both games winnable, zero console
-  errors, and the app fully renders with network disabled (SW precache works).
-  Remaining: external fact-check, PNG icons, more featured elements.
+- 2026-07-05 — MVP built end-to-end and verified in headless Chromium
+  (118 tiles, games winnable, zero console errors, offline works).
+- 2026-07-06 — Phase 1 audit complete: dataset accurate vs IUPAC/CRC
+  knowledge; caveat list drawn up; network-verification blocked (documented).
 
 ## Next steps
 
-- [ ] Fact-check pass: verify every number in data/*.json against IUPAC/CRC;
-      fix and note sources in the JSON `$comment` fields.
-- [ ] Generate 192/512 PNG + apple-touch-icon from assets/icon.svg and add to
-      manifest + index.html + sw.js precache (bump CACHE_VERSION).
-- [ ] Add 5 more featured elements (start with Li, Mg, K) following the
-      content rules in README; run the validator; smoke-test.
+- [ ] Phase 2: write docs/SOURCES.md; touch `$comment`s; validator; commit+push.
+- [ ] Phase 3: add 6 featured elements; validator; commit+push.
+- [ ] Phase 4–6 per **Current phase** above.
