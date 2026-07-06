@@ -10,6 +10,14 @@ after the first visit.
 
 ## Features & learning goals
 
+- **Start Here intro** — a four-page, two-minute story explaining atoms,
+  protons, the atomic number (with a hands-on proton counter you can tap),
+  and why the periodic table is "the great map of everything". Shown on
+  first launch, always revisitable from Learn.
+- **The Journey (Learn tab)** — featured elements are introduced in six
+  themed chapters (The Air Around You → The Treasure Vault) that unlock one
+  by one as kids meet every element in the current chapter. Self-paced,
+  curiosity-driven — and the full table stays freely explorable at all times.
 - **Interactive periodic table** — all 118 elements, color-coded by family,
   with ⭐ "featured" elements that have full kid-friendly stories.
 - **Element profiles** — superpowers, science facts, origin stories, wow
@@ -45,10 +53,12 @@ js/games.js           Detective + Match + confetti
 js/crystals.js        Canvas 2D orthographic 3D lattice viewer
 js/progress.js        localStorage progress + badge logic
 data/elements.json    basic data for all 118 elements
-data/kid-content.json rich content for featured elements
+data/kid-content.json rich content for featured elements (28)
 data/games.json       detective cases, match pairs, experiments
+data/journey.json     phased chapter progression for the Learn tab
 tools/validate-data.mjs  data schema/cross-reference validator
 docs/DESIGN.md        full design & architecture document
+docs/SOURCES.md       citations + uncertainty flags for every data value
 ```
 
 Key decisions (full rationale in [docs/DESIGN.md](docs/DESIGN.md)):
@@ -99,17 +109,26 @@ All content lives in `data/*.json` — no code changes needed:
    `density` g/cm³; `meltC`; `conduct` 0–10 qualitative).
 3. **Games & experiments** → `data/games.json`.
 
+4. **Journey chapters** → `data/journey.json`. Every featured element must
+   appear in exactly one chapter (the validator enforces this), so new
+   featured elements need a chapter home too.
+
 **Rules:**
 - `facts`, clues, and `reveal` texts must be *scientifically true* — check
   numeric properties against an authoritative source (IUPAC atomic weights,
-  CRC Handbook for densities/melting points) before merging.
+  CRC Handbook for densities/melting points) before merging, and record the
+  reference in `docs/SOURCES.md`. Citations live there — never in the JSON;
+  the schema is frozen.
 - Playful language goes in `imagine` only, and must never contradict the facts.
 - Every experiment must be household-safe and include a `safety` note.
 - Always run `node tools/validate-data.mjs` after editing.
 
-> ⚠️ The current dataset was written from general scientific knowledge and is
-> intended to be accurate, but it has **not** been formally verified against a
-> reference database. Do that verification pass before any public release.
+> **Data provenance:** every value is cross-referenced in
+> [docs/SOURCES.md](docs/SOURCES.md) (IUPAC/CIAAW atomic weights, CRC
+> Handbook properties, RSC for history/uses), including explicit ⚠ flags on
+> the handful of values where published sources vary. A final pass against
+> the live references is recommended before public release — SOURCES.md
+> lists the flagged rows to check first.
 
 ## Performance on tablets
 

@@ -19,13 +19,14 @@ let cache = null;
 
 export async function loadData() {
   if (cache) return cache;
-  const [elementsRes, kidRes, gamesRes] = await Promise.all([
+  const [elementsRes, kidRes, gamesRes, journeyRes] = await Promise.all([
     fetch('data/elements.json'),
     fetch('data/kid-content.json'),
-    fetch('data/games.json')
+    fetch('data/games.json'),
+    fetch('data/journey.json')
   ]);
-  const [elementsJson, kidJson, gamesJson] = await Promise.all([
-    elementsRes.json(), kidRes.json(), gamesRes.json()
+  const [elementsJson, kidJson, gamesJson, journeyJson] = await Promise.all([
+    elementsRes.json(), kidRes.json(), gamesRes.json(), journeyRes.json()
   ]);
 
   const elements = elementsJson.elements;
@@ -35,6 +36,7 @@ export async function loadData() {
     byNumber,
     featured: kidJson.featured,
     games: gamesJson,
+    journey: journeyJson.chapters,
     featuredNumbers: Object.keys(kidJson.featured).map(Number).sort((a, b) => a - b)
   };
   return cache;

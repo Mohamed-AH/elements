@@ -49,6 +49,16 @@ export const progress = {
   }
 };
 
+const INTRO_KEY = 'elements-intro-seen';
+
+export function introSeen() {
+  try { return localStorage.getItem(INTRO_KEY) === '1'; } catch { return true; }
+}
+
+export function markIntroSeen() {
+  try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* session-only */ }
+}
+
 export function badges(featuredNumbers) {
   const s = load();
   const featuredVisited = s.visited.filter((n) => featuredNumbers.includes(n)).length;

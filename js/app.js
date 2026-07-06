@@ -2,7 +2,7 @@
 // fill #view; game logic lives in games.js, 3D in crystals.js.
 
 import { loadData, CATEGORIES, gridPosition } from './data.js';
-import { progress, badges } from './progress.js';
+import { progress, badges, introSeen, markIntroSeen } from './progress.js';
 import { renderDetective, renderMatch } from './games.js';
 import { mountCrystal, LATTICE_TITLES } from './crystals.js';
 
@@ -28,6 +28,229 @@ function setChrome(title, { back = false, tab = null } = {}) {
     t.classList.toggle('active', t.dataset.tab === tab);
   });
   window.scrollTo(0, 0);
+}
+
+/* ---------- Intro: atoms → atomic number → why the table matters ---------- */
+
+const PROTON_LINES = {
+  1: 'the star fuel that fills the universe',
+  2: 'the gas that makes balloons float',
+  3: 'the metal inside your tablet’s battery',
+  4: 'a metal used in space telescope mirrors',
+  5: 'found in heat-proof kitchen glass',
+  6: 'the builder of diamonds, pencils — and you',
+  7: 'most of every breath you take',
+  8: 'the part of air that keeps you alive',
+  9: 'the tooth-protector in toothpaste',
+  10: 'the gas that glows red in signs'
+};
+
+function atomSVG(protons) {
+  const nucleons = [];
+  const total = Math.min(protons * 2, 20);
+  for (let i = 0; i < total; i++) {
+    const angle = i * 2.4, r = 4.5 * Math.sqrt(i);
+    const x = 60 + r * Math.cos(angle), y = 60 + r * Math.sin(angle);
+    const isProton = i % 2 === 0;
+    nucleons.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6.5"
+      fill="${isProton ? '#ff7ab8' : '#8a93c4'}" stroke="rgba(0,0,0,.3)"/>`);
+  }
+  const electrons = [];
+  const shell1 = Math.min(protons, 2), shell2 = Math.max(0, protons - 2);
+  for (let i = 0; i < shell1; i++) {
+    const a = (i / shell1) * Math.PI * 2;
+    electrons.push(`<circle cx="${(60 + 32 * Math.cos(a)).toFixed(1)}" cy="${(60 + 32 * Math.sin(a)).toFixed(1)}" r="3.5" fill="#5ee0ff"/>`);
+  }
+  for (let i = 0; i < shell2; i++) {
+    const a = (i / shell2) * Math.PI * 2 + 0.4;
+    electrons.push(`<circle cx="${(60 + 50 * Math.cos(a)).toFixed(1)}" cy="${(60 + 50 * Math.sin(a)).toFixed(1)}" r="3.5" fill="#5ee0ff"/>`);
+  }
+  return `<svg viewBox="0 0 120 120" class="atom-svg" aria-hidden="true">
+    ${shell1 ? '<circle cx="60" cy="60" r="32" fill="none" stroke="rgba(94,224,255,.35)" stroke-width="1.5"/>' : ''}
+    ${shell2 ? '<circle cx="60" cy="60" r="50" fill="none" stroke="rgba(94,224,255,.25)" stroke-width="1.5"/>' : ''}
+    ${nucleons.join('')}${electrons.join('')}
+  </svg>`;
+}
+
+function introView() {
+  setChrome('Start Here', { tab: 'learn' });
+  markIntroSeen();
+  let page = 0;
+  let protons = 1;
+
+  const pages = [
+    () => `
+      <div class="intro-art">🌍 🐶 🍕 ⭐ 🧸</div>
+      <h2 class="intro-title">Everything is made of atoms</h2>
+      <p class="intro-text">Your shoes, the ocean, pizza, planets, <strong>you</strong> — if you could
+      zoom in far, far closer than any microscope, you'd find that everything is built from
+      unbelievably tiny building blocks called <strong>atoms</strong>.</p>
+      <p class="intro-text">How tiny? The dot on this letter <strong>i</strong> could hold
+      billions of them.</p>`,
+    () => `
+      ${atomSVG(3)}
+      <h2 class="intro-title">Inside an atom</h2>
+      <p class="intro-text">Every atom has a middle called the <strong>nucleus</strong>, made of
+      <span class="tag tag-pink">protons</span> and <span class="tag tag-gray">neutrons</span>.
+      Around it, tiny <span class="tag tag-cyan">electrons</span> whizz in a blur.</p>
+      <p class="intro-text">Different atoms are just different combos of these three pieces.</p>`,
+    () => `
+      <div id="proton-widget"></div>
+      <h2 class="intro-title">The magic number</h2>
+      <p class="intro-text">Here's the big secret: <strong>counting protons tells you which
+      element an atom is.</strong> That count is called the <strong>atomic number</strong>.
+      Try it — add and remove protons:</p>`,
+    () => `
+      <div class="intro-art">🗺️</div>
+      <h2 class="intro-title">The great map of everything</h2>
+      <p class="intro-text">Scientists found <strong>118</strong> different elements — and arranged
+      them into the <strong>periodic table</strong>: a map where element families line up in columns,
+      like a bookshelf sorted by superpower.</p>
+      <p class="intro-text">Over 150 years ago, Dmitri Mendeleev spotted the pattern and even left
+      gaps for elements nobody had found yet. He was right — they were discovered later!</p>
+      <p class="intro-text">Every material ever made — every toy, rocket, and cupcake — is a recipe
+      using this one map. Ready to explore it?</p>`
+  ];
+
+  function protonWidget() {
+    const el = DATA.byNumber.get(protons);
+    return `
+      ${atomSVG(protons)}
+      <div class="proton-controls">
+        <button class="round-btn" id="p-minus" aria-label="Remove a proton" ${protons <= 1 ? 'disabled' : ''}>−</button>
+        <div class="proton-readout">
+          <div class="proton-count">${protons} proton${protons > 1 ? 's' : ''}</div>
+          <div class="proton-element" style="color:${CATEGORIES[el.c].color}">${esc(el.name)} (${esc(el.s)})</div>
+          <div class="proton-line">${esc(PROTON_LINES[protons])}</div>
+        </div>
+        <button class="round-btn" id="p-plus" aria-label="Add a proton" ${protons >= 10 ? 'disabled' : ''}>+</button>
+      </div>`;
+  }
+
+  function draw() {
+    const last = page === pages.length - 1;
+    viewEl.innerHTML = `
+      <div class="intro-card">
+        ${pages[page]()}
+        <div class="intro-nav">
+          <button class="big-btn secondary" id="intro-back" ${page === 0 ? 'style="visibility:hidden"' : ''}>← Back</button>
+          <div class="intro-dots">${pages.map((_, i) =>
+            `<span class="dot ${i === page ? 'on' : ''}"></span>`).join('')}</div>
+          ${last
+            ? '<a class="big-btn" href="#/learn">Start the journey 🚀</a>'
+            : '<button class="big-btn" id="intro-next">Next →</button>'}
+        </div>
+        ${last ? '<p class="muted" style="text-align:center;margin-top:12px"><a class="text-link" href="#/home">or jump straight to the periodic table →</a></p>' : ''}
+      </div>`;
+
+    if (page === 2) {
+      const mount = () => {
+        viewEl.querySelector('#proton-widget').innerHTML = protonWidget();
+        viewEl.querySelector('#p-plus')?.addEventListener('click', () => { protons = Math.min(10, protons + 1); mount(); });
+        viewEl.querySelector('#p-minus')?.addEventListener('click', () => { protons = Math.max(1, protons - 1); mount(); });
+      };
+      mount();
+    }
+    viewEl.querySelector('#intro-back')?.addEventListener('click', () => { page--; draw(); });
+    viewEl.querySelector('#intro-next')?.addEventListener('click', () => { page++; draw(); });
+  }
+  draw();
+}
+
+/* ---------- Learn: the phased journey ---------- */
+
+function chapterStates() {
+  const visited = new Set(progress.get().visited);
+  let prevComplete = true;
+  return DATA.journey.map((ch) => {
+    const done = ch.elements.filter((n) => visited.has(n)).length;
+    const complete = done === ch.elements.length;
+    const unlocked = prevComplete;
+    prevComplete = complete;
+    return { ch, done, complete, unlocked, visited };
+  });
+}
+
+function learnView() {
+  setChrome('Your Journey', { tab: 'learn' });
+  const states = chapterStates();
+  const metCount = states.reduce((sum, s) => sum + s.done, 0);
+  const totalCount = states.reduce((sum, s) => sum + s.ch.elements.length, 0);
+  const allDone = metCount === totalCount;
+
+  // The next element to meet: first unvisited in the first incomplete unlocked chapter.
+  let nextEl = null;
+  for (const s of states) {
+    if (s.unlocked && !s.complete) {
+      nextEl = s.ch.elements.find((n) => !s.visited.has(n));
+      break;
+    }
+  }
+
+  const chaptersHtml = states.map((s, idx) => {
+    const { ch } = s;
+    if (!s.unlocked) {
+      const prev = states[idx - 1].ch;
+      return `
+        <section class="chapter locked" aria-label="${esc(ch.title)} (locked)">
+          <div class="chapter-head">
+            <span class="chapter-emoji">🔒</span>
+            <div>
+              <span class="chapter-kicker">Chapter ${idx + 1}</span>
+              <h3 class="chapter-title">${esc(ch.title)}</h3>
+              <p class="chapter-tag">Meet everyone in “${esc(prev.title)}” to unlock this chapter.</p>
+            </div>
+          </div>
+        </section>`;
+    }
+    const cards = ch.elements.map((n) => {
+      const el = DATA.byNumber.get(n);
+      const kid = DATA.featured[n];
+      const met = s.visited.has(n);
+      const isNext = n === nextEl;
+      return `
+        <a class="journey-el ${met ? 'met' : ''} ${isNext ? 'next-up' : ''}" href="#/element/${n}">
+          ${isNext ? '<span class="next-pill">up next</span>' : ''}
+          <span class="journey-sym" style="--cat:${CATEGORIES[el.c].color}">${esc(el.s)}${met ? '<span class="met-tick">✓</span>' : ''}</span>
+          <span class="journey-name">${esc(el.name)}</span>
+          <span class="journey-power">${esc(kid.superpower)}</span>
+        </a>`;
+    }).join('');
+    return `
+      <section class="chapter ${s.complete ? 'complete' : ''}">
+        <div class="chapter-head">
+          <span class="chapter-emoji">${ch.emoji}</span>
+          <div>
+            <span class="chapter-kicker">Chapter ${idx + 1}${s.complete ? ' · complete ✓' : ''}</span>
+            <h3 class="chapter-title">${esc(ch.title)}</h3>
+            <p class="chapter-tag">${esc(ch.tagline)}</p>
+          </div>
+          <span class="chapter-count">${s.done}/${ch.elements.length}</span>
+        </div>
+        <div class="journey-grid">${cards}</div>
+      </section>`;
+  }).join('');
+
+  viewEl.innerHTML = `
+    ${nova(allDone
+      ? 'You met every featured element — every single one! The whole table is yours to explore now. 🌟'
+      : metCount === 0
+        ? 'This is your element journey! Meet everyone in a chapter to unlock the next one. No rush — curiosity sets the pace.'
+        : `Welcome back, explorer! You've met <strong>${metCount} of ${totalCount}</strong> featured elements. Your next discovery is waiting below.`)}
+    <a class="intro-banner" href="#/intro">
+      <span class="hub-emoji">⚛️</span>
+      <span><strong>New here? Start with the 2-minute intro:</strong><br>
+      What's an atom, and why does one little number change everything?</span>
+      <span class="intro-banner-go">→</span>
+    </a>
+    <div class="journey-progress">
+      <div class="journey-progress-label"><span>Elements met</span><span>${metCount} / ${totalCount}</span></div>
+      <div class="bar"><span style="width:${Math.max(2, (metCount / totalCount) * 100)}%"></span></div>
+    </div>
+    ${chaptersHtml}
+    <p class="muted" style="margin-top:18px">Want to roam free? The full periodic table is always open in
+    <a class="text-link" href="#/home">⚛️ Explore</a> — chapters just pace the story.</p>
+  `;
 }
 
 /* ---------- Views ---------- */
@@ -245,6 +468,11 @@ function playView() {
         <h3>Material Match</h3>
         <p>Match each element to the real-world thing it's famous for.</p>
       </a>
+      <a class="hub-card" href="#/compare">
+        <span class="hub-emoji">⚖️</span>
+        <h3>Compare Lab</h3>
+        <p>Put two elements head-to-head and think like an engineer.</p>
+      </a>
     </div>
   `;
 }
@@ -316,6 +544,8 @@ function badgesView() {
 /* ---------- Router ---------- */
 
 const routes = [
+  { pattern: /^learn$/, view: learnView },
+  { pattern: /^intro$/, view: introView },
   { pattern: /^home$/, view: homeView },
   { pattern: /^element\/(\d+)$/, view: elementView },
   { pattern: /^compare(?:\/(\d+))?(?:\/(\d+))?$/, view: compareView },
@@ -328,12 +558,13 @@ const routes = [
 ];
 
 function render() {
-  const path = location.hash.replace(/^#\//, '') || 'home';
+  const path = location.hash.replace(/^#\//, '');
+  if (!path) { location.hash = introSeen() ? '#/learn' : '#/intro'; return; }
   for (const route of routes) {
     const match = path.match(route.pattern);
     if (match) { route.view(...match.slice(1)); return; }
   }
-  location.hash = '#/home';
+  location.hash = '#/learn';
 }
 
 window.addEventListener('hashchange', render);
