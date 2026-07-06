@@ -194,7 +194,35 @@ cited. All claims below verified against [RSC]/[CRC] unless noted.
   block it (galvanizing analogy). All standard demonstrations; no citation
   disputes known.
 
-## Field-by-field uncertainty summary
+## Batch 2: completing all 118 featured elements (phases A–H)
+
+Same conventions as above: density g/cm³ [CRC], melt °C [CRC], Mohs
+hardness [MOHS], `null` = **never measured** (element exists only as a few
+short-lived atoms — displayed in-app as an honest "mystery" card, never
+guessed). Narrative claims per [RSC] unless noted.
+
+### Phase A — noble gases & halogens (Ar, Br, Kr, I, Xe, At, Rn)
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 18 | Ar | 0.0018 | −189 | gas, 1.784 g/L [CRC]; 0.934% of air |
+| 35 | Br | 3.10 | −7 | liquid at RT [CRC]; melt −7.2 |
+| 36 | Kr | 0.0037 | −157 | gas, 3.749 g/L [CRC] |
+| 53 | I | 4.93 | 114 | sublimes readily; melt 113.7 [CRC] |
+| 54 | Xe | 0.0059 | −112 | gas, 5.894 g/L [CRC] |
+| 85 | At | null | null | never seen in bulk; total crustal inventory commonly estimated at under ~30 g ("less than a spoonful"); At-210 half-life 8.1 h |
+| 86 | Rn | 0.0097 | −71 | gas, 9.73 g/L [CRC]; radioactive, Rn-222 half-life 3.8 d |
+
+Claims: Ar third most abundant air gas, name *argos* (idle), Rayleigh &
+Ramsay 1894, bulb/welding fill [RSC]. Br one of two liquid elements, name
+*bromos* (stench), Balard 1826 age 23, AgBr photography, Dead Sea brines
+[RSC]. Kr name *kryptos* (hidden), Ramsay & Travers 1898, meter defined by
+Kr-86 line 1960–1983 (BIPM) [RSC]. I violet vapor/name, Courtois 1811
+seaweed ash, thyroid/iodized salt, starch test [RSC]. Xe name *xenos*
+(stranger), ion propulsion (NASA Dawn), HID lamps, anesthesia [RSC/NASA].
+At rarest natural element, name *astatos* (unstable), synthesized Berkeley
+1940, At-211 targeted alpha-therapy research [RSC]. Rn from radium decay,
+Dorn 1900, home test kits/mitigation fans (EPA), heaviest noble gas [RSC/EPA].
 
 | Where | Field | Status |
 |---|---|---|

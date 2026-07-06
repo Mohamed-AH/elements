@@ -258,6 +258,23 @@
       "props": {"hardness": null, "density": 0.0032, "meltC": -101, "conduct": 0},
       "state": "gas"
     },
+    "18": {
+      "superpower": "The lazy guardian",
+      "facts": [
+        "About 1 in every 100 breaths you take is argon — it's the third most common gas in the air.",
+        "Its name means 'the lazy one' in Greek, because it almost never reacts with anything.",
+        "That laziness is its superpower: argon fills light bulbs and blankets hot metal during welding, because it refuses to let things burn."
+      ],
+      "imagine": "Argon is the bodyguard who wins every fight by doing absolutely nothing — nothing can make it react.",
+      "origin": "Discovered in 1894, hiding in plain sight: scientists noticed the 'nitrogen' from air weighed a tiny bit too much, and found a whole new gas inside. It was the first noble gas ever found on Earth.",
+      "trivia": [
+        "Double-glazed windows often have argon sealed between the panes to keep heat in.",
+        "Argon protects old documents and museum treasures from slowly reacting with air."
+      ],
+      "uses": ["Light bulbs", "Welding shields", "Insulating windows"],
+      "props": {"hardness": null, "density": 0.0018, "meltC": -189, "conduct": 0},
+      "state": "gas"
+    },
     "19": {
       "superpower": "The body's messenger",
       "facts": [
@@ -379,6 +396,40 @@
       "props": {"hardness": 2.5, "density": 7.13, "meltC": 420, "conduct": 6},
       "state": "solid"
     },
+    "35": {
+      "superpower": "The liquid rebel",
+      "facts": [
+        "Bromine is one of only two elements that are liquid at room temperature — the other is mercury.",
+        "It's a deep red-brown liquid that gives off orange fumes, and it's harsh stuff: only trained chemists handle it.",
+        "Its name comes from the Greek word for 'stench' — it smells terrible!"
+      ],
+      "imagine": "Bromine is the dragon of the element world: red-brown, smoky, and definitely not for petting.",
+      "origin": "Discovered in 1826 by Antoine Balard, a 23-year-old French scientist studying salty pond water from the sea.",
+      "trivia": [
+        "Old-fashioned photography worked thanks to silver bromide — light falling on it drew the picture.",
+        "The Dead Sea is one of the richest bromine sources on Earth."
+      ],
+      "uses": ["Fire-slowing materials", "Old photo film", "Hot tub cleaners"],
+      "props": {"hardness": null, "density": 3.1, "meltC": -7, "conduct": 0},
+      "state": "liquid"
+    },
+    "36": {
+      "superpower": "The hidden one",
+      "facts": [
+        "Krypton's name means 'the hidden one' in Greek — it took clever chemistry with liquid air to find it.",
+        "From 1960 to 1983, the world's official METER was defined using the orange light of krypton atoms.",
+        "Like all noble gases, it almost never reacts with anything."
+      ],
+      "imagine": "Krypton is a shy celebrity: it hid from scientists for centuries, then quietly helped define how long a meter is.",
+      "origin": "Discovered in 1898 by William Ramsay and Morris Travers, who boiled liquid air and studied what was left behind.",
+      "trivia": [
+        "Sorry, Superman fans — kryptonite is fiction, but krypton is a real (and completely harmless) gas.",
+        "Krypton can make brilliant white light in some camera flashes and airport runway lights."
+      ],
+      "uses": ["Airport runway lights", "Camera flashes", "Super-insulating windows"],
+      "props": {"hardness": null, "density": 0.0037, "meltC": -157, "conduct": 0},
+      "state": "gas"
+    },
     "47": {
       "superpower": "The champion conductor",
       "facts": [
@@ -412,6 +463,40 @@
       "uses": ["Bronze statues", "Food can coatings", "Solder in electronics"],
       "props": {"hardness": 1.5, "density": 7.31, "meltC": 232, "conduct": 5},
       "state": "solid"
+    },
+    "53": {
+      "superpower": "The purple protector",
+      "facts": [
+        "Heat solid iodine and it skips being a liquid — it turns straight into a beautiful violet vapor. Its name comes from the Greek for 'violet'.",
+        "The thyroid gland in your neck needs iodine to work — that's why table salt is often 'iodized'.",
+        "Iodine is a famous germ fighter: that brown liquid painted on cuts and scrapes."
+      ],
+      "imagine": "Iodine is a tiny purple genie — warm up the dark crystals and a violet cloud whooshes out.",
+      "origin": "Discovered by accident in 1811, when French chemist Bernard Courtois was processing seaweed ash and a mysterious purple vapor rose up.",
+      "trivia": [
+        "Seaweed is naturally rich in iodine — one reason it's a healthy snack.",
+        "Scientists test for starch using iodine: it turns potato or bread spots blue-black."
+      ],
+      "uses": ["Iodized table salt", "Germ-killing medicine", "Seaweed"],
+      "props": {"hardness": null, "density": 4.93, "meltC": 114, "conduct": 0},
+      "state": "solid"
+    },
+    "54": {
+      "superpower": "The starship stranger",
+      "facts": [
+        "Real spacecraft fly using xenon: ion engines shoot xenon atoms out the back to push through space, gently but for years.",
+        "Xenon makes the brilliant white light in some car headlights and giant movie projectors.",
+        "Its name means 'stranger' in Greek — it's one of the rarest gases in our air."
+      ],
+      "imagine": "Xenon is the quiet stranger in town who turns out to be a starship pilot.",
+      "origin": "Discovered in 1898 by Ramsay and Travers — the third noble gas they found in liquid air in a single amazing summer.",
+      "trivia": [
+        "NASA's Dawn spacecraft rode xenon ion engines all the way to the asteroid belt.",
+        "Doctors have used xenon gas to put patients to sleep for surgery."
+      ],
+      "uses": ["Spacecraft ion engines", "Bright headlights", "Movie projector lamps"],
+      "props": {"hardness": null, "density": 0.0059, "meltC": -112, "conduct": 0},
+      "state": "gas"
     },
     "74": {
       "superpower": "The unmeltable",
@@ -480,6 +565,40 @@
       "uses": ["X-ray shields", "Car batteries", "Diving weights"],
       "props": {"hardness": 1.5, "density": 11.34, "meltC": 327, "conduct": 3},
       "state": "solid"
+    },
+    "85": {
+      "superpower": "The vanishing act",
+      "facts": [
+        "Astatine is the rarest natural element: all of it in Earth's crust at any moment adds up to less than a spoonful.",
+        "Its atoms fall apart within hours — its name literally means 'unstable' in Greek.",
+        "Nobody has ever seen a visible piece of astatine. If you somehow gathered one, its own radiation energy would instantly vaporize it."
+      ],
+      "imagine": "Astatine is a magician frozen mid-disappearing-act — by the time you point at it, it's already gone.",
+      "origin": "First created in 1940 at a particle accelerator in Berkeley, California — humans made it before anyone found it in nature.",
+      "trivia": [
+        "Scientists study astatine one atom at a time.",
+        "Doctors are researching a form of astatine that might one day zap cancer cells with pinpoint accuracy."
+      ],
+      "uses": ["Science experiments", "Cancer-treatment research"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
+    },
+    "86": {
+      "superpower": "The basement ghost",
+      "facts": [
+        "Radon is an invisible radioactive gas that seeps out of ordinary rocks and soil.",
+        "It can slowly collect in basements — which is why grown-ups can buy simple radon test kits, and some houses have special fans to blow it out.",
+        "Radon is born when radium deep in the ground breaks apart, and radon's own atoms break apart in a few days."
+      ],
+      "imagine": "Radon is a real ghost that drifts up from underground — but unlike storybook ghosts, a simple detector finds it and a fan chases it away.",
+      "origin": "Discovered in 1900 by Friedrich Dorn, who noticed radium giving off a mysterious radioactive gas — it was called 'radium emanation' at first.",
+      "trivia": [
+        "Radon is the heaviest of all the noble gases.",
+        "Testing a home for radon is one of the easiest pieces of real science a family can do."
+      ],
+      "uses": ["Home safety testing (knowing about it!)", "Tracing underground air and water", "Earthquake research"],
+      "props": {"hardness": null, "density": 0.0097, "meltC": -71, "conduct": 0},
+      "state": "gas"
     }
   }
 }

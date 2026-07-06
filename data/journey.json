@@ -42,6 +42,20 @@
       "emoji": "👑",
       "tagline": "Pirate gold, ancient bronze, and a metal that flows like water.",
       "elements": [79, 47, 50, 82, 80]
+    },
+    {
+      "id": "nobles",
+      "title": "The Invisible Shields",
+      "emoji": "🛡️",
+      "tagline": "Lazy gases with a strange superpower: they never, ever react.",
+      "elements": [18, 36, 54, 86]
+    },
+    {
+      "id": "fierce",
+      "title": "The Fierce Cousins",
+      "emoji": "🌋",
+      "tagline": "Chlorine and fluorine's wilder relatives — liquid, purple, and vanishing.",
+      "elements": [35, 53, 85]
     }
   ]
 }
