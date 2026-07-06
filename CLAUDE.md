@@ -5,11 +5,41 @@ for goals, constraints, and active tasks. Update it at the end of each phase.
 
 ## Current phase
 
-**Data-verification + redesign task: ALL 6 PHASES COMPLETE (2026-07-06).**
-Verified in Chromium: intro flow, proton counter, journey unlock sequence,
-all legacy views, offline mode (SW v2), zero console errors. Validator green
-(118 elements, 28 featured, 6 chapters). Nothing in flight; safe to start
-new work from here.
+**Task: feature ALL 118 elements (started 2026-07-06).** Add the remaining
+90 elements to kid-content.json + journey.json in 8 phased batches, same
+workflow as before (SOURCES.md rows → entries → chapter(s) → validator →
+commit+push per phase). Roadmap below; tick as completed so a crashed
+session can resume at the first unticked phase.
+
+- [ ] Phase 0 — Infra: app + validator accept `null` density/meltC/conduct
+      (elements never measured in bulk show an honest "mystery" card instead
+      of bars; compare picker filters to measurable elements). No schema
+      change — extends the existing hardness-null convention.
+- [ ] Phase A (7): Ar Kr Xe Rn + Br I At. Chapters: "The Invisible Shields"
+      (18,36,54,86), "The Fierce Cousins" (35,53,85). At = null props.
+- [ ] Phase B (11): B Ga Ge As Se + Be Sc V Cr Mn Co. Chapters: "The
+      In-Betweeners" (5,31,32,33,34), "The Color Brigade" (4,21,23,24,25,27).
+- [ ] Phase C (6): Rb Sr Cs Ba Fr Ra. Chapter: "The Wild Bunch"
+      (37,38,55,56,87,88). Fr = null props.
+- [ ] Phase D (15): chapters "The Super-Steel Squad" (39,40,41,42,43),
+      "The Gadget Gang" (48,49,51,52), "The Precious Six" (44,45,46,76,77,78).
+- [ ] Phase E (6): chapters "The Heat Champions" (72,73,75),
+      "Heavy Legends" (81,83,84).
+- [ ] Phase F (15): lanthanides. "Rare Earths: The Magnet Makers" (57-61),
+      "Rare Earths: The Glow Team" (62-66), "Rare Earths: The Laser Crew" (67-71).
+- [ ] Phase G (15): actinides. "The Atomic Age" (89-93), "The Star Makers"
+      (94-98), "The Vanishing Five" (99-103). Fm Md No Lr = null props.
+- [ ] Phase H (15): superheavies, ALL null props, state "unknown".
+      "Lab Legends I" (104-108), "Lab Legends II" (109-113),
+      "The Edge of the Map" (114-118).
+- [ ] Final: bump sw.js CACHE_VERSION → v3 (precached data changed), full
+      Chromium smoke + offline test, README count updates, CLAUDE.md close-out.
+
+Content rules for radioactive/synthetic elements: radioactivity explained
+as "atoms that slowly break apart, releasing energy — handled by scientists
+with special protection, never found loose at home"; radon framed around
+home test kits (useful safety knowledge); no poisoning stories; synthesis
+stories (labs, naming, atom-counting) are the hook.
 
 ## Completed work (this task)
 

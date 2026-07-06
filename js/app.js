@@ -363,16 +363,29 @@ function elementView(n) {
 const CONDUCT_WORDS = ['not at all', 'barely', 'a little', 'a little', 'pretty well', 'well', 'well', 'really well', 'really well', 'amazingly', 'best of all!'];
 
 function propBars(props) {
+  // Elements only ever made a few atoms at a time have no measured bulk
+  // properties — say so honestly instead of showing made-up bars.
+  if (props.density == null && props.meltC == null) {
+    return `<p class="mystery-props">⚗️ Mystery! Scientists can only make a few atoms
+      of this element at a time — and they vanish in moments. Nobody has ever collected
+      enough to measure how heavy, hard, or melty it is. Maybe someday <em>you</em> will.</p>`;
+  }
   const rows = [];
   if (props.hardness != null) {
     rows.push(bar('💪 Hardness', `${props.hardness} / 10 on the Mohs scale`, props.hardness / 10));
   }
-  const isGas = props.density < 0.01;
-  rows.push(bar('🏋️ Heaviness (density)',
-    isGas ? `${(props.density * 1000).toFixed(2)} g per liter — it's a gas, super light!` : `${props.density} g/cm³`,
-    Math.min(props.density / 20, 1)));
-  rows.push(bar('🔥 Melting point', `${props.meltC.toLocaleString()} °C`, (props.meltC + 273) / 3823));
-  rows.push(bar('⚡ Carries electricity', CONDUCT_WORDS[props.conduct], props.conduct / 10));
+  if (props.density != null) {
+    const isGas = props.density < 0.01;
+    rows.push(bar('🏋️ Heaviness (density)',
+      isGas ? `${(props.density * 1000).toFixed(2)} g per liter — it's a gas, super light!` : `${props.density} g/cm³`,
+      Math.min(props.density / 20, 1)));
+  }
+  if (props.meltC != null) {
+    rows.push(bar('🔥 Melting point', `${props.meltC.toLocaleString()} °C`, (props.meltC + 273) / 3823));
+  }
+  if (props.conduct != null) {
+    rows.push(bar('⚡ Carries electricity', CONDUCT_WORDS[props.conduct], props.conduct / 10));
+  }
   return rows.join('');
 }
 
@@ -386,7 +399,13 @@ function bar(label, valueText, frac) {
 
 function compareView(aNum, bNum) {
   setChrome('Compare Lab', { tab: 'compare' });
-  const featured = DATA.featuredNumbers.map((n) => DATA.byNumber.get(n));
+  // Only elements with measured properties can go head-to-head.
+  const featured = DATA.featuredNumbers
+    .filter((n) => {
+      const p = DATA.featured[n].props;
+      return p.density != null && p.meltC != null && p.conduct != null;
+    })
+    .map((n) => DATA.byNumber.get(n));
   const a = Number(aNum) || 26;
   const b = Number(bNum) || 13;
 
@@ -403,6 +422,8 @@ function compareView(aNum, bNum) {
   `;
 
   const draw = () => {
+    // Read back from the selects: if the URL named an unmeasurable element,
+    // the browser falls back to the first option, which is always valid.
     const na = Number(viewEl.querySelector('#pick-a').value);
     const nb = Number(viewEl.querySelector('#pick-b').value);
     renderComparison(viewEl.querySelector('#compare-result'), na, nb);

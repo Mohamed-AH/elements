@@ -518,6 +518,16 @@ button { font: inherit; color: inherit; }
 .text-link { color: var(--accent); font-weight: 700; text-decoration: none; }
 .text-link:hover { text-decoration: underline; }
 
+.mystery-props {
+  margin: 0;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(201, 167, 255, 0.08);
+  border: 1.5px dashed rgba(201, 167, 255, 0.4);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
 /* ---------- Intro ---------- */
 
 .intro-card {
