@@ -52,6 +52,40 @@
       "props": {"hardness": 0.6, "density": 0.534, "meltC": 180, "conduct": 7},
       "state": "solid"
     },
+    "4": {
+      "superpower": "The space-mirror maker",
+      "facts": [
+        "The James Webb Space Telescope's giant golden mirrors are made of beryllium — super light, super stiff, and steady in extreme cold.",
+        "Emeralds and aquamarines are beryllium minerals (the mineral beryl) with a dash of other elements for color.",
+        "Beryllium dust is harmful to breathe, so factories handle it with serious protection."
+      ],
+      "imagine": "Beryllium is the featherweight champion with nerves of steel — so calm and stiff that we trust it to hold a telescope's gaze across the universe.",
+      "origin": "Discovered in 1798 inside beryl gemstones. Early chemists called it 'glucinium' because its compounds taste sweet — which they definitely should NOT have tested by licking!",
+      "trivia": [
+        "Beryllium is see-through to X-rays, so X-ray machine 'windows' are made from it.",
+        "It's about a third lighter than aluminum but much stiffer."
+      ],
+      "uses": ["Space telescope mirrors", "Emeralds and aquamarines", "X-ray windows"],
+      "props": {"hardness": 5.5, "density": 1.85, "meltC": 1287, "conduct": 5},
+      "state": "solid"
+    },
+    "5": {
+      "superpower": "The toughener",
+      "facts": [
+        "Boron makes glass heat-proof: lab beakers and oven dishes are borosilicate glass, which barely expands when hot, so it doesn't crack.",
+        "Boron compounds make slime slimy — borax links the glue molecules together into a stretchy net.",
+        "Plants can't grow without a tiny bit of boron in the soil."
+      ],
+      "imagine": "Boron is the quiet kid who makes the whole team better — add a pinch to glass, metal, or slime and suddenly it's tougher, springier, stretchier.",
+      "origin": "Borax has been used for over a thousand years (ancient goldsmiths used it for soldering), but pure boron was only isolated in 1808 — and truly pure boron not until a century later.",
+      "trivia": [
+        "Boron burns with a bright green flame — some green fireworks use it.",
+        "Boron carbide is one of the hardest materials ever made — it's used in tank armor."
+      ],
+      "uses": ["Heat-proof glass", "Slime (borax)", "Green fireworks", "Super-hard armor"],
+      "props": {"hardness": 9.3, "density": 2.34, "meltC": 2077, "conduct": 1},
+      "state": "solid"
+    },
     "6": {
       "superpower": "Shape-shifter",
       "facts": [
@@ -309,6 +343,23 @@
       "props": {"hardness": 1.75, "density": 1.55, "meltC": 842, "conduct": 6},
       "state": "solid"
     },
+    "21": {
+      "superpower": "The jet-age lightener",
+      "facts": [
+        "A pinch of scandium makes aluminum alloys noticeably stronger — used in fighter jets, racing bikes, and baseball bats.",
+        "Dmitri Mendeleev predicted scandium before anyone found it — he even predicted its properties, and he was right.",
+        "It's named after Scandinavia, where it was discovered."
+      ],
+      "imagine": "Scandium is the secret ingredient — a spoonful in a swimming pool of aluminum, and the whole batch levels up.",
+      "origin": "Discovered in 1879 in Sweden by Lars Fredrik Nilson — filling the exact gap Mendeleev had labeled 'eka-boron' ten years earlier.",
+      "trivia": [
+        "Some stadium lights use scandium to shine more like daylight.",
+        "Scandium is scattered so thinly around Earth that it's expensive even though it isn't truly rare."
+      ],
+      "uses": ["Aerospace alloys", "Racing bike frames", "Stadium lights"],
+      "props": {"hardness": null, "density": 2.99, "meltC": 1541, "conduct": 4},
+      "state": "solid"
+    },
     "22": {
       "superpower": "The space-age armor",
       "facts": [
@@ -324,6 +375,57 @@
       ],
       "uses": ["Jet planes", "Replacement hips", "Fancy bikes", "Spacecraft"],
       "props": {"hardness": 6, "density": 4.51, "meltC": 1668, "conduct": 4},
+      "state": "solid"
+    },
+    "23": {
+      "superpower": "The color-changing armorer",
+      "facts": [
+        "Vanadium steel is famously tough — it helped make early cars strong and light, and it's still in wrenches and axles today.",
+        "In chemistry class demos, vanadium solutions can shift through four different colors: yellow, blue, green, and violet.",
+        "It's named after Vanadis, a name of the Norse goddess of beauty, because its compounds are so colorful."
+      ],
+      "imagine": "Vanadium is a knight who forges unbreakable armor by day and paints rainbows by night.",
+      "origin": "Discovered twice! First in Mexico in 1801 (but talked out of it), then again in Sweden in 1830, where it got its goddess name.",
+      "trivia": [
+        "Some sea squirts mysteriously collect vanadium in their blood — scientists still puzzle over why.",
+        "Giant vanadium 'flow batteries' can store energy for whole towns."
+      ],
+      "uses": ["Tool steel", "Springs and wrenches", "Giant storage batteries"],
+      "props": {"hardness": 7, "density": 6.11, "meltC": 1910, "conduct": 4},
+      "state": "solid"
+    },
+    "24": {
+      "superpower": "The shine and color master",
+      "facts": [
+        "Chromium's name comes from the Greek word for color — rubies are red and emeralds are green because of tiny amounts of chromium inside them.",
+        "'Chrome' — the mirror-bright coating on faucets, tools, and old car bumpers — is chromium.",
+        "Chromium teams up with iron and nickel to make stainless steel stainless."
+      ],
+      "imagine": "Chromium is the artist AND the polisher: it paints gemstones from the inside, then shines everything else like a mirror.",
+      "origin": "Discovered in 1797 in a bright red Siberian mineral. Chemists soon realized this one element could make red, green, yellow, and orange colors.",
+      "trivia": [
+        "School bus yellow was originally a chromium paint color.",
+        "A ruby and an emerald owe their colors to the same element in different homes."
+      ],
+      "uses": ["Stainless steel", "Shiny chrome plating", "Ruby-red and emerald-green colors"],
+      "props": {"hardness": 8.5, "density": 7.19, "meltC": 1907, "conduct": 5},
+      "state": "solid"
+    },
+    "25": {
+      "superpower": "The ancient artist's helper",
+      "facts": [
+        "Cave painters used black manganese minerals more than 17,000 years ago — some of humanity's first art used this element.",
+        "A little manganese makes steel tough enough for railroad tracks, safes, and bulldozer blades.",
+        "Your bones and the enzymes in your body need a trace of manganese."
+      ],
+      "imagine": "Manganese is the ancient art teacher who now coaches a football team of steel girders.",
+      "origin": "Recognized as an element in 1774 in Sweden. Its confusing name comes from the same magnetic minerals region as magnesium — the two were mixed up for ages.",
+      "trivia": [
+        "Parts of the deep ocean floor are scattered with potato-sized manganese nodules that grew over millions of years.",
+        "Most drink cans contain a little manganese to make the aluminum stronger."
+      ],
+      "uses": ["Railway and digger steel", "Drink can alloys", "Cave paintings (long ago!)"],
+      "props": {"hardness": 6, "density": 7.3, "meltC": 1246, "conduct": 3},
       "state": "solid"
     },
     "26": {
@@ -343,6 +445,23 @@
       "props": {"hardness": 4, "density": 7.87, "meltC": 1538, "conduct": 6},
       "state": "solid",
       "crystals": ["iron"]
+    },
+    "27": {
+      "superpower": "The blue goblin",
+      "facts": [
+        "Cobalt blue has colored glass and pottery for centuries — ancient Egyptian and Chinese artists prized it.",
+        "Cobalt sits at the heart of vitamin B12, which your body needs to make blood cells.",
+        "It's one of only three elements that are magnetic at room temperature (with iron and nickel), and it's key to many rechargeable batteries."
+      ],
+      "imagine": "Cobalt is a goblin from old mining legends who turned out to be an artist — grumpy name, gorgeous blue.",
+      "origin": "Named after the 'kobolds' — goblins that German miners blamed for ore that looked valuable but wasn't. In 1735, chemist Georg Brandt proved the 'goblin ore' held a brand-new metal.",
+      "trivia": [
+        "Some 'invisible inks' use cobalt: the writing appears when the paper is gently warmed.",
+        "Cobalt keeps jet-engine parts strong at scorching temperatures."
+      ],
+      "uses": ["Blue glass and paint", "Rechargeable batteries", "Jet engine parts", "Vitamin B12"],
+      "props": {"hardness": 5, "density": 8.86, "meltC": 1495, "conduct": 5},
+      "state": "solid"
     },
     "28": {
       "superpower": "The metal with a memory",
@@ -394,6 +513,74 @@
       ],
       "uses": ["Rust-proof coatings", "Brass instruments", "Sunscreen", "Batteries"],
       "props": {"hardness": 2.5, "density": 7.13, "meltC": 420, "conduct": 6},
+      "state": "solid"
+    },
+    "31": {
+      "superpower": "The hand-melter",
+      "facts": [
+        "Gallium melts at just under 30 °C — a piece would slowly melt into a silvery puddle in your warm hand (a famous science-fair demonstration).",
+        "Gallium nitride makes blue LEDs possible — the invention that completed white LED light and won a Nobel Prize in 2014.",
+        "Gallium never appears as a pure metal in nature; we get it as a bonus while refining aluminum."
+      ],
+      "imagine": "Gallium is the prankster metal: it looks solid and serious like aluminum, then melts the moment things warm up.",
+      "origin": "Another Mendeleev prediction come true! He described 'eka-aluminum' in 1871; French chemist Lecoq de Boisbaudran found real gallium in 1875, matching almost perfectly.",
+      "trivia": [
+        "A classic (mean!) chemistry prank: a gallium spoon that melts in hot tea.",
+        "Gallium stays liquid over a huge range — from ~30 °C to over 2,000 °C."
+      ],
+      "uses": ["Blue and white LEDs", "Phone chips", "Science demonstrations"],
+      "props": {"hardness": 1.5, "density": 5.91, "meltC": 30, "conduct": 5},
+      "state": "solid"
+    },
+    "32": {
+      "superpower": "The forgotten pioneer",
+      "facts": [
+        "The very first transistor — ancestor of every computer chip — was made of germanium in 1947, before silicon took over.",
+        "Germanium is transparent to infrared light, so night-vision and heat-camera lenses are made from it.",
+        "A dash of germanium in the core of fiber-optic cables helps guide light around the world."
+      ],
+      "imagine": "Germanium is the retired champion who taught silicon everything it knows.",
+      "origin": "Mendeleev's most famous prediction: he described 'eka-silicon' down to its density. When Clemens Winkler found it in 1886, the match made the periodic table world-famous.",
+      "trivia": [
+        "Night-vision goggles see the world through germanium glass.",
+        "Winkler named it after his homeland, Germany."
+      ],
+      "uses": ["Infrared and night-vision lenses", "Fiber optics", "The first transistor"],
+      "props": {"hardness": 6, "density": 5.32, "meltC": 938, "conduct": 3},
+      "state": "solid"
+    },
+    "33": {
+      "superpower": "The infamous one",
+      "facts": [
+        "Arsenic is famously poisonous — it's the villain of countless old detective stories, and nobody should ever touch it.",
+        "In safe, sealed form, gallium arsenide chips help phones and satellites send signals — some jobs silicon can't do.",
+        "Scientists once found arsenic in wallpaper pigments and old medicines — banning it made homes much safer."
+      ],
+      "imagine": "Arsenic is the classic story villain who, under strict supervision, now works an honest job in electronics.",
+      "origin": "Known since ancient times; credit for isolating it often goes to the medieval scholar Albertus Magnus around the year 1250 — making it one of the oldest known elements.",
+      "trivia": [
+        "A once-popular green paint ('Paris green') was dropped when people learned it contained arsenic.",
+        "Forensic scientists learned to detect arsenic in the 1830s — and the 'undetectable poison' era ended."
+      ],
+      "uses": ["Special phone and satellite chips", "LED lights", "Detective stories"],
+      "props": {"hardness": 3.5, "density": 5.75, "meltC": 817, "conduct": 3},
+      "state": "solid"
+    },
+    "34": {
+      "superpower": "The light catcher",
+      "facts": [
+        "Selenium conducts electricity better when light shines on it — early photocopiers, light meters, and solar cells were built on this trick.",
+        "Your body needs a trace of selenium; Brazil nuts are famously packed with it.",
+        "It's named after Selene, the Greek Moon goddess — its neighbor tellurium was already named after the Earth."
+      ],
+      "imagine": "Selenium is a sunflower in metal form — it wakes up and springs into action whenever light hits it.",
+      "origin": "Discovered in 1817 by Jöns Jacob Berzelius, who noticed a strange red residue in his sulfuric acid factory.",
+      "trivia": [
+        "The first television experiments in the 1800s used selenium to turn light into electric signals.",
+        "Red glass and some red paints get their color from selenium."
+      ],
+      "uses": ["Photocopiers (historic)", "Red glass", "Brazil nuts (trace nutrition)"],
+      "props": {"hardness": 2, "density": 4.81, "meltC": 221, "conduct": 2},
       "state": "solid"
     },
     "35": {

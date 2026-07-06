@@ -56,6 +56,20 @@
       "emoji": "🌋",
       "tagline": "Chlorine and fluorine's wilder relatives — liquid, purple, and vanishing.",
       "elements": [35, 53, 85]
+    },
+    {
+      "id": "inbetween",
+      "title": "The In-Betweeners",
+      "emoji": "🌗",
+      "tagline": "Half metal, half not — the elements that gave us chips, LEDs, and slime.",
+      "elements": [5, 31, 32, 33, 34]
+    },
+    {
+      "id": "colors",
+      "title": "The Color Brigade",
+      "emoji": "🎨",
+      "tagline": "The metals hiding inside rubies, blue glass, cave paintings, and space mirrors.",
+      "elements": [4, 21, 23, 24, 25, 27]
     }
   ]
 }

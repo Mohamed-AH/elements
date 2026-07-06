@@ -224,6 +224,43 @@ At rarest natural element, name *astatos* (unstable), synthesized Berkeley
 1940, At-211 targeted alpha-therapy research [RSC]. Rn from radium decay,
 Dorn 1900, home test kits/mitigation fans (EPA), heaviest noble gas [RSC/EPA].
 
+### Phase B — metalloids & 3d metals (Be, B, Sc, V, Cr, Mn, Co, Ga, Ge, As, Se)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 4 | Be | 1.85 | 1287 | 5.5 | [CRC] |
+| 5 | B | 2.34 | 2077 | 9.3 | β-rhombohedral [CRC] |
+| 21 | Sc | 2.99 | 1541 | — | [CRC] |
+| 23 | V | 6.11 | 1910 | 7 | [CRC]; Mohs ~6.7 rounded |
+| 24 | Cr | 7.19 | 1907 | 8.5 | [CRC] |
+| 25 | Mn | 7.3 | 1246 | 6 | [CRC] |
+| 27 | Co | 8.86 | 1495 | 5 | [CRC] |
+| 31 | Ga | 5.91 | 30 | 1.5 | melt 29.76 [CRC] |
+| 32 | Ge | 5.32 | 938 | 6 | [CRC] |
+| 33 | As | 5.75 | 817 | 3.5 | **⚠ FLAG**: gray As sublimes at 1 atm (~614 °C); 817 °C is the triple-point melt under pressure — conventional table value |
+| 34 | Se | 4.81 | 221 | 2 | gray Se [CRC] |
+
+Claims: Be JWST beryllium mirrors (NASA), beryl→emerald/aquamarine, 1798
+Vauquelin, sweet-tasting "glucinium", X-ray windows, dust toxicity [RSC/NASA].
+B borosilicate glass, borax-glue slime crosslinking, plant micronutrient,
+green flame, B₄C armor, 1808 isolation [RSC]. Sc Mendeleev eka-boron,
+Nilson 1879, Al-Sc alloys [RSC]. V Model T vanadium steel, colorful
+oxidation states, Vanadis naming, del Río 1801 / Sefström 1830, ascidian
+blood, flow batteries [RSC]. Cr *chroma*, ruby/emerald chromophore,
+electroplating, stainless steel, 1797 Vauquelin, school-bus "chrome yellow"
+[RSC]. Mn Lascaux manganese-oxide pigments (~17k yr), Hadfield steel,
+seafloor nodules, trace nutrient, 1774 Gahn [RSC]. Co kobold naming, Brandt
+1735, cobalt blue, B12, Li-ion cathodes, ferromagnetic trio, CoCl₂
+thermochromic ink, superalloys [RSC]. Ga melt-in-hand 29.8 °C, GaN blue LED
+(2014 Nobel), eka-aluminum 1875, liquid range to ~2200 °C [RSC]. Ge first
+transistor 1947 (Bell Labs), IR optics, fiber-optic dopant, eka-silicon
+1886 Winkler [RSC]. As toxicity/forensics (Marsh test 1836), GaAs
+electronics, Paris green history, Albertus Magnus ~1250 [RSC]. Se
+photoconductivity (xerography), Berzelius 1817, Brazil nuts, red glass,
+Selene naming [RSC].
+
+## Field-by-field uncertainty summary
+
 | Where | Field | Status |
 |---|---|---|
 | elements.json | all masses | ✅ matches [IUPAC] abridged |
