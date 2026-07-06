@@ -35,6 +35,23 @@
       "props": {"hardness": null, "density": 0.00018, "meltC": -272, "conduct": 0},
       "state": "gas"
     },
+    "3": {
+      "superpower": "The pocket power plant",
+      "facts": [
+        "Lithium is the lightest metal of all — a chunk of it would float on water (but it reacts with water, so that's a lab-only fact!).",
+        "The rechargeable batteries in phones, laptops, and electric cars are lithium batteries.",
+        "Lithium is one of only three elements made in the Big Bang, along with hydrogen and helium."
+      ],
+      "imagine": "Lithium is a featherweight boxer with a mighty punch — the lightest metal there is, yet it powers your whole tablet.",
+      "origin": "Discovered in 1817 inside a stone — its name comes from 'lithos', Greek for stone. It's as old as the universe itself: some lithium atoms were made in the Big Bang.",
+      "trivia": [
+        "An electric car battery can hold several kilograms of lithium.",
+        "Lithium burns with a crimson-red flame — that red in some fireworks? Often lithium."
+      ],
+      "uses": ["Phone batteries", "Electric cars", "Laptop batteries"],
+      "props": {"hardness": 0.6, "density": 0.534, "meltC": 180, "conduct": 7},
+      "state": "solid"
+    },
     "6": {
       "superpower": "Shape-shifter",
       "facts": [
@@ -87,6 +104,23 @@
       "props": {"hardness": null, "density": 0.00143, "meltC": -218, "conduct": 0},
       "state": "gas"
     },
+    "9": {
+      "superpower": "The tamed wildcat",
+      "facts": [
+        "Fluorine is the most reactive element of all — it grabs onto almost anything it touches. Pure fluorine gas is dangerous, so only scientists ever handle it.",
+        "Tamed into 'fluoride' and added to toothpaste in tiny amounts, it makes your tooth enamel harder.",
+        "Teflon — the slippery non-stick coating on pans — is made of carbon and fluorine."
+      ],
+      "imagine": "Fluorine is the wildest kid in the element class who grew up to be a bodyguard — locked safely inside toothpaste, it protects your teeth every single morning.",
+      "origin": "Fluorine was so fierce that chemists were injured trying to capture it for decades. Henri Moissan finally tamed it in 1886 — and won a Nobel Prize for it. Its name comes from 'fluere', Latin for 'to flow'.",
+      "trivia": [
+        "Fluorine helps make one of the slipperiest solids ever created (the Teflon on non-stick pans).",
+        "Brushing with fluoride toothpaste turns the outside of your teeth into a tougher mineral."
+      ],
+      "uses": ["Toothpaste", "Non-stick pans", "Refrigerator coolants"],
+      "props": {"hardness": null, "density": 0.0017, "meltC": -220, "conduct": 0},
+      "state": "gas"
+    },
     "10": {
       "superpower": "The glow master",
       "facts": [
@@ -122,6 +156,23 @@
       "state": "solid",
       "crystals": ["salt"]
     },
+    "12": {
+      "superpower": "The dazzling flash",
+      "facts": [
+        "Magnesium burns with a light so bright and white that it was used for camera flashes long ago — and still lights up fireworks and emergency flares today.",
+        "Every green plant needs magnesium: it sits at the center of chlorophyll, the molecule that catches sunlight.",
+        "It's a very light metal, so it's mixed into alloys for laptops, bikes, and race-car wheels."
+      ],
+      "imagine": "Magnesium is the element world's camera flash — quiet and gray until showtime, then FLASH: brighter than anything else on stage.",
+      "origin": "Named after Magnesia, a region in Greece where its minerals were dug up. First separated as a pure metal in 1808 by Humphry Davy.",
+      "trivia": [
+        "The ocean is full of magnesium — seawater is one of the main places we get it from.",
+        "Your muscles need magnesium to work properly. It's in nuts, beans, and leafy greens."
+      ],
+      "uses": ["Fireworks and flares", "Green plants (chlorophyll)", "Light laptop and bike parts"],
+      "props": {"hardness": 2.5, "density": 1.74, "meltC": 650, "conduct": 7},
+      "state": "solid"
+    },
     "13": {
       "superpower": "Light as a feather, tough as a plane",
       "facts": [
@@ -154,6 +205,23 @@
       ],
       "uses": ["Computer chips", "Glass", "Sand", "Solar panels"],
       "props": {"hardness": 6.5, "density": 2.33, "meltC": 1414, "conduct": 4},
+      "state": "solid"
+    },
+    "15": {
+      "superpower": "The spark of life",
+      "facts": [
+        "The striking strip on a matchbox contains red phosphorus — it helps the match burst into flame.",
+        "Your bones and teeth are built from calcium phosphate, and the DNA inside every one of your cells has a phosphorus backbone.",
+        "There's another form, white phosphorus, that glows in the dark and catches fire in air by itself — scientists keep it underwater, and nobody should ever touch it."
+      ],
+      "imagine": "Phosphorus is the battery pack of every living cell — it stores little packets of energy the way a wallet stores pocket money.",
+      "origin": "Discovered in 1669 when Hennig Brand boiled down urine hunting for gold — and found a glowing element instead! It was the first element discovery in history where we know exactly who found it. The name means 'light-bearer' in Greek.",
+      "trivia": [
+        "The 'P' in NPK plant fertilizer stands for phosphorus — crops can't grow without it.",
+        "Phosphorus never appears pure in nature — it's far too eager to react."
+      ],
+      "uses": ["Matches", "Bones and DNA", "Plant fertilizer"],
+      "props": {"hardness": null, "density": 1.82, "meltC": 44, "conduct": 0},
       "state": "solid"
     },
     "16": {
@@ -189,6 +257,23 @@
       "uses": ["Clean pool water", "Safe drinking water", "Table salt (with sodium)"],
       "props": {"hardness": null, "density": 0.0032, "meltC": -101, "conduct": 0},
       "state": "gas"
+    },
+    "19": {
+      "superpower": "The body's messenger",
+      "facts": [
+        "Every blink, heartbeat, and wiggle of your toes is a signal sent by your nerves using potassium (teamed up with sodium).",
+        "Bananas, potatoes, and orange juice are famous for being full of potassium.",
+        "Pure potassium metal reacts with water even more fiercely than sodium — with a lilac flash! Strictly a lab-only fact."
+      ],
+      "imagine": "Potassium is your body's text-messaging service — millions of tiny potassium-powered signals zip through your nerves every second.",
+      "origin": "In 1807, Humphry Davy used electricity to split potassium out of 'potash' — ashes from burnt plants soaked in a pot. That's really where the name comes from! Its symbol K is from 'kalium', its Latin name.",
+      "trivia": [
+        "Potassium was the very first metal ever separated using electricity.",
+        "Potassium burns with a pretty lilac-purple flame."
+      ],
+      "uses": ["Bananas and potatoes", "Nerve signals", "Plant fertilizer"],
+      "props": {"hardness": 0.4, "density": 0.89, "meltC": 63, "conduct": 7},
+      "state": "solid"
     },
     "20": {
       "superpower": "The skeleton builder",
@@ -241,6 +326,24 @@
       "props": {"hardness": 4, "density": 7.87, "meltC": 1538, "conduct": 6},
       "state": "solid",
       "crystals": ["iron"]
+    },
+    "28": {
+      "superpower": "The metal with a memory",
+      "facts": [
+        "Mix nickel with titanium and you get 'nitinol', a memory metal: bend it out of shape, warm it up, and it springs back to exactly how it was.",
+        "Nickel makes steel stainless — it's a key ingredient in rust-proof forks, sinks, and pans.",
+        "Deep down, Earth's core is a giant ball of iron and nickel."
+      ],
+      "imagine": "Nickel is the loyal sidekick of the metal world — rarely the star, but mixed into other metals it makes them tougher, shinier, and rust-proof.",
+      "origin": "German miners kept finding ore that looked like copper but wasn't — they blamed a mischievous goblin and called it 'Kupfernickel', devil's copper. In 1751 a Swedish chemist showed it was a brand-new metal.",
+      "trivia": [
+        "The US 5-cent 'nickel' coin is actually mostly copper — just one quarter of it is nickel.",
+        "Magnets stick to nickel! Only three elements are magnetic at room temperature: iron, cobalt, and nickel.",
+        "Real meteorites almost always contain nickel mixed with iron — it's one way scientists spot a fake."
+      ],
+      "uses": ["Stainless steel", "Coins", "Memory-metal glasses frames", "Batteries"],
+      "props": {"hardness": 4, "density": 8.91, "meltC": 1455, "conduct": 6},
+      "state": "solid"
     },
     "29": {
       "superpower": "The electricity highway",
