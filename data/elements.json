@@ -1,5 +1,5 @@
 {
-  "$comment": "Basic data for all 118 elements. n=atomic number, s=symbol, m=standard atomic weight (or [most stable mass number]), c=category, p=period, g=group (null for lanthanides/actinides shown in the f-block rows). Values require verification against IUPAC before public release — see README 'Content accuracy'.",
+  "$comment": "Basic data for all 118 elements. n=atomic number, s=symbol, m=standard atomic weight (or [most stable mass number]), c=category, p=period, g=group (null for lanthanides/actinides shown in the f-block rows). Verified against IUPAC/CIAAW abridged values 2026-07-06; citations and uncertainty flags in docs/SOURCES.md (kept separate — schema is frozen).",
   "elements": [
     {"n":1,"s":"H","name":"Hydrogen","m":"1.008","c":"nonmetal","p":1,"g":1},
     {"n":2,"s":"He","name":"Helium","m":"4.003","c":"noble","p":1,"g":18},

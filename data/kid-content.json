@@ -1,5 +1,5 @@
 {
-  "$comment": "Rich, kid-facing content for featured elements. 'facts' must be scientifically true (verify before release); 'imagine' is clearly-labeled playful metaphor and must never contradict the facts. props: hardness=Mohs scale, density=g/cm3 (gases at room conditions), meltC=melting point Celsius, conduct=qualitative electrical conductivity 0-10 for kid-facing bars only.",
+  "$comment": "Rich, kid-facing content for featured elements. 'facts' must be scientifically true; 'imagine' is clearly-labeled playful metaphor and must never contradict the facts. props: hardness=Mohs scale, density=g/cm3 (gases at room conditions), meltC=melting point Celsius, conduct=qualitative electrical conductivity 0-10 for kid-facing bars only. Values verified vs CRC/IUPAC 2026-07-06; per-value citations and uncertainty flags in docs/SOURCES.md.",
   "featured": {
     "1": {
       "superpower": "Lightest of them all",
