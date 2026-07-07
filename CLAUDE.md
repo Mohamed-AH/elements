@@ -5,11 +5,23 @@ for goals, constraints, and active tasks. Update it at the end of each phase.
 
 ## Current phase
 
-**Data-verification + redesign task: ALL 6 PHASES COMPLETE (2026-07-06).**
-Verified in Chromium: intro flow, proton counter, journey unlock sequence,
-all legacy views, offline mode (SW v2), zero console errors. Validator green
-(118 elements, 28 featured, 6 chapters). Nothing in flight; safe to start
-new work from here.
+**ALL 118 ELEMENTS FEATURED — task complete (2026-07-07).** Phases 0 + A–H
+all done and pushed (one commit each). Final state: 118 featured entries in
+kid-content.json, 25 journey chapters covering each element exactly once,
+validator green, Chromium smoke + offline test green, SW CACHE_VERSION v4.
+Also completed en route: Lucide SVG icon redesign (js/icons.js; emoji UI
+chrome removed; content pictograms in games.json intentionally kept).
+
+Key facts for future sessions:
+- 21 elements have null props (At, Fr, Fm, Md, No, Lr, 104–118) → app shows
+  the honest "mystery" card; Compare picker filters to the 97 measurable.
+- Featured tile star was removed (everything is featured now).
+- Chapter ids are mapped to icons in js/icons.js CHAPTER_ICONS — new
+  chapters need an id there (or they fall back to their emoji field).
+- Radioactive/synthetic content rules (preserved): decay = "atoms that
+  slowly break apart, releasing energy — scientists use special
+  protection"; radon → home test kits; no poisoning stories; synthesis/
+  naming stories are the hook. Ra/Tl/As/Po framed as history + safety.
 
 ## Completed work (this task)
 
@@ -69,14 +81,18 @@ new work from here.
 ## Progress log
 
 - 2026-07-05 — MVP built + verified (see git history).
-- 2026-07-06 — Verification+redesign task, phases 1–6 complete and pushed
-  (one commit per phase). App re-verified end-to-end incl. offline.
+- 2026-07-06 — Verification+redesign task, phases 1–6 complete and pushed.
+- 2026-07-06/07 — All-118 task: Phase 0 (null-props infra), A (nobles/
+  halogens), B (metalloids/3d), Lucide icon redesign, C (wild alkali),
+  D (4d/gadgets/platinum group), E (refractory/heavies), F (lanthanides),
+  G (actinides), H (superheavies), final cleanup. 118/118 featured,
+  25 chapters, SOURCES.md phases A–H, SW v4. Full smoke + offline green.
 
 ## Next steps
 
-- [ ] Pre-release: re-check ⚠-flagged rows in docs/SOURCES.md against live
-      CIAAW + CRC; mark each verified row.
+- [ ] Pre-release: re-check ALL ⚠-flagged rows in docs/SOURCES.md against
+      live CIAAW + CRC (needs networked environment); mark each row.
 - [ ] Generate PNG icons (192/512 + apple-touch-icon), add to manifest +
-      index.html + sw.js precache, bump CACHE_VERSION to v3.
-- [ ] Optional: add detective cases / match pairs featuring Li, F, Mg, P, K,
-      Ni; validator + smoke-test.
+      index.html + sw.js precache, bump CACHE_VERSION to v5.
+- [ ] Optional: grow detective cases / match pairs using newly featured
+      elements (Nd magnets, He→Xe engines, Bi crystals are good candidates).

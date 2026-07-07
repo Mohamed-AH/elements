@@ -14,12 +14,14 @@ after the first visit.
   protons, the atomic number (with a hands-on proton counter you can tap),
   and why the periodic table is "the great map of everything". Shown on
   first launch, always revisitable from Learn.
-- **The Journey (Learn tab)** — featured elements are introduced in six
-  themed chapters (The Air Around You → The Treasure Vault) that unlock one
-  by one as kids meet every element in the current chapter. Self-paced,
+- **The Journey (Learn tab)** — all 118 elements are introduced in 25
+  themed chapters (The Air Around You → The Edge of the Map) that unlock
+  one by one as kids meet every element in the current chapter. Self-paced,
   curiosity-driven — and the full table stays freely explorable at all times.
 - **Interactive periodic table** — all 118 elements, color-coded by family,
-  with ⭐ "featured" elements that have full kid-friendly stories.
+  every one with a full kid-friendly story. Elements science has never
+  measured in bulk (astatine, francium, the superheavies) honestly say so
+  with a "mystery" card instead of made-up numbers.
 - **Element profiles** — superpowers, science facts, origin stories, wow
   trivia, and real-world uses. Facts and playful metaphors are always
   visually separated ("Science facts" vs. "Imagine it like…").
@@ -53,7 +55,7 @@ js/games.js           Detective + Match + confetti
 js/crystals.js        Canvas 2D orthographic 3D lattice viewer
 js/progress.js        localStorage progress + badge logic
 data/elements.json    basic data for all 118 elements
-data/kid-content.json rich content for featured elements (28)
+data/kid-content.json rich content for all 118 elements
 data/games.json       detective cases, match pairs, experiments
 data/journey.json     phased chapter progression for the Learn tab
 tools/validate-data.mjs  data schema/cross-reference validator

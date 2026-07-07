@@ -46,11 +46,13 @@ for (const [key, kid] of Object.entries(featured)) {
   check(typeof kid.origin === 'string' && kid.origin.length > 0, `${where}: missing origin`);
   check(Array.isArray(kid.trivia) && kid.trivia.length >= 1, `${where}: needs >= 1 trivia`);
   check(Array.isArray(kid.uses) && kid.uses.length >= 2, `${where}: needs >= 2 uses`);
+  // null = "never measured" (elements only made a few atoms at a time);
+  // the app shows an honest mystery card for these instead of bars.
   const p = kid.props || {};
   check(p.hardness === null || (typeof p.hardness === 'number' && p.hardness >= 0 && p.hardness <= 10), `${where}: bad hardness`);
-  check(typeof p.density === 'number' && p.density > 0, `${where}: bad density`);
-  check(typeof p.meltC === 'number' && p.meltC >= -273 && p.meltC <= 3550, `${where}: bad meltC`);
-  check(Number.isInteger(p.conduct) && p.conduct >= 0 && p.conduct <= 10, `${where}: bad conduct`);
+  check(p.density === null || (typeof p.density === 'number' && p.density > 0), `${where}: bad density`);
+  check(p.meltC === null || (typeof p.meltC === 'number' && p.meltC >= -273 && p.meltC <= 3550), `${where}: bad meltC`);
+  check(p.conduct === null || (Number.isInteger(p.conduct) && p.conduct >= 0 && p.conduct <= 10), `${where}: bad conduct`);
   if (kid.crystals) {
     check(kid.crystals.every((c) => ['salt', 'diamond', 'graphite', 'iron'].includes(c)), `${where}: unknown crystal`);
   }

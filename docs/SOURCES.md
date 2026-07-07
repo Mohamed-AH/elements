@@ -194,6 +194,288 @@ cited. All claims below verified against [RSC]/[CRC] unless noted.
   block it (galvanizing analogy). All standard demonstrations; no citation
   disputes known.
 
+## Batch 2: completing all 118 featured elements (phases A–H)
+
+Same conventions as above: density g/cm³ [CRC], melt °C [CRC], Mohs
+hardness [MOHS], `null` = **never measured** (element exists only as a few
+short-lived atoms — displayed in-app as an honest "mystery" card, never
+guessed). Narrative claims per [RSC] unless noted.
+
+### Phase A — noble gases & halogens (Ar, Br, Kr, I, Xe, At, Rn)
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 18 | Ar | 0.0018 | −189 | gas, 1.784 g/L [CRC]; 0.934% of air |
+| 35 | Br | 3.10 | −7 | liquid at RT [CRC]; melt −7.2 |
+| 36 | Kr | 0.0037 | −157 | gas, 3.749 g/L [CRC] |
+| 53 | I | 4.93 | 114 | sublimes readily; melt 113.7 [CRC] |
+| 54 | Xe | 0.0059 | −112 | gas, 5.894 g/L [CRC] |
+| 85 | At | null | null | never seen in bulk; total crustal inventory commonly estimated at under ~30 g ("less than a spoonful"); At-210 half-life 8.1 h |
+| 86 | Rn | 0.0097 | −71 | gas, 9.73 g/L [CRC]; radioactive, Rn-222 half-life 3.8 d |
+
+Claims: Ar third most abundant air gas, name *argos* (idle), Rayleigh &
+Ramsay 1894, bulb/welding fill [RSC]. Br one of two liquid elements, name
+*bromos* (stench), Balard 1826 age 23, AgBr photography, Dead Sea brines
+[RSC]. Kr name *kryptos* (hidden), Ramsay & Travers 1898, meter defined by
+Kr-86 line 1960–1983 (BIPM) [RSC]. I violet vapor/name, Courtois 1811
+seaweed ash, thyroid/iodized salt, starch test [RSC]. Xe name *xenos*
+(stranger), ion propulsion (NASA Dawn), HID lamps, anesthesia [RSC/NASA].
+At rarest natural element, name *astatos* (unstable), synthesized Berkeley
+1940, At-211 targeted alpha-therapy research [RSC]. Rn from radium decay,
+Dorn 1900, home test kits/mitigation fans (EPA), heaviest noble gas [RSC/EPA].
+
+### Phase B — metalloids & 3d metals (Be, B, Sc, V, Cr, Mn, Co, Ga, Ge, As, Se)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 4 | Be | 1.85 | 1287 | 5.5 | [CRC] |
+| 5 | B | 2.34 | 2077 | 9.3 | β-rhombohedral [CRC] |
+| 21 | Sc | 2.99 | 1541 | — | [CRC] |
+| 23 | V | 6.11 | 1910 | 7 | [CRC]; Mohs ~6.7 rounded |
+| 24 | Cr | 7.19 | 1907 | 8.5 | [CRC] |
+| 25 | Mn | 7.3 | 1246 | 6 | [CRC] |
+| 27 | Co | 8.86 | 1495 | 5 | [CRC] |
+| 31 | Ga | 5.91 | 30 | 1.5 | melt 29.76 [CRC] |
+| 32 | Ge | 5.32 | 938 | 6 | [CRC] |
+| 33 | As | 5.75 | 817 | 3.5 | **⚠ FLAG**: gray As sublimes at 1 atm (~614 °C); 817 °C is the triple-point melt under pressure — conventional table value |
+| 34 | Se | 4.81 | 221 | 2 | gray Se [CRC] |
+
+Claims: Be JWST beryllium mirrors (NASA), beryl→emerald/aquamarine, 1798
+Vauquelin, sweet-tasting "glucinium", X-ray windows, dust toxicity [RSC/NASA].
+B borosilicate glass, borax-glue slime crosslinking, plant micronutrient,
+green flame, B₄C armor, 1808 isolation [RSC]. Sc Mendeleev eka-boron,
+Nilson 1879, Al-Sc alloys [RSC]. V Model T vanadium steel, colorful
+oxidation states, Vanadis naming, del Río 1801 / Sefström 1830, ascidian
+blood, flow batteries [RSC]. Cr *chroma*, ruby/emerald chromophore,
+electroplating, stainless steel, 1797 Vauquelin, school-bus "chrome yellow"
+[RSC]. Mn Lascaux manganese-oxide pigments (~17k yr), Hadfield steel,
+seafloor nodules, trace nutrient, 1774 Gahn [RSC]. Co kobold naming, Brandt
+1735, cobalt blue, B12, Li-ion cathodes, ferromagnetic trio, CoCl₂
+thermochromic ink, superalloys [RSC]. Ga melt-in-hand 29.8 °C, GaN blue LED
+(2014 Nobel), eka-aluminum 1875, liquid range to ~2200 °C [RSC]. Ge first
+transistor 1947 (Bell Labs), IR optics, fiber-optic dopant, eka-silicon
+1886 Winkler [RSC]. As toxicity/forensics (Marsh test 1836), GaAs
+electronics, Paris green history, Albertus Magnus ~1250 [RSC]. Se
+photoconductivity (xerography), Berzelius 1817, Brazil nuts, red glass,
+Selene naming [RSC].
+
+### Phase C — heavy alkali & alkaline earth (Rb, Sr, Cs, Ba, Fr, Ra)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 37 | Rb | 1.53 | 39 | 0.3 | melt 39.3 [CRC] |
+| 38 | Sr | 2.64 | 777 | 1.5 | [CRC] |
+| 55 | Cs | 1.93 | 28 | 0.2 | melt 28.5 [CRC] |
+| 56 | Ba | 3.62 | 727 | 1.25 | [CRC] |
+| 87 | Fr | null | null | null | never isolated in weighable amounts; Fr-223 half-life 22 min; crustal inventory ~tens of grams |
+| 88 | Ra | 5.5 | 700 | null | [CRC]; Ra-226 half-life 1600 y |
+
+Claims: Rb spectroscopic discovery 1861 Bunsen/Kirchhoff, *rubidus* red
+lines, GPS rubidium clocks [RSC/NIST]. Sr Strontian (Scotland) naming, red
+pyrotechnics, SrAl₂O₄ glow pigments, bone chemistry, CRT X-ray blocking
+[RSC]. Cs SI second = 9,192,631,770 Cs-133 oscillations (BIPM), golden
+color, melt 28.5 °C, first spectroscope discovery 1860, *caesius* [RSC/BIPM].
+Ba *barys* (heavy), BaSO₄ contrast meals (insoluble → safe), green
+fireworks, Davy 1808, Bologna stone [RSC]. Fr Perey 1939 (Curie's
+assistant), last naturally-discovered element, 22-min half-life, first
+woman in French Academy of Sciences [RSC]. Ra Curies 1898, ~1M× uranium
+activity, radioluminescence, dial-painter history (framed as safety
+lesson), Curie's radioactive notebooks, dual Nobels [RSC].
+
+### Phase D — 4d metals, gadget metals, platinum group (15)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 39 | Y | 4.47 | 1522 | — | [CRC] |
+| 40 | Zr | 6.52 | 1855 | 5 | [CRC] |
+| 41 | Nb | 8.57 | 2477 | 6 | [CRC] |
+| 42 | Mo | 10.2 | 2623 | 5.5 | [CRC] |
+| 43 | Tc | 11 | 2157 | — | **⚠ FLAG**: density estimates 11.0–11.5 across sources (tiny samples) |
+| 44 | Ru | 12.1 | 2334 | 6.5 | **⚠ FLAG**: published density 12.1 [CRC] vs 12.45 (X-ray) |
+| 45 | Rh | 12.4 | 1964 | 6 | [CRC] |
+| 46 | Pd | 12.0 | 1555 | 4.75 | [CRC] |
+| 48 | Cd | 8.69 | 321 | 2 | [CRC] |
+| 49 | In | 7.31 | 157 | 1.2 | [CRC] |
+| 51 | Sb | 6.68 | 631 | 3 | [CRC] |
+| 52 | Te | 6.24 | 450 | 2.25 | [CRC] |
+| 76 | Os | 22.59 | 3033 | 7 | densest element [CRC] |
+| 77 | Ir | 22.56 | 2446 | 6.5 | [CRC] |
+| 78 | Pt | 21.5 | 1768 | 3.5 | [CRC] |
+
+Claims: Y Ytterby naming (Y/Yb/Tb/Er), YAG:Ce phosphor in white LEDs,
+YBCO 1987 superconductor, 1794 Gadolin [RSC]. Zr Hadean zircons ~4.4 Ga
+(Jack Hills), cubic zirconia, reactor cladding (low neutron capture) [RSC/USGS].
+Nb NbTi superconducting magnets (MRI/LHC), Niobe/Tantalus naming, anodize
+colors, biocompatibility [RSC/CERN]. Mo *molybdos*, alloy steel, MoS₂
+lubricant, essential trace enzymes, 1778 Scheele [RSC]. Tc first synthetic
+element 1937 Perrier & Segrè, name = artificial, Tc-99m imaging (~tens of
+millions scans/yr) [RSC/IAEA]. Ru Klaus 1844, Ruthenia naming, hard-drive
+"pixie dust" layer (2001), pen nibs, Grubbs catalysis Nobel 2005 [RSC].
+Rh Wollaston 1803, *rhodon*, priciest precious metal in recent markets,
+three-way catalysts, white-gold plating [RSC]. Pd Wollaston 1803, asteroid
+Pallas, H₂ absorption ~900 volumes, catalysts [RSC/CRC]. Cd 1817
+Stromeyer, cadmium yellow (Monet/Van Gogh), NiCd, control rods, toxicity
+phase-out [RSC]. In 1863 Reich & Richter, indigo line, ITO touchscreens,
+"tin cry" analog [RSC]. Sb stibium/kohl, type metal (expands on freezing),
+flame retardants, battery grids [RSC]. Te 1782 Müller von Reichenstein,
+*tellus*, crustal rarity (volatile loss), garlic breath effect, CdTe solar,
+phase-change discs, gold tellurides [RSC/USGS]. Os densest (22.59),
+Tennant 1803, *osme*, pen/needle tips [RSC/CRC]. Ir K-Pg iridium anomaly
+(Alvarez 1980), most corrosion-resistant, Iris naming, spark plugs [RSC].
+Pt platina naming, International Prototype Kilogram (retired 2019,
+SI redefinition), cisplatin, converters, rarer than gold [RSC/BIPM].
+
+### Phase E — refractory & post-transition heavies (Hf, Ta, Re, Tl, Bi, Po)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 72 | Hf | 13.3 | 2233 | 5.5 | [CRC] |
+| 73 | Ta | 16.4 | 3017 | 6.5 | **⚠ FLAG**: published density 16.4 [CRC] vs 16.69 elsewhere |
+| 75 | Re | 20.8 | 3186 | 7 | **⚠ FLAG**: published density 20.8 [CRC] vs 21.02 (X-ray) |
+| 81 | Tl | 11.8 | 304 | 1.2 | [CRC] |
+| 83 | Bi | 9.79 | 271 | 2.25 | [CRC]; expands on freezing; α-decay t½ ≈ 2×10¹⁹ y (2003 measurement) |
+| 84 | Po | 9.2 | 254 | — | α-Po [CRC]; Po-210 t½ 138 d |
+
+Claims: Hf Hafnia/Copenhagen 1923 (Coster & Hevesy), Zr/Hf separation
+difficulty, opposite neutron cross-sections (Hf rods vs Zr cladding), HfO₂
+high-k gate dielectric (45 nm era, 2007) [RSC/Intel]. Ta Tantalus naming,
+capacitor miniaturization, implant biocompatibility, acid resistance
+[RSC]. Re last stable element discovered (1925, Noddacks), 2nd-highest
+metal melting point, single-crystal superalloy turbine blades, Rhine
+naming, crustal rarity [RSC/ASM]. Tl *thallos* green line, Crookes 1861,
+rodenticide bans, Tl-201 cardiac imaging, Christie's "The Pale Horse"
+diagnostic anecdote [RSC]. Bi hopper crystals/iridescent oxide, heaviest
+quasi-stable element (α-decay measured 2003, t½ ~2×10¹⁹ y), bismuth
+subsalicylate remedies, lead-replacement uses, freeze expansion [RSC/Nature 2003].
+Po Curies July 1898, Poland naming as political statement, extreme
+specific activity, RTG/antistatic history, lunar-soil traces [RSC].
+
+### Phase F — lanthanides (57–71)
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 57 | La | 6.15 | 920 | hardness 2.5 [MOHS] |
+| 58 | Ce | 6.77 | 799 | hardness 2.5 [MOHS] |
+| 59 | Pr | 6.77 | 931 | [CRC] |
+| 60 | Nd | 7.01 | 1016 | [CRC] |
+| 61 | Pm | 7.26 | 1042 | radioactive; density calculated from crystal structure — **⚠ FLAG** (no bulk measurement); Pm-145 t½ 17.7 y |
+| 62 | Sm | 7.52 | 1072 | [CRC] |
+| 63 | Eu | 5.24 | 822 | [CRC] |
+| 64 | Gd | 7.90 | 1313 | [CRC] |
+| 65 | Tb | 8.23 | 1359 | [CRC] |
+| 66 | Dy | 8.55 | 1412 | [CRC] |
+| 67 | Ho | 8.80 | 1472 | [CRC] |
+| 68 | Er | 9.07 | 1529 | [CRC] |
+| 69 | Tm | 9.32 | 1545 | [CRC] |
+| 70 | Yb | 6.90 | 824 | [CRC] |
+| 71 | Lu | 9.84 | 1663 | [CRC] |
+
+Claims: La *lanthanein* (hidden), Mosander 1839, La glass optics, NiMH
+(LaNi₅) batteries, mischmetal flints [RSC]. Ce Ceres naming (1801
+asteroid), crustal abundance ≈ Cu, ferrocerium sparks, CeO₂ polishing/
+oxygen-storage catalysts [RSC/USGS]. Pr "green twin" (didymium split,
+Auer von Welsbach 1885), didymium goggles, PrMg aero alloys [RSC].
+Nd NdFeB strongest permanent magnets (1984, GM/Sumitomo), earbuds/EV/wind
+uses [RSC]. Pm only unstable lanthanide, confirmed ORNL 1945, Prometheus
+naming, crustal inventory <1 kg, historic luminous dials/RTG batteries
+[RSC]. Sm SmCo high-temp magnets, samarskite/Samarsky (first person-linked
+element name), Sm-153 palliative therapy, 1879 Boisbaudran [RSC]. Eu euro
+UV inks, red phosphor (Y₂O₃:Eu), most reactive REE, 1901 Demarçay, Europe
+naming [RSC/ECB]. Gd MRI contrast agents, highest thermal-neutron capture
+of stable elements, magnetocaloric effect, gadolinite/Gadolin naming
+[RSC]. Tb Ytterby naming, green phosphors, Terfenol-D magnetostriction
+(Navy sonar → surface speakers) [RSC]. Dy *dysprositos* (hard to get),
+Boisbaudran 1886 (~30+ separations), high-temp magnet dopant for EV/wind
+[RSC]. Ho Holmia/Stockholm, highest magnetic moment of elements, Ho:YAG
+surgical lasers, single-atom magnet memory experiments (IBM 2017) [RSC].
+Er EDFA fiber amplifiers (undersea internet), pink glass, Er:YAG
+dental/derm lasers, Mosander 1843 [RSC]. Tm least abundant stable REE,
+Tm-170 portable X-ray sources, Thule naming, Cleve 1879, still commoner
+than gold [RSC/USGS]. Yb optical lattice clocks (~10⁻¹⁸ precision, NIST),
+Ytterby fourth naming, Marignac 1878, pressure sensors [RSC/NIST].
+Lu hardest/densest REE, LYSO PET crystals, Lu-177 targeted therapy,
+Lutetia/Paris naming, ~1907 triple discovery, price >> gold [RSC].
+
+### Phase G — actinides (89–103)
+
+All radioactive; kid copy uses the safety framing from CLAUDE.md. Densities
+for Ac–Es are X-ray/crystallographic values — bulk samples are impractical,
+so treat ALL Phase G densities as **⚠ calculated/estimated** [CRC, X-ray].
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 89 | Ac | 10.07 | 1051 | glows blue (radioluminescence); Ac-227 t½ 21.8 y |
+| 90 | Th | 11.7 | 1750 | Th-232 t½ 14.0 Gy |
+| 91 | Pa | 15.4 | 1572 | UK ~125 g stock anecdote (UKAEA, 1960s) |
+| 92 | U | 19.1 | 1135 | U-238 t½ 4.47 Gy ≈ Earth's age |
+| 93 | Np | 20.45 | 644 | **⚠ FLAG**: sources 20.2–20.45 |
+| 94 | Pu | 19.85 | 640 | α-Pu; **⚠ FLAG**: 19.7–19.86 by phase |
+| 95 | Am | 13.69 | 1176 | Am-241 in ionization smoke detectors (~0.3 µg, sealed) |
+| 96 | Cm | 13.51 | 1345 | APXS alpha sources on Mars rovers |
+| 97 | Bk | 14.78 | 986 | Tennessine target (Bk-249, ORNL) |
+| 98 | Cf | 15.1 | 900 | Cf-252 neutron source; $/g among highest of any substance |
+| 99 | Es | 8.84 | 860 | 2021 Berkeley chemistry with <250 ng; both values estimated — **⚠** |
+| 100 | Fm | null | null | never made in bulk; heaviest reactor-producible element |
+| 101 | Md | null | null | first one-atom-at-a-time discovery (17 atoms, 1955) |
+| 102 | No | null | null | disputed discovery ("Transfermium Wars") |
+| 103 | Lr | null | null | Lr-266 t½ ~10 h |
+
+Claims: Ac Debierne 1899, *aktis*, Ac-225 targeted alpha therapy trials
+[RSC/NCI]. Th Berzelius 1829, Thor naming, gas mantle history, thorium
+fuel-cycle research (India) [RSC/WNA]. Pa Meitner & Hahn 1917–18,
+"before actinium", Pa/Th ocean-circulation proxies [RSC/Nature]. U 1789
+Klaproth, Uranus naming, Becquerel 1896, fuel pellet ≈ 1 ton coal (NEI),
+U-Pb dating of Earth 4.5 Gy (Patterson 1956), vaseline glass, geothermal
+contribution [RSC/NEI]. Np McMillan & Abelson 1940, Nobel 1951, planet
+chain, Np-237 → Pu-238 production [RSC/DOE]. Pu Seaborg 1940–41, RTGs on
+Voyager/Cassini/New Horizons/MSL/Perseverance, self-heating Pu-238, NASA
+Pu-238 restart [RSC/NASA]. Am Seaborg 1944, Quiz Kids radio announcement
+1945, Am-241 smoke detectors (EPA guidance on disposal) [RSC/EPA].
+Cm 1944, Curie honor, red-violet glow, APXS instruments on Mars rovers
+[RSC/NASA]. Bk 1949, Berkeley naming series, ~250-day irradiation for the
+Ts campaign [RSC/ORNL]. Cf 1950, reactor start-up sources, neutron
+activation prospecting/moisture probes, extreme price [RSC/ORNL].
+Es Ivy Mike 1952 fallout, 3-year secrecy, Einstein naming, blue glow, 2021
+<250 ng chemistry (Nature) [RSC]. Fm Fermi honor, reactor production
+limit, CP-1 under Stagg Field 1942 [RSC]. Md Mendeleev honor, 17 atoms
+1955, Cold War gesture [RSC]. No Nobel naming, tri-lab dispute resolved
+1990s IUPAC [RSC]. Lr Lawrence/cyclotron honor, 1961, medical cyclotrons
+[RSC].
+
+### Phase H — superheavies (104–118)
+
+ALL props null (no bulk properties have ever been measured — the app shows
+the "mystery" card) and state "unknown". Content is discovery/naming
+history per [IUPAC] naming records and lab histories (GSI, JINR/Dubna,
+RIKEN, ORNL, LLNL):
+
+- Rf/Db: Dubna vs Berkeley claims (1964–1970s), Transfermium Wars, IUPAC
+  1997 resolution; "kurchatovium" usage in Soviet literature.
+- Sg: first living-person naming (Seaborg, 1997); Seaborg's 10 elements
+  and element-address anecdote (Sg/Lr/Bk/Cf/Am) — widely documented.
+- Bh: GSI 1981; 6-atom chemistry (2000, PSI); "nielsbohrium" naming debate.
+- Hs: GSI 1984; ~7-atom HsO₄ chemistry (2002) matching group-8 prediction.
+- Mt: GSI 1982; Meitner honor, fission explanation, Nobel omission,
+  gravestone epitaph — standard biographies.
+- Ds/Rg: GSI Nov/Dec 1994; four-atom discovery run; Röntgen first physics
+  Nobel 1901, no patent.
+- Cn: GSI 1996; named 2010 on Copernicus's Feb 19 birthday; volatility/
+  gold-adsorption single-atom experiments suggest noble-gas-like behavior.
+- Nh: RIKEN 2004–2012, three decay chains, >550 beam days, first Asian
+  discovery, named 2016.
+- Fl: Dubna 1998; island-of-stability context (longer half-lives near
+  N=184 predictions); Flyorov's WWII letter — documented history.
+- Mc: Dubna+LLNL 2003, named 2016; "element 115" UFO mythology framed as
+  myth-busting.
+- Lv: Dubna 2000 with ORNL curium target, named 2012; Livermore
+  centennial bulb (fun fact, Guinness-documented).
+- Ts: ORNL Bk-249 (~22 mg, ~250 irradiation days), double Atlantic
+  crossing due to customs paperwork (documented in discovery accounts),
+  Dubna 2010, named 2016.
+- Og: Dubna 2002–2006, ~5 atoms, second living-person naming (Oganessian,
+  2016), predicted solid/non-noble behavior; element 119/120 searches
+  ongoing (RIKEN, JINR, GSI).
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |
