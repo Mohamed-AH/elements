@@ -442,6 +442,40 @@ limit, CP-1 under Stagg Field 1942 [RSC]. Md Mendeleev honor, 17 atoms
 1990s IUPAC [RSC]. Lr Lawrence/cyclotron honor, 1961, medical cyclotrons
 [RSC].
 
+### Phase H — superheavies (104–118)
+
+ALL props null (no bulk properties have ever been measured — the app shows
+the "mystery" card) and state "unknown". Content is discovery/naming
+history per [IUPAC] naming records and lab histories (GSI, JINR/Dubna,
+RIKEN, ORNL, LLNL):
+
+- Rf/Db: Dubna vs Berkeley claims (1964–1970s), Transfermium Wars, IUPAC
+  1997 resolution; "kurchatovium" usage in Soviet literature.
+- Sg: first living-person naming (Seaborg, 1997); Seaborg's 10 elements
+  and element-address anecdote (Sg/Lr/Bk/Cf/Am) — widely documented.
+- Bh: GSI 1981; 6-atom chemistry (2000, PSI); "nielsbohrium" naming debate.
+- Hs: GSI 1984; ~7-atom HsO₄ chemistry (2002) matching group-8 prediction.
+- Mt: GSI 1982; Meitner honor, fission explanation, Nobel omission,
+  gravestone epitaph — standard biographies.
+- Ds/Rg: GSI Nov/Dec 1994; four-atom discovery run; Röntgen first physics
+  Nobel 1901, no patent.
+- Cn: GSI 1996; named 2010 on Copernicus's Feb 19 birthday; volatility/
+  gold-adsorption single-atom experiments suggest noble-gas-like behavior.
+- Nh: RIKEN 2004–2012, three decay chains, >550 beam days, first Asian
+  discovery, named 2016.
+- Fl: Dubna 1998; island-of-stability context (longer half-lives near
+  N=184 predictions); Flyorov's WWII letter — documented history.
+- Mc: Dubna+LLNL 2003, named 2016; "element 115" UFO mythology framed as
+  myth-busting.
+- Lv: Dubna 2000 with ORNL curium target, named 2012; Livermore
+  centennial bulb (fun fact, Guinness-documented).
+- Ts: ORNL Bk-249 (~22 mg, ~250 irradiation days), double Atlantic
+  crossing due to customs paperwork (documented in discovery accounts),
+  Dubna 2010, named 2016.
+- Og: Dubna 2002–2006, ~5 atoms, second living-person naming (Oganessian,
+  2016), predicted solid/non-noble behavior; element 119/120 searches
+  ongoing (RIKEN, JINR, GSI).
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |

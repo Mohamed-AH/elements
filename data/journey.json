@@ -154,6 +154,27 @@
       "emoji": "⏳",
       "tagline": "Born in fireballs and counted atom by atom — science at its absolute edge.",
       "elements": [99, 100, 101, 102, 103]
+    },
+    {
+      "id": "lab1",
+      "title": "Lab Legends I",
+      "emoji": "🧪",
+      "tagline": "The first superheavies — Cold War naming battles and six-atom chemistry.",
+      "elements": [104, 105, 106, 107, 108]
+    },
+    {
+      "id": "lab2",
+      "title": "Lab Legends II",
+      "emoji": "⚗️",
+      "tagline": "Tributes written in atoms: Meitner, Röntgen, Copernicus — and Japan's three fish.",
+      "elements": [109, 110, 111, 112, 113]
+    },
+    {
+      "id": "edge",
+      "title": "The Edge of the Map",
+      "emoji": "🗺️",
+      "tagline": "The island of stability, a berkelium heist, and the very last square — for now.",
+      "elements": [114, 115, 116, 117, 118]
     }
   ]
 }

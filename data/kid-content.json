@@ -1755,6 +1755,261 @@
       "uses": ["Pure research", "Testing the edges of the periodic table"],
       "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
       "state": "solid"
+    },
+    "104": {
+      "superpower": "First past the edge",
+      "facts": [
+        "Rutherfordium was the first 'superheavy' element — the first one past the actinide row.",
+        "It's named for Ernest Rutherford, the scientist who discovered the atomic nucleus itself.",
+        "Its atoms are built by slamming smaller atoms together and last only minutes at best."
+      ],
+      "imagine": "Rutherfordium is the first footprint on the far shore — the moment element-makers crossed into truly unknown territory.",
+      "origin": "First reported in Dubna (Russia) in 1964 and Berkeley (USA) in 1969 — starting a famous Cold War naming battle that took 30 years to settle.",
+      "trivia": [
+        "In Soviet textbooks it was 'kurchatovium' for decades.",
+        "Chemists have done real chemistry with just a handful of rutherfordium atoms."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "105": {
+      "superpower": "The city on the table",
+      "facts": [
+        "Dubnium is named after Dubna, the Russian science city whose lab has built more new elements than almost anywhere on Earth.",
+        "Like all superheavies, it's made atom by atom in particle accelerators.",
+        "Its naming feud lasted until 1997."
+      ],
+      "imagine": "Dubnium is a hometown jersey — the element world's way of putting a small Russian science city permanently on the map of matter.",
+      "origin": "Created in the late 1960s in both Dubna and Berkeley; IUPAC finally settled the name in 1997.",
+      "trivia": [
+        "The era's element-naming feuds are nicknamed the 'Transfermium Wars' — fought with journals, not weapons.",
+        "Its longest-lived form survives about a day — a superheavy record."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "106": {
+      "superpower": "Named for a living legend",
+      "facts": [
+        "Seaborgium honors Glenn Seaborg — the first time ever an element was named after a living person.",
+        "Seaborg helped discover TEN elements, from plutonium onward.",
+        "He even redrew the periodic table itself, inventing the actinide row."
+      ],
+      "imagine": "Seaborgium is a statue built while its hero could still visit — Seaborg could point at the periodic table and say 'that one's me!'",
+      "origin": "Made in 1974 at Berkeley; officially named in 1997 after years of debate about honoring living people.",
+      "trivia": [
+        "Seaborg said the naming was a greater honor than his Nobel Prize.",
+        "He could write his address in elements: seaborgium, lawrencium (lab), berkelium (city), californium (state), americium (country)!"
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "107": {
+      "superpower": "The quantum honoree",
+      "facts": [
+        "Bohrium is named for Niels Bohr, whose picture of the atom — electrons circling a nucleus — is the one you see in this app's intro.",
+        "It was confirmed from a handful of atoms made in Darmstadt, Germany, in 1981.",
+        "Chemists later proved it behaves like its column-mate rhenium — using only six atoms!"
+      ],
+      "imagine": "Bohrium is a thank-you note to the man who taught us what atoms look like — written in atoms.",
+      "origin": "First convincingly made by the GSI lab in Darmstadt in 1981.",
+      "trivia": [
+        "The six-atom experiment is one of the smallest chemistry studies ever done.",
+        "It was nearly named 'nielsbohrium' — the first-name version lost the vote."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "108": {
+      "superpower": "The map still works",
+      "facts": [
+        "Hassium is named after Hesse, the German state where the GSI element-factory lab sits.",
+        "Scientists did real chemistry with about seven hassium atoms — a world record in tiny chemistry.",
+        "It behaved exactly as the periodic table predicted — the map works even out here!"
+      ],
+      "imagine": "Hassium is proof the periodic table's map is honest — five rows deep into human-made elements, X still marks the spot.",
+      "origin": "Made at GSI Darmstadt in 1984 by Armbruster and Münzenberg's team.",
+      "trivia": [
+        "The GSI lab discovered six elements (107–112).",
+        "Its chemistry experiment formed hassium tetroxide, just like its cousin osmium would."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "109": {
+      "superpower": "The overdue honor",
+      "facts": [
+        "Meitnerium honors Lise Meitner, the physicist who explained how atoms split (nuclear fission) — and who was unfairly passed over for the Nobel Prize.",
+        "She's one of the only real women scientists an element is named for.",
+        "All the meitnerium ever made would be invisible even under a microscope."
+      ],
+      "imagine": "Meitnerium is history saying sorry — the prize Lise Meitner never got, written permanently into the map of matter.",
+      "origin": "Made at GSI Darmstadt in 1982; named in 1997. Meitner's gravestone reads: 'a physicist who never lost her humanity'.",
+      "trivia": [
+        "Meitner did her greatest work as a refugee, having fled Nazi Germany.",
+        "Einstein called her 'the German Marie Curie'."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "110": {
+      "superpower": "The factory's hometown",
+      "facts": [
+        "Darmstadtium is named after Darmstadt, Germany — home of the GSI lab where it was born in 1994.",
+        "Making it meant firing nickel atoms at lead for days — the discovery run caught just four atoms.",
+        "Most of its forms live for less than a thousandth of a second."
+      ],
+      "imagine": "Darmstadtium is a soap bubble at a bubble factory — beautiful proof the machine works, gone before you can touch it.",
+      "origin": "GSI Darmstadt, November 1994 — the first of three elements the lab made in about a year.",
+      "trivia": [
+        "Its placeholder name was 'ununnilium' — literally 'one-one-zero-ium'.",
+        "Element factories run for weeks to catch single atoms."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "111": {
+      "superpower": "The X-ray tribute",
+      "facts": [
+        "Roentgenium honors Wilhelm Röntgen, discoverer of X-rays — the invisible light that shows your bones.",
+        "It was made at GSI just one month after darmstadtium, in December 1994.",
+        "Only a few dozen atoms have ever existed."
+      ],
+      "imagine": "Roentgenium is a hundredth-birthday gift for the X-ray — element 111, delivered almost exactly a century after Röntgen's discovery.",
+      "origin": "GSI Darmstadt, 1994; named in 2004, ~109 years after Röntgen X-rayed his wife's hand in the famous first picture.",
+      "trivia": [
+        "Röntgen won the very first Nobel Prize in Physics (1901).",
+        "He refused to patent X-rays so everyone could use them."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "112": {
+      "superpower": "The rule breaker",
+      "facts": [
+        "Copernicium honors Copernicus, who dared to say Earth orbits the Sun.",
+        "Fittingly, the element is a rebel too: experiments hint it acts strangely aloof and gas-like for a metal — closer to noble gases than its column-mates.",
+        "It was the last element GSI Darmstadt discovered (1996)."
+      ],
+      "imagine": "Copernicium is the astronomer's rebel spirit reborn — everyone expected it to behave like zinc's family, and it politely declined.",
+      "origin": "Made at GSI in 1996; named in 2010 — announced on Copernicus's birthday, February 19.",
+      "trivia": [
+        "Chemists tested it by watching single atoms stick (or not) to gold surfaces.",
+        "Predictions say it might even be a liquid or gas at room temperature — if you could ever collect enough!"
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "113": {
+      "superpower": "The rising sun's element",
+      "facts": [
+        "Nihonium was the first element discovered in Asia — 'Nihon' means Japan, 'the land of the rising sun'.",
+        "Japan's RIKEN lab fired zinc at bismuth for NINE YEARS and caught exactly three atoms.",
+        "Those three atoms earned Japan a permanent place on the periodic table (named 2016)."
+      ],
+      "imagine": "Nihonium is the world's most patient fishing trip: nine years at the pond, three fish — and every fish made history.",
+      "origin": "RIKEN's team under Kosuke Morita detected single atoms in 2004, 2005, and (decisively) 2012.",
+      "trivia": [
+        "The search used over 550 days of accelerator beam time.",
+        "Element 113's naming was front-page news across Japan."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "114": {
+      "superpower": "The island scout",
+      "facts": [
+        "Scientists predict an 'island of stability' — special proton-and-neutron combos where superheavy atoms might live much longer. Flerovium sits near its shores.",
+        "Its atoms already live for whole seconds — long for a superheavy — hinting the island is real.",
+        "It's named for Georgy Flyorov, founder of Russia's element-hunting lab."
+      ],
+      "imagine": "Flerovium is the scout paddling toward a legendary island — its longer-living atoms are the first glimpse of land on the horizon.",
+      "origin": "Made in Dubna in 1998 by the Russian-American collaboration that went on to finish the seventh row.",
+      "trivia": [
+        "If the island of stability is real, some future superheavies might last years instead of milliseconds.",
+        "Flyorov himself spotted wartime secrets: Western journals had gone suspiciously quiet about atomic fission."
+      ],
+      "uses": ["Pure research", "Island of stability hunting"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "115": {
+      "superpower": "The internet's favorite",
+      "facts": [
+        "Moscovium — 'element 115' — stars in internet UFO legends. The real thing: its atoms vanish in a fraction of a second.",
+        "Real moscovium was first made in Dubna in 2003 by the Russia-USA team.",
+        "It's named after the Moscow region, home of the Dubna lab."
+      ],
+      "imagine": "Moscovium is the celebrity with a fan-fiction problem — the myths say alien spaceships; the science says 'gone in a blink, and that's amazing enough'.",
+      "origin": "Joint Institute for Nuclear Research (Dubna) with Lawrence Livermore (USA), 2003; named in 2016.",
+      "trivia": [
+        "Being able to fact-check 'element 115' stories is real science power!",
+        "Roughly a hundred atoms have ever been observed."
+      ],
+      "uses": ["Pure research", "Myth-busting practice"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "116": {
+      "superpower": "The teamwork trophy",
+      "facts": [
+        "Livermorium is named for the Lawrence Livermore lab in California — Dubna's partner in completing the table's seventh row.",
+        "Cold War rival labs ended up sharing discoveries — and sit side by side forever: moscovium is element 115, livermorium 116.",
+        "Its atoms last tens of milliseconds."
+      ],
+      "imagine": "Livermorium and moscovium are a handshake carved into the periodic table — two old rivals, one row, neighbors forever.",
+      "origin": "First made in Dubna in 2000, using a curium target made in the USA; named in 2012.",
+      "trivia": [
+        "The curium target came from Oak Ridge, Tennessee.",
+        "Livermore, California is also home to the world's longest-burning light bulb!"
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "117": {
+      "superpower": "The passport problem",
+      "facts": [
+        "Making tennessine needed rare berkelium from Tennessee — and the precious 22-milligram shipment got stuck in customs and crossed the Atlantic TWICE before reaching Russia.",
+        "Tennessine honors Tennessee, home of the Oak Ridge lab that spent ~250 reactor days making that berkelium.",
+        "It sits in the halogen column under astatine — but is probably nothing like its family."
+      ],
+      "imagine": "Tennessine's origin story is a heist movie where the treasure is 22 milligrams of berkelium and the villain is airport paperwork.",
+      "origin": "Made in Dubna in 2010 from the Oak Ridge berkelium; named in 2016.",
+      "trivia": [
+        "The berkelium was decaying the whole time — every customs delay hurt the experiment.",
+        "It was the second-to-last gap filled in the modern table."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
+    },
+    "118": {
+      "superpower": "The edge of the map",
+      "facts": [
+        "Oganesson is element 118 — the current end of the periodic table. Beyond it: blank map.",
+        "It's named for Yuri Oganessian, the element-hunter who led the seventh row's completion — only the second person ever honored with an element name while alive.",
+        "Only about five atoms have ever been made, each vanishing in under a millisecond."
+      ],
+      "imagine": "Oganesson is the flag planted at the edge of the known world — and somewhere past it, element 119 is waiting for someone (maybe you) to find it.",
+      "origin": "Made in Dubna in 2002–2006 by the Oganessian-led Russia-USA team; named in 2016.",
+      "trivia": [
+        "It sits in the noble gas column, but scientists suspect it breaks the family rules — it might even be a solid.",
+        "Labs in Russia, Japan, and Germany are already hunting elements 119 and 120."
+      ],
+      "uses": ["Pure research", "Inspiring future element hunters"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "unknown"
     }
   }
 }
