@@ -1,0 +1,19 @@
+# Render Blueprint — deploys the Elements app + companion server on the
+# FREE tier. See docs/DEPLOY.md for the full walkthrough.
+services:
+  - type: web
+    name: elements
+    runtime: node
+    plan: free
+    buildCommand: cd server && npm install --omit=dev
+    startCommand: node server/index.mjs
+    healthCheckPath: /api/health
+    envVars:
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: GOOGLE_CLIENT_ID   # from Google Cloud Console (OAuth client, type: Web)
+        sync: false
+      - key: ADMIN_EMAILS       # comma-separated institution admin emails
+        sync: false
+      - key: MONGODB_URI        # MongoDB Atlas M0 (free) connection string
+        sync: false

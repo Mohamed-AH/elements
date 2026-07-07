@@ -1,0 +1,10 @@
+{
+  "name": "elements-server",
+  "private": true,
+  "type": "module",
+  "description": "Companion server for the Elements PWA: optional Google sign-in, MongoDB progress sync, institutional roster. The frontend app itself has zero dependencies.",
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "mongodb": "^6.8.0"
+  }
+}
