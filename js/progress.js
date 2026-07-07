@@ -23,6 +23,27 @@ function load() {
 
 function save(state) {
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch { /* private mode: progress is session-only */ }
+  // Let the (optional) cloud-sync layer know something changed.
+  window.dispatchEvent(new CustomEvent('elements-progress-changed'));
+}
+
+// Union arrays, keep the best counters — merging can never lose progress.
+export function mergeProgress(a, b) {
+  const A = { ...DEFAULTS, ...(a || {}) };
+  const B = { ...DEFAULTS, ...(b || {}) };
+  return {
+    visited: [...new Set([...A.visited, ...B.visited])],
+    solved: [...new Set([...A.solved, ...B.solved])],
+    experimentsRead: [...new Set([...A.experimentsRead, ...B.experimentsRead])],
+    matchWins: Math.max(A.matchWins, B.matchWins),
+    compares: Math.max(A.compares, B.compares),
+    familyCorrect: Math.max(A.familyCorrect, B.familyCorrect),
+    heavierBest: Math.max(A.heavierBest, B.heavierBest)
+  };
+}
+
+export function replaceAll(state) {
+  save({ ...DEFAULTS, ...state });
 }
 
 export const progress = {
@@ -70,8 +91,10 @@ export function markIntroSeen() {
   try { localStorage.setItem(INTRO_KEY, '1'); } catch { /* session-only */ }
 }
 
-export function badges(featuredNumbers) {
-  const s = load();
+// Pass an explicit state (e.g. a student's synced progress) to compute
+// badges for someone other than the local user.
+export function badges(featuredNumbers, state = null) {
+  const s = state ? { ...DEFAULTS, ...state } : load();
   const featuredVisited = s.visited.filter((n) => featuredNumbers.includes(n)).length;
   return [
     { id: 'explorer', icon: 'compass', title: 'Element Explorer', desc: 'Visit 10 different elements', have: s.visited.length, need: 10 },

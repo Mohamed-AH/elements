@@ -6,6 +6,8 @@ import { progress, badges, introSeen, markIntroSeen } from './progress.js';
 import { renderDetective, renderMatch, renderFamily, renderHeavier } from './games.js';
 import { mountCrystal, LATTICE_TITLES } from './crystals.js';
 import { icon, iconFilled, CHAPTER_ICONS } from './icons.js';
+import { initAuth } from './auth.js';
+import { adminView } from './admin.js';
 
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('app-title');
@@ -687,7 +689,8 @@ const routes = [
   { pattern: /^heavier$/, view: heavierView },
   { pattern: /^experiments$/, view: experimentsView },
   { pattern: /^experiments\/([\w-]+)$/, view: experimentView },
-  { pattern: /^badges$/, view: badgesView }
+  { pattern: /^badges$/, view: badgesView },
+  { pattern: /^admin$/, view: () => { setChrome('Institution Dashboard', { back: true }); adminView(viewEl); } }
 ];
 
 function render() {
@@ -702,9 +705,12 @@ function render() {
 
 window.addEventListener('hashchange', render);
 
+window.addEventListener('elements-progress-synced', render);
+
 loadData().then((data) => {
   DATA = data;
   render();
+  initAuth(); // optional cloud layer; no-op on static hosting / offline
 }).catch(() => {
   viewEl.innerHTML = '<div class="card"><h3>Oops</h3><p>Couldn\'t load the element data. Check your connection once, then the app works fully offline.</p></div>';
 });

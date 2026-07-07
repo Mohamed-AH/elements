@@ -1,6 +1,6 @@
 // Offline-first service worker: everything the app needs is precached on
 // install. Bump CACHE_VERSION on every deploy that changes any precached file.
-const CACHE_VERSION = 'elements-v6';
+const CACHE_VERSION = 'elements-v7';
 
 const PRECACHE = [
   './',
@@ -13,6 +13,8 @@ const PRECACHE = [
   './js/games.js',
   './js/crystals.js',
   './js/icons.js',
+  './js/auth.js',
+  './js/admin.js',
   './data/elements.json',
   './data/kid-content.json',
   './data/games.json',
@@ -38,6 +40,9 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  // Never cache API calls or third-party requests (e.g. Google sign-in).
+  if (url.origin !== self.location.origin || url.pathname.startsWith('/api/')) return;
   event.respondWith(
     caches.match(event.request, { ignoreSearch: true }).then((cached) => {
       if (cached) return cached;
