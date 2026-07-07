@@ -63,11 +63,11 @@ export function badges(featuredNumbers) {
   const s = load();
   const featuredVisited = s.visited.filter((n) => featuredNumbers.includes(n)).length;
   return [
-    { id: 'explorer', emoji: '🧭', title: 'Element Explorer', desc: 'Visit 10 different elements', have: s.visited.length, need: 10 },
-    { id: 'sleuth', emoji: '🔍', title: 'Super Sleuth', desc: 'Solve 5 material mysteries', have: s.solved.length, need: 5 },
-    { id: 'matcher', emoji: '🧠', title: 'Match Master', desc: 'Win a round of Material Match', have: s.matchWins, need: 1 },
-    { id: 'engineer', emoji: '⚖️', title: 'Junior Engineer', desc: 'Compare 3 pairs of elements', have: s.compares, need: 3 },
-    { id: 'scientist', emoji: '🧪', title: 'Kitchen Scientist', desc: 'Read 3 experiments', have: s.experimentsRead.length, need: 3 },
-    { id: 'legend', emoji: '🌟', title: 'Periodic Legend', desc: `Visit all ${featuredNumbers.length} featured elements`, have: featuredVisited, need: featuredNumbers.length }
+    { id: 'explorer', icon: 'compass', title: 'Element Explorer', desc: 'Visit 10 different elements', have: s.visited.length, need: 10 },
+    { id: 'sleuth', icon: 'search', title: 'Super Sleuth', desc: 'Solve 5 material mysteries', have: s.solved.length, need: 5 },
+    { id: 'matcher', icon: 'puzzle', title: 'Match Master', desc: 'Win a round of Material Match', have: s.matchWins, need: 1 },
+    { id: 'engineer', icon: 'scale', title: 'Junior Engineer', desc: 'Compare 3 pairs of elements', have: s.compares, need: 3 },
+    { id: 'scientist', icon: 'flask', title: 'Kitchen Scientist', desc: 'Read 3 experiments', have: s.experimentsRead.length, need: 3 },
+    { id: 'legend', icon: 'star', title: 'Periodic Legend', desc: `Visit all ${featuredNumbers.length} featured elements`, have: featuredVisited, need: featuredNumbers.length }
   ].map((b) => ({ ...b, earned: b.have >= b.need }));
 }

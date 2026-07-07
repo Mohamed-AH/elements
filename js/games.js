@@ -2,6 +2,7 @@
 // wrong guesses unlock hints, never punish.
 
 import { progress } from './progress.js';
+import { icon } from './icons.js';
 
 export function celebrate() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -69,13 +70,13 @@ function startCase(container, cases, kase) {
     if (btn.dataset.answer === kase.material) {
       btn.classList.add('correct');
       container.querySelectorAll('.option-btn').forEach((b) => { b.disabled = true; });
-      status.textContent = 'Case closed! 🎉';
+      status.textContent = 'Case closed!';
       progress.solve(kase.id);
       celebrate();
       container.querySelector('#after').innerHTML = `
-        <div class="card"><h3>The reveal</h3><p>${esc(kase.reveal)}</p></div>
+        <div class="card"><h3>${icon('lightbulb')} The reveal</h3><p>${esc(kase.reveal)}</p></div>
         <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button class="big-btn" id="next-case">Next mystery 🔍</button>
+          <button class="big-btn" id="next-case">${icon('search')} Next mystery</button>
           <a class="big-btn secondary" href="#/element/${kase.element}">Meet the element</a>
         </div>`;
       container.querySelector('#next-case').addEventListener('click', () => renderDetective(container, cases));
@@ -152,11 +153,11 @@ export function renderMatch(container, pairs) {
       matched += 1;
       status.textContent = ['Nice match!', 'You got it!', 'Brilliant!', 'Science whiz!'][matched % 4];
       if (matched === 6) {
-        status.textContent = 'You matched them all! 🎉';
+        status.textContent = 'You matched them all!';
         progress.winMatch();
         celebrate();
         const after = container.querySelector('#after');
-        after.innerHTML = '<button class="big-btn" id="again">Play again 🎮</button>';
+        after.innerHTML = `<button class="big-btn" id="again">${icon('rotate-ccw')} Play again</button>`;
         after.querySelector('#again').addEventListener('click', () => renderMatch(container, pairs));
       }
     } else {

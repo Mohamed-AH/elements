@@ -5,6 +5,7 @@ import { loadData, CATEGORIES, gridPosition } from './data.js';
 import { progress, badges, introSeen, markIntroSeen } from './progress.js';
 import { renderDetective, renderMatch } from './games.js';
 import { mountCrystal, LATTICE_TITLES } from './crystals.js';
+import { icon, iconFilled, CHAPTER_ICONS } from './icons.js';
 
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('app-title');
@@ -80,7 +81,13 @@ function introView() {
 
   const pages = [
     () => `
-      <div class="intro-art">🌍 🐶 🍕 ⭐ 🧸</div>
+      <div class="intro-art">
+        <span style="color:var(--accent)">${icon('globe')}</span>
+        <span style="color:var(--pink)">${icon('heart')}</span>
+        <span style="color:var(--green)">${icon('gift')}</span>
+        <span style="color:var(--sun)">${icon('star')}</span>
+        <span style="color:#c9a7ff">${icon('rocket')}</span>
+      </div>
       <h2 class="intro-title">Everything is made of atoms</h2>
       <p class="intro-text">Your shoes, the ocean, pizza, planets, <strong>you</strong> — if you could
       zoom in far, far closer than any microscope, you'd find that everything is built from
@@ -101,7 +108,7 @@ function introView() {
       element an atom is.</strong> That count is called the <strong>atomic number</strong>.
       Try it — add and remove protons:</p>`,
     () => `
-      <div class="intro-art">🗺️</div>
+      <div class="intro-art"><span style="color:var(--sun)">${icon('map')}</span></div>
       <h2 class="intro-title">The great map of everything</h2>
       <p class="intro-text">Scientists found <strong>118</strong> different elements — and arranged
       them into the <strong>periodic table</strong>: a map where element families line up in columns,
@@ -133,14 +140,14 @@ function introView() {
       <div class="intro-card">
         ${pages[page]()}
         <div class="intro-nav">
-          <button class="big-btn secondary" id="intro-back" ${page === 0 ? 'style="visibility:hidden"' : ''}>← Back</button>
+          <button class="big-btn secondary" id="intro-back" ${page === 0 ? 'style="visibility:hidden"' : ''}>${icon('arrow-left')} Back</button>
           <div class="intro-dots">${pages.map((_, i) =>
             `<span class="dot ${i === page ? 'on' : ''}"></span>`).join('')}</div>
           ${last
-            ? '<a class="big-btn" href="#/learn">Start the journey 🚀</a>'
-            : '<button class="big-btn" id="intro-next">Next →</button>'}
+            ? `<a class="big-btn" href="#/learn">${icon('rocket')} Start the journey</a>`
+            : `<button class="big-btn" id="intro-next">Next ${icon('arrow-right')}</button>`}
         </div>
-        ${last ? '<p class="muted" style="text-align:center;margin-top:12px"><a class="text-link" href="#/home">or jump straight to the periodic table →</a></p>' : ''}
+        ${last ? `<p class="muted" style="text-align:center;margin-top:12px"><a class="text-link" href="#/home">or jump straight to the periodic table ${icon('arrow-right')}</a></p>` : ''}
       </div>`;
 
     if (page === 2) {
@@ -194,7 +201,7 @@ function learnView() {
       return `
         <section class="chapter locked" aria-label="${esc(ch.title)} (locked)">
           <div class="chapter-head">
-            <span class="chapter-emoji">🔒</span>
+            <span class="chapter-emoji">${icon('lock')}</span>
             <div>
               <span class="chapter-kicker">Chapter ${idx + 1}</span>
               <h3 class="chapter-title">${esc(ch.title)}</h3>
@@ -211,7 +218,7 @@ function learnView() {
       return `
         <a class="journey-el ${met ? 'met' : ''} ${isNext ? 'next-up' : ''}" href="#/element/${n}">
           ${isNext ? '<span class="next-pill">up next</span>' : ''}
-          <span class="journey-sym" style="--cat:${CATEGORIES[el.c].color}">${esc(el.s)}${met ? '<span class="met-tick">✓</span>' : ''}</span>
+          <span class="journey-sym" style="--cat:${CATEGORIES[el.c].color}">${esc(el.s)}${met ? `<span class="met-tick">${icon('check')}</span>` : ''}</span>
           <span class="journey-name">${esc(el.name)}</span>
           <span class="journey-power">${esc(kid.superpower)}</span>
         </a>`;
@@ -219,9 +226,9 @@ function learnView() {
     return `
       <section class="chapter ${s.complete ? 'complete' : ''}">
         <div class="chapter-head">
-          <span class="chapter-emoji">${ch.emoji}</span>
+          <span class="chapter-emoji">${CHAPTER_ICONS[ch.id] ? icon(CHAPTER_ICONS[ch.id]) : ch.emoji}</span>
           <div>
-            <span class="chapter-kicker">Chapter ${idx + 1}${s.complete ? ' · complete ✓' : ''}</span>
+            <span class="chapter-kicker">Chapter ${idx + 1}${s.complete ? ' · complete' : ''}</span>
             <h3 class="chapter-title">${esc(ch.title)}</h3>
             <p class="chapter-tag">${esc(ch.tagline)}</p>
           </div>
@@ -233,15 +240,15 @@ function learnView() {
 
   viewEl.innerHTML = `
     ${nova(allDone
-      ? 'You met every featured element — every single one! The whole table is yours to explore now. 🌟'
+      ? 'You met every featured element — every single one! The whole table is yours to explore now.'
       : metCount === 0
         ? 'This is your element journey! Meet everyone in a chapter to unlock the next one. No rush — curiosity sets the pace.'
         : `Welcome back, explorer! You've met <strong>${metCount} of ${totalCount}</strong> featured elements. Your next discovery is waiting below.`)}
     <a class="intro-banner" href="#/intro">
-      <span class="hub-emoji">⚛️</span>
+      <span class="hub-emoji">${icon('book-open')}</span>
       <span><strong>New here? Start with the 2-minute intro:</strong><br>
       What's an atom, and why does one little number change everything?</span>
-      <span class="intro-banner-go">→</span>
+      <span class="intro-banner-go">${icon('arrow-right')}</span>
     </a>
     <div class="journey-progress">
       <div class="journey-progress-label"><span>Elements met</span><span>${metCount} / ${totalCount}</span></div>
@@ -249,7 +256,7 @@ function learnView() {
     </div>
     ${chaptersHtml}
     <p class="muted" style="margin-top:18px">Want to roam free? The full periodic table is always open in
-    <a class="text-link" href="#/home">⚛️ Explore</a> — chapters just pace the story.</p>
+    <a class="text-link" href="#/home">${icon('atom')} Explore</a> — chapters just pace the story.</p>
   `;
 }
 
@@ -261,7 +268,7 @@ function homeView() {
 
   const tiles = DATA.elements.map((el) => {
     const { row, col } = gridPosition(el);
-    const featured = DATA.featured[el.n] ? '<span class="star">⭐</span>' : '';
+    const featured = DATA.featured[el.n] ? `<span class="star">${iconFilled('star')}</span>` : '';
     return `<button class="el-tile ${visited.has(el.n) ? 'visited' : ''}"
       style="--row:${row};--col:${col};--cat:${CATEGORIES[el.c].color}"
       data-el="${el.n}" aria-label="${esc(el.name)}, element ${el.n}">
@@ -277,7 +284,7 @@ function homeView() {
     `<span class="legend-item"><span class="legend-dot" style="background:${meta.color}"></span>${meta.label}</span>`).join('');
 
   viewEl.innerHTML = `
-    ${nova('Welcome to the periodic table — every single thing in the universe is built from these! Tap a tile to meet an element. The ⭐ ones have full stories.')}
+    ${nova(`Welcome to the periodic table — every single thing in the universe is built from these! Tap a tile to meet an element. The star-marked ${iconFilled('star', 'icon-star')} ones have full stories.`)}
     <div class="table-scroll"><div class="ptable">${tiles}${seriesTags}<div class="fblock-gap"></div></div></div>
     <div class="legend">${legend}</div>
   `;
@@ -309,7 +316,7 @@ function elementView(n) {
     viewEl.innerHTML = `
       ${hero}
       <div class="card"><h3>What kind of element is this?</h3><p>${esc(cat.kid)}</p></div>
-      ${nova(`I'm still writing ${esc(el.name)}'s full story! Explore a ⭐ element on the table for superpowers, games, and trivia.`)}
+      ${nova(`I'm still writing ${esc(el.name)}'s full story! Explore a star-marked ${iconFilled('star', 'icon-star')} element on the table for superpowers, games, and trivia.`)}
       <a class="big-btn secondary" href="#/home">Back to the table</a>
     `;
     return;
@@ -321,7 +328,7 @@ function elementView(n) {
 
   const crystalSection = kid.crystals ? `
     <div class="card crystal-wrap">
-      <h3>Crystal viewer — spin me!</h3>
+      <h3>${icon('gem')} Crystal viewer — spin me!</h3>
       <div class="crystal-tabs">
         ${kid.crystals.map((c, i) => `<button class="big-btn ${i ? 'secondary' : ''}" data-crystal="${c}">${esc(c[0].toUpperCase() + c.slice(1))}</button>`).join('')}
       </div>
@@ -332,15 +339,15 @@ function elementView(n) {
   viewEl.innerHTML = `
     ${hero}
     <div class="superpower"><span class="sp-label">SUPERPOWER</span>${esc(kid.superpower)}</div>
-    <div class="card"><h3>🔬 Science facts</h3><ul>${facts}</ul></div>
-    <div class="card metaphor"><h3>💭 Imagine it like…</h3><p>${esc(kid.imagine)}</p></div>
-    <div class="card"><h3>📜 Origin story</h3><p>${esc(kid.origin)}</p></div>
-    <div class="card"><h3>🌍 Where you'll find it</h3><div class="chips">${uses}</div></div>
-    <div class="card"><h3>⚡ Powers &amp; properties</h3>${propBars(kid.props)}</div>
+    <div class="card"><h3>${icon('microscope')} Science facts</h3><ul>${facts}</ul></div>
+    <div class="card metaphor"><h3>${icon('cloud')} Imagine it like…</h3><p>${esc(kid.imagine)}</p></div>
+    <div class="card"><h3>${icon('scroll')} Origin story</h3><p>${esc(kid.origin)}</p></div>
+    <div class="card"><h3>${icon('globe')} Where you'll find it</h3><div class="chips">${uses}</div></div>
+    <div class="card"><h3>${icon('gauge')} Powers &amp; properties</h3>${propBars(kid.props)}</div>
     ${crystalSection}
-    <div class="card"><h3>🤯 Wow trivia</h3><ul>${trivia}</ul></div>
+    <div class="card"><h3>${icon('sparkles')} Wow trivia</h3><ul>${trivia}</ul></div>
     <div style="display:flex;gap:10px;flex-wrap:wrap">
-      <a class="big-btn" href="#/compare/${el.n}">Compare me! ⚖️</a>
+      <a class="big-btn" href="#/compare/${el.n}">${icon('scale')} Compare me!</a>
       <a class="big-btn secondary" href="#/home">Back to the table</a>
     </div>
   `;
@@ -366,25 +373,25 @@ function propBars(props) {
   // Elements only ever made a few atoms at a time have no measured bulk
   // properties — say so honestly instead of showing made-up bars.
   if (props.density == null && props.meltC == null) {
-    return `<p class="mystery-props">⚗️ Mystery! Scientists can only make a few atoms
+    return `<p class="mystery-props">${icon('help')} Mystery! Scientists can only make a few atoms
       of this element at a time — and they vanish in moments. Nobody has ever collected
       enough to measure how heavy, hard, or melty it is. Maybe someday <em>you</em> will.</p>`;
   }
   const rows = [];
   if (props.hardness != null) {
-    rows.push(bar('💪 Hardness', `${props.hardness} / 10 on the Mohs scale`, props.hardness / 10));
+    rows.push(bar(`${icon('gem')} Hardness`, `${props.hardness} / 10 on the Mohs scale`, props.hardness / 10));
   }
   if (props.density != null) {
     const isGas = props.density < 0.01;
-    rows.push(bar('🏋️ Heaviness (density)',
+    rows.push(bar(`${icon('weight')} Heaviness (density)`,
       isGas ? `${(props.density * 1000).toFixed(2)} g per liter — it's a gas, super light!` : `${props.density} g/cm³`,
       Math.min(props.density / 20, 1)));
   }
   if (props.meltC != null) {
-    rows.push(bar('🔥 Melting point', `${props.meltC.toLocaleString()} °C`, (props.meltC + 273) / 3823));
+    rows.push(bar(`${icon('flame')} Melting point`, `${props.meltC.toLocaleString()} °C`, (props.meltC + 273) / 3823));
   }
   if (props.conduct != null) {
-    rows.push(bar('⚡ Carries electricity', CONDUCT_WORDS[props.conduct], props.conduct / 10));
+    rows.push(bar(`${icon('zap')} Carries electricity`, CONDUCT_WORDS[props.conduct], props.conduct / 10));
   }
   return rows.join('');
 }
@@ -469,7 +476,7 @@ function renderComparison(container, na, nb) {
       <div class="card" style="margin:0"><h3>${esc(elA.s)} properties</h3>${propBars(kidA.props)}</div>
       <div class="card" style="margin:0"><h3>${esc(elB.s)} properties</h3>${propBars(kidB.props)}</div>
     </div>
-    <div class="section-title">🏆 The verdict</div>
+    <div class="section-title">${icon('trophy')} The verdict</div>
     ${verdicts.map((v) => `<div class="verdict">${v}</div>`).join('')}
   `;
 }
@@ -477,20 +484,20 @@ function renderComparison(container, na, nb) {
 function playView() {
   setChrome('Play', { tab: 'play' });
   viewEl.innerHTML = `
-    ${nova('Time to play! Games are secretly the best way to remember what you learned. Don\'t tell anyone. 🤫')}
+    ${nova('Time to play! Games are secretly the best way to remember what you learned. Don\'t tell anyone.')}
     <div class="hub-cards">
       <a class="hub-card" href="#/detective">
-        <span class="hub-emoji">🔍</span>
+        <span class="hub-emoji">${icon('search')}</span>
         <h3>Material Detective</h3>
         <p>A mystery material, three clues, one answer. Can you crack the case?</p>
       </a>
       <a class="hub-card" href="#/match">
-        <span class="hub-emoji">🧠</span>
+        <span class="hub-emoji">${icon('puzzle')}</span>
         <h3>Material Match</h3>
         <p>Match each element to the real-world thing it's famous for.</p>
       </a>
       <a class="hub-card" href="#/compare">
-        <span class="hub-emoji">⚖️</span>
+        <span class="hub-emoji">${icon('scale')}</span>
         <h3>Compare Lab</h3>
         <p>Put two elements head-to-head and think like an engineer.</p>
       </a>
@@ -531,7 +538,7 @@ function experimentView(id) {
 
   viewEl.innerHTML = `
     <div style="text-align:center;font-size:3rem">${exp.emoji}</div>
-    <div class="exp-safety">🧑‍🔬 Ask a grown-up first — always! Extra note: ${esc(exp.safety)}</div>
+    <div class="exp-safety">${icon('shield-alert')} Ask a grown-up first — always! Extra note: ${esc(exp.safety)}</div>
     <div class="card"><h3>You'll learn about</h3><p>${esc(exp.teaches)}</p></div>
     <div class="card"><h3>You'll need</h3><div class="chips">${exp.materials.map((m) => `<span class="chip">${esc(m)}</span>`).join('')}</div></div>
     <div class="card"><h3>Steps</h3><ol class="steps">${exp.steps.map((st) => `<li>${esc(st)}</li>`).join('')}</ol></div>
@@ -547,15 +554,15 @@ function badgesView() {
 
   viewEl.innerHTML = `
     ${nova(earned === list.length
-      ? 'EVERY badge?! You\'re officially a Periodic Legend. Go tell someone — you\'ve earned the bragging rights! 🌟'
+      ? 'EVERY badge?! You\'re officially a Periodic Legend. Go tell someone — you\'ve earned the bragging rights!'
       : `You've earned ${earned} of ${list.length} badges. Keep exploring, playing, and experimenting to unlock the rest!`)}
     <div class="badge-grid">
       ${list.map((b) => `
         <div class="badge-card ${b.earned ? '' : 'locked'}">
-          <div class="badge-emoji">${b.emoji}</div>
+          <div class="badge-emoji">${icon(b.icon)}</div>
           <h3>${esc(b.title)}</h3>
           <p>${esc(b.desc)}</p>
-          <div class="badge-progress">${b.earned ? 'EARNED! ✅' : `${Math.min(b.have, b.need)} / ${b.need}`}</div>
+          <div class="badge-progress">${b.earned ? `${icon('check')} EARNED` : `${Math.min(b.have, b.need)} / ${b.need}`}</div>
         </div>`).join('')}
     </div>
     <p class="muted" style="margin-top:16px">Progress is saved on this device only — no accounts, nothing leaves your tablet.</p>

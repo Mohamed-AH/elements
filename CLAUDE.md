@@ -11,14 +11,18 @@ workflow as before (SOURCES.md rows → entries → chapter(s) → validator →
 commit+push per phase). Roadmap below; tick as completed so a crashed
 session can resume at the first unticked phase.
 
-- [ ] Phase 0 — Infra: app + validator accept `null` density/meltC/conduct
-      (elements never measured in bulk show an honest "mystery" card instead
-      of bars; compare picker filters to measurable elements). No schema
-      change — extends the existing hardness-null convention.
-- [ ] Phase A (7): Ar Kr Xe Rn + Br I At. Chapters: "The Invisible Shields"
-      (18,36,54,86), "The Fierce Cousins" (35,53,85). At = null props.
-- [ ] Phase B (11): B Ga Ge As Se + Be Sc V Cr Mn Co. Chapters: "The
-      In-Betweeners" (5,31,32,33,34), "The Color Brigade" (4,21,23,24,25,27).
+- [x] Phase 0 — Infra: null-props support (mystery card, validator, compare
+      filter) — done.
+- [x] Phase A (7): done, pushed. 35 featured.
+- [x] Phase B (11): done, pushed. 46 featured.
+- [x] (interleaved) Icon redesign: emoji UI chrome replaced with inline
+      Lucide SVGs (js/icons.js, ISC license). Tabs/back-btn in index.html,
+      section headers/prop bars/hub cards/chapters/badges/intro/buttons via
+      icon() helper. CHAPTER_ICONS maps chapter id → icon (future chapter ids
+      wild/steel/gadgets/precious/heat/heavy/rare1-3/atomic/starmakers/
+      vanishing/lab1/lab2/edge are pre-mapped — USE THESE IDS in journey.json).
+      Content emojis in games.json (object pictures) intentionally kept.
+      SW bumped to v3 with js/icons.js precached.
 - [ ] Phase C (6): Rb Sr Cs Ba Fr Ra. Chapter: "The Wild Bunch"
       (37,38,55,56,87,88). Fr = null props.
 - [ ] Phase D (15): chapters "The Super-Steel Squad" (39,40,41,42,43),
