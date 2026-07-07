@@ -61,10 +61,36 @@ Key facts for future sessions:
   default; localStorage is source of truth; merge-on-login = union/max
   (never loses progress). Accounts = school-managed, admin-added rosters,
   no self-signup; only active when GOOGLE_CLIENT_ID is configured.
-- **Process:** `node tools/validate-data.mjs` after any data edit; commit +
-  push per phase; smoke-test all tabs + offline before finishing.
+- **Process:** `node tools/validate-data.mjs` after any data edit;
+  `node --test tests/server.test.mjs` after server changes;
+  `cd tests && node --test e2e.test.mjs` before finishing any UI work
+  (needs playwright-core — `cd tests && npm install`; Chromium via
+  PLAYWRIGHT_CHROMIUM_PATH or /opt/pw-browsers/chromium). Commit + push
+  per phase.
   ⚠ NEVER `rm -rf data` — that's the app's dataset (server store lives in
   server/data). This mistake happened once; restored from git.
+
+## Testing (added 2026-07-07)
+
+- `tools/validate-data.mjs` — data schema, counts, cross-references
+  (118 elements/featured, journey coverage, games shapes).
+- `tests/server.test.mjs` — API suite, zero deps, Node's built-in runner.
+  Spawns the server with DEV_FAKE_AUTH + temp DATA_DIR. Covers: health/
+  config, static serving + traversal/server-dir blocks, session guard,
+  progress round-trip + sanitization (dupes/invalid/out-of-range dropped),
+  me/logout, admin guard + roster CRUD + student summaries, unconfigured
+  Google rejection, forged-cookie rejection.
+- `tests/e2e.test.mjs` — 11 browser tests via playwright-core (the only
+  test dep, isolated in tests/package.json; skips if Chromium missing).
+  Covers: 118 tiles, featured profile + crystal canvas, mystery card,
+  journey unlock (visit ch1 → ch2 unlocks), proton counter, detective
+  solvable, match winnable (12/12), family finder + heavier round won,
+  compare = 97 options, dev-auth sync, desktop sidebar + hover preview,
+  offline via SW, zero console errors overall.
+- All green as of 2026-07-07 (7 + 11 pass). E2E serves the app through
+  server/index.mjs so auth paths are exercised; static-only behavior is
+  additionally covered by the "chip hidden" logic in initAuth (no-op when
+  /api/config unreachable).
 
 ## Preserved decisions
 

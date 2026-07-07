@@ -109,12 +109,19 @@ free-tier + MongoDB Atlas instructions.
 **Testing:**
 
 ```bash
-node tools/validate-data.mjs   # validates all data files (run after any content edit)
+node tools/validate-data.mjs        # data schema + cross-reference validation
+node --test tests/server.test.mjs   # companion-server API suite (zero deps)
+
+cd tests && npm install             # one dev dep: playwright-core
+node --test e2e.test.mjs            # browser E2E: all views, games, journey
+                                    # unlock, auth sync, offline, desktop chrome
+# or run everything: cd tests && npm test
 ```
 
-To verify offline behavior: load the app once, then in DevTools → Network set
-"Offline" and reload — every screen should still work. On a tablet, use
-"Add to Home Screen" to install it as a standalone app.
+The E2E suite needs a Chromium binary (`PLAYWRIGHT_CHROMIUM_PATH`, or
+`npx playwright-core install chromium`); it skips cleanly when unavailable.
+Manual offline check: load the app once, then DevTools → Network → Offline
+and reload — every screen should still work.
 
 ## Adding or updating element content
 
