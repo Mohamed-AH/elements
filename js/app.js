@@ -3,7 +3,7 @@
 
 import { loadData, CATEGORIES, gridPosition } from './data.js';
 import { progress, badges, introSeen, markIntroSeen } from './progress.js';
-import { renderDetective, renderMatch } from './games.js';
+import { renderDetective, renderMatch, renderFamily, renderHeavier } from './games.js';
 import { mountCrystal, LATTICE_TITLES } from './crystals.js';
 import { icon, iconFilled, CHAPTER_ICONS } from './icons.js';
 
@@ -571,6 +571,16 @@ function playView() {
         <h3>Compare Lab</h3>
         <p>Put two elements head-to-head and think like an engineer.</p>
       </a>
+      <a class="hub-card" href="#/family">
+        <span class="hub-emoji">${icon('palette')}</span>
+        <h3>Family Finder</h3>
+        <p>Sort elements into their families — all 118 can appear!</p>
+      </a>
+      <a class="hub-card" href="#/heavier">
+        <span class="hub-emoji">${icon('weight')}</span>
+        <h3>Heavier or Lighter</h3>
+        <p>Density showdown: which element wins? Build your streak!</p>
+      </a>
     </div>
   `;
 }
@@ -583,6 +593,23 @@ function detectiveView() {
 function matchView() {
   setChrome('Material Match', { back: true, tab: 'play' });
   renderMatch(viewEl, DATA.games.match);
+}
+
+function familyView() {
+  setChrome('Family Finder', { back: true, tab: 'play' });
+  renderFamily(viewEl, DATA.elements, CATEGORIES);
+}
+
+function heavierView() {
+  setChrome('Heavier or Lighter', { back: true, tab: 'play' });
+  const contenders = DATA.featuredNumbers
+    .filter((n) => DATA.featured[n].props.density != null)
+    .map((n) => ({
+      el: DATA.byNumber.get(n),
+      density: DATA.featured[n].props.density,
+      color: CATEGORIES[DATA.byNumber.get(n).c].color
+    }));
+  renderHeavier(viewEl, contenders);
 }
 
 function experimentsView() {
@@ -656,6 +683,8 @@ const routes = [
   { pattern: /^play$/, view: playView },
   { pattern: /^detective$/, view: detectiveView },
   { pattern: /^match$/, view: matchView },
+  { pattern: /^family$/, view: familyView },
+  { pattern: /^heavier$/, view: heavierView },
   { pattern: /^experiments$/, view: experimentsView },
   { pattern: /^experiments\/([\w-]+)$/, view: experimentView },
   { pattern: /^badges$/, view: badgesView }

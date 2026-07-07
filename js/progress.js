@@ -8,7 +8,9 @@ const DEFAULTS = {
   solved: [],           // detective case ids solved
   matchWins: 0,
   compares: 0,
-  experimentsRead: []   // experiment ids opened
+  experimentsRead: [],  // experiment ids opened
+  familyCorrect: 0,     // first-try correct sorts in Family Finder
+  heavierBest: 0        // best streak in Heavier or Lighter
 };
 
 function load() {
@@ -46,6 +48,15 @@ export const progress = {
   readExperiment(id) {
     const s = load();
     if (!s.experimentsRead.includes(id)) { s.experimentsRead.push(id); save(s); }
+  },
+  familyCorrect() {
+    const s = load();
+    s.familyCorrect += 1;
+    save(s);
+  },
+  heavierStreak(streak) {
+    const s = load();
+    if (streak > s.heavierBest) { s.heavierBest = streak; save(s); }
   }
 };
 
@@ -68,6 +79,8 @@ export function badges(featuredNumbers) {
     { id: 'matcher', icon: 'puzzle', title: 'Match Master', desc: 'Win a round of Material Match', have: s.matchWins, need: 1 },
     { id: 'engineer', icon: 'scale', title: 'Junior Engineer', desc: 'Compare 3 pairs of elements', have: s.compares, need: 3 },
     { id: 'scientist', icon: 'flask', title: 'Kitchen Scientist', desc: 'Read 3 experiments', have: s.experimentsRead.length, need: 3 },
+    { id: 'family', icon: 'palette', title: 'Family Expert', desc: 'Sort 15 elements into the right family (first try!)', have: s.familyCorrect, need: 15 },
+    { id: 'density', icon: 'weight', title: 'Density Genius', desc: 'Reach a streak of 8 in Heavier or Lighter', have: s.heavierBest, need: 8 },
     { id: 'legend', icon: 'star', title: 'Periodic Legend', desc: `Visit all ${featuredNumbers.length} featured elements`, have: featuredVisited, need: featuredNumbers.length }
   ].map((b) => ({ ...b, earned: b.have >= b.need }));
 }

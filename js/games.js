@@ -117,6 +117,145 @@ function startCase(container, cases, kase) {
   draw();
 }
 
+/* ---------- Family Finder ----------
+   Questions derive entirely from elements.json categories — authentic by
+   construction, and it covers all 118 elements. Wrong answers get retries
+   (never punish); only first-try correct counts toward the badge. */
+
+export function renderFamily(container, elements, categories) {
+  let sessionRight = 0;
+  let sessionTotal = 0;
+
+  function next() {
+    const el = elements[Math.floor(Math.random() * elements.length)];
+    const wrongs = shuffle(Object.keys(categories).filter((c) => c !== el.c)).slice(0, 3);
+    const options = shuffle([el.c, ...wrongs]);
+    let firstTry = true;
+
+    container.innerHTML = `
+      <div class="nova">
+        <img src="assets/nova.svg" alt="">
+        <div class="nova-bubble">Every element belongs to a family with shared superpowers — the table's columns and colors! Which family is this one from?</div>
+      </div>
+      <div class="family-el">
+        <span class="journey-sym family-sym" style="--cat:${categories[el.c].color}">${esc(el.s)}</span>
+        <div class="family-name">${esc(el.name)}</div>
+        <div class="family-meta">element #${el.n}</div>
+      </div>
+      <div class="game-status" id="status">Sorted right this visit: ${sessionRight}${sessionTotal ? ` of ${sessionTotal}` : ''}</div>
+      <div class="options family-options" id="options">
+        ${options.map((c) => `
+          <button class="option-btn" data-cat="${c}">
+            <span class="legend-dot" style="background:${categories[c].color}"></span>${esc(categories[c].label)}
+          </button>`).join('')}
+      </div>
+      <div id="after" style="margin-top:16px"></div>
+    `;
+
+    container.querySelectorAll('.option-btn').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const status = container.querySelector('#status');
+        if (btn.dataset.cat === el.c) {
+          btn.classList.add('correct');
+          container.querySelectorAll('.option-btn').forEach((b) => { b.disabled = true; });
+          sessionTotal += 1;
+          if (firstTry) {
+            sessionRight += 1;
+            progress.familyCorrect();
+            status.textContent = 'First try — expert sorting!';
+            celebrate();
+          } else {
+            status.textContent = 'Found it!';
+          }
+          container.querySelector('#after').innerHTML = `
+            <div class="card"><h3>${icon('lightbulb')} About this family</h3>
+            <p>${esc(categories[el.c].kid)}</p></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <button class="big-btn" id="next-el">Next element</button>
+              <a class="big-btn secondary" href="#/element/${el.n}">Meet ${esc(el.name)}</a>
+            </div>`;
+          container.querySelector('#next-el').addEventListener('click', next);
+        } else {
+          firstTry = false;
+          btn.classList.add('wrong');
+          btn.disabled = true;
+          status.textContent = 'Not that family — hint: check its color on the periodic table!';
+        }
+      });
+    });
+  }
+  next();
+}
+
+/* ---------- Heavier or Lighter ----------
+   Density duel using the sourced props in kid-content.json. Pairs with a
+   density ratio under 1.15 are skipped so measurement uncertainty can
+   never flip an answer. */
+
+export function renderHeavier(container, contenders) {
+  let streak = 0;
+
+  function pickPair() {
+    for (let tries = 0; tries < 60; tries++) {
+      const a = contenders[Math.floor(Math.random() * contenders.length)];
+      const b = contenders[Math.floor(Math.random() * contenders.length)];
+      if (a.el.n === b.el.n) continue;
+      const ratio = Math.max(a.density, b.density) / Math.min(a.density, b.density);
+      if (ratio >= 1.15) return [a, b];
+    }
+    return [contenders[0], contenders[1]];
+  }
+
+  function next() {
+    const [a, b] = pickPair();
+
+    const cardHtml = (side) => `
+      <button class="versus-card" data-n="${side.el.n}" style="--cat:${side.color}">
+        <span class="versus-sym">${esc(side.el.s)}</span>
+        <span class="versus-name">${esc(side.el.name)}</span>
+        <span class="versus-density" data-density hidden>${side.density < 0.01
+          ? `${(side.density * 1000).toFixed(2)} g per liter (gas!)`
+          : `${side.density} g/cm³`}</span>
+      </button>`;
+
+    container.innerHTML = `
+      <div class="nova">
+        <img src="assets/nova.svg" alt="">
+        <div class="nova-bubble">Same-size blocks of each — which one is <strong>denser</strong> (heavier for its size)? Tap your pick!</div>
+      </div>
+      <div class="game-status" id="status">Streak: ${streak} 🔥</div>
+      <div class="versus-grid">${cardHtml(a)}${cardHtml(b)}</div>
+      <div id="after" style="margin-top:16px;text-align:center"></div>
+    `;
+
+    const denser = a.density >= b.density ? a : b;
+    container.querySelectorAll('.versus-card').forEach((card) => {
+      card.addEventListener('click', () => {
+        container.querySelectorAll('.versus-card').forEach((c) => {
+          c.disabled = true;
+          c.querySelector('[data-density]').hidden = false;
+          c.classList.add(Number(c.dataset.n) === denser.el.n ? 'correct' : 'dimmed');
+        });
+        const status = container.querySelector('#status');
+        const won = Number(card.dataset.n) === denser.el.n;
+        if (won) {
+          streak += 1;
+          progress.heavierStreak(streak);
+          status.textContent = `Correct! Streak: ${streak} 🔥`;
+          if (streak > 0 && streak % 5 === 0) celebrate();
+        } else {
+          streak = 0;
+          status.textContent = `Oof — ${denser.el.name} wins this one. New streak starts now!`;
+        }
+        container.querySelector('#after').innerHTML =
+          '<button class="big-btn" id="next-round">Next round</button>';
+        container.querySelector('#next-round').addEventListener('click', next);
+      });
+    });
+  }
+  next();
+}
+
 /* ---------- Material Match ---------- */
 
 export function renderMatch(container, pairs) {

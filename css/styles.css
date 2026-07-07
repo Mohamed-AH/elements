@@ -498,6 +498,60 @@ button { font: inherit; color: inherit; }
 .badge-card p { margin: 0; font-size: 0.8rem; color: var(--text-dim); line-height: 1.4; }
 .badge-card .badge-progress { margin-top: 8px; font-size: 0.78rem; font-weight: 800; color: var(--sun); }
 
+/* ---------- Family Finder & Heavier or Lighter ---------- */
+
+.family-el { text-align: center; margin: 6px 0 14px; }
+.family-sym { margin: 0 auto; width: 76px; height: 76px; font-size: 2rem; }
+.family-name { font-size: 1.4rem; font-weight: 900; margin-top: 10px; }
+.family-meta { color: var(--text-dim); font-weight: 700; font-size: 0.85rem; }
+.family-options .option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: left;
+}
+
+.versus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.versus-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0)), var(--bg-card);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  padding: 26px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.versus-card:hover { transform: translateY(-3px); border-color: rgba(255, 255, 255, 0.25); }
+.versus-card:active { transform: scale(0.96); }
+.versus-card:disabled { cursor: default; }
+.versus-sym {
+  width: 84px; height: 84px;
+  border-radius: 20px;
+  background: var(--cat, var(--cat-unknown));
+  color: #101430;
+  font-size: 2.2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.versus-name { font-size: 1.15rem; font-weight: 900; }
+.versus-density { font-weight: 800; color: var(--sun); font-size: 0.95rem; }
+.versus-card.correct { border-color: var(--green); box-shadow: 0 0 0 3px rgba(125, 255, 168, 0.2); }
+.versus-card.dimmed { opacity: 0.55; }
+
 /* ---------- Confetti ---------- */
 
 #confetti-layer { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 50; }
