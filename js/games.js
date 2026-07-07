@@ -45,19 +45,38 @@ function startCase(container, cases, kase) {
   let revealed = 1;
 
   function draw() {
+    const solvedNow = progress.get().solved;
+    const caseFiles = cases.map((c) => {
+      const isSolved = solvedNow.includes(c.id);
+      return `<li class="case-row ${isSolved ? 'solved' : ''}">
+        <span class="case-emoji">${isSolved ? c.emoji : '❓'}</span>
+        <span>${isSolved ? esc(c.material) : 'Unsolved mystery'}</span>
+        ${isSolved ? `<span class="case-check">${icon('check')}</span>` : ''}
+      </li>`;
+    }).join('');
+
     container.innerHTML = `
       <div class="nova">
         <img src="assets/nova.svg" alt="">
         <div class="nova-bubble">A mystery material, detective! Read the clue${revealed > 1 ? 's' : ''} and make your guess. Wrong guesses unlock more clues.</div>
       </div>
-      <div style="text-align:center;font-size:3rem">${kase.emoji}</div>
-      ${kase.clues.slice(0, revealed).map((clue, i) =>
-        `<div class="clue-box"><span class="clue-n">Clue ${i + 1}:</span>${esc(clue)}</div>`).join('')}
-      <div class="game-status" id="status"></div>
-      <div class="options" id="options">
-        ${shuffle(kase.options).map((o) => `<button class="option-btn" data-answer="${esc(o)}">${esc(o)}</button>`).join('')}
+      <div class="detective-layout">
+        <div class="detective-main">
+          <div class="case-emoji-big">${kase.emoji}</div>
+          ${kase.clues.slice(0, revealed).map((clue, i) =>
+            `<div class="clue-box"><span class="clue-n">Clue ${i + 1}:</span>${esc(clue)}</div>`).join('')}
+          <div class="game-status" id="status"></div>
+          <div class="options" id="options">
+            ${shuffle(kase.options).map((o) => `<button class="option-btn" data-answer="${esc(o)}">${esc(o)}</button>`).join('')}
+          </div>
+          <div id="after" style="margin-top:16px"></div>
+        </div>
+        <aside class="card case-files">
+          <h3>${icon('search')} Case files</h3>
+          <p class="muted">${solvedNow.length} of ${cases.length} mysteries solved</p>
+          <ul class="case-list">${caseFiles}</ul>
+        </aside>
       </div>
-      <div id="after" style="margin-top:16px"></div>
     `;
 
     container.querySelectorAll('.option-btn').forEach((btn) => {

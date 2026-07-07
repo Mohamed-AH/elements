@@ -78,6 +78,24 @@ Key facts for future sessions:
 - Detective/Match don't yet use the 6 new featured elements as answers —
   optional content growth, not a defect.
 
+## Desktop layout (2026-07-07)
+
+Desktop optimization behind `@media (min-width:1100px)` (mobile/tablet
+untouched below it; extra tile bump ≥1500px). Global: tab bar becomes a
+fixed 232px left sidebar (pure CSS, same markup; `body{padding-left}`),
+view max-width 1400px. Per-screen: table = grid + sticky right panel
+(hover preview `#el-preview` filled by pointerenter JS + vertical legend);
+Learn = split dashboard (sticky left: intro banner, progress, badge row,
+clickable chapter timeline w/ scrollIntoView; right: chapters, ids
+`ch-{id}`); intro card = 2fr/3fr visual|content split (pages refactored to
+{visual, body}); element detail = `.detail-cols` (tech col left via
+explicit grid placement, story col right — DOM order story-first so mobile
+stacks narrative first); compare scaled up via CSS; detective =
+`.detective-layout` w/ sticky Case Files aside (games.js) + 2×2 options;
+lab/badges grids widened; experiment detail = `.exp-cols` 35/65 recipe.
+SW CACHE_VERSION v5. User's reference screenshots are the root
+`Screenshot 2026-07-07 *.png` files (commit 61ca0ca).
+
 ## Progress log
 
 - 2026-07-05 — MVP built + verified (see git history).
