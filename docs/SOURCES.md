@@ -396,6 +396,52 @@ Ytterby fourth naming, Marignac 1878, pressure sensors [RSC/NIST].
 Lu hardest/densest REE, LYSO PET crystals, Lu-177 targeted therapy,
 Lutetia/Paris naming, ~1907 triple discovery, price >> gold [RSC].
 
+### Phase G — actinides (89–103)
+
+All radioactive; kid copy uses the safety framing from CLAUDE.md. Densities
+for Ac–Es are X-ray/crystallographic values — bulk samples are impractical,
+so treat ALL Phase G densities as **⚠ calculated/estimated** [CRC, X-ray].
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 89 | Ac | 10.07 | 1051 | glows blue (radioluminescence); Ac-227 t½ 21.8 y |
+| 90 | Th | 11.7 | 1750 | Th-232 t½ 14.0 Gy |
+| 91 | Pa | 15.4 | 1572 | UK ~125 g stock anecdote (UKAEA, 1960s) |
+| 92 | U | 19.1 | 1135 | U-238 t½ 4.47 Gy ≈ Earth's age |
+| 93 | Np | 20.45 | 644 | **⚠ FLAG**: sources 20.2–20.45 |
+| 94 | Pu | 19.85 | 640 | α-Pu; **⚠ FLAG**: 19.7–19.86 by phase |
+| 95 | Am | 13.69 | 1176 | Am-241 in ionization smoke detectors (~0.3 µg, sealed) |
+| 96 | Cm | 13.51 | 1345 | APXS alpha sources on Mars rovers |
+| 97 | Bk | 14.78 | 986 | Tennessine target (Bk-249, ORNL) |
+| 98 | Cf | 15.1 | 900 | Cf-252 neutron source; $/g among highest of any substance |
+| 99 | Es | 8.84 | 860 | 2021 Berkeley chemistry with <250 ng; both values estimated — **⚠** |
+| 100 | Fm | null | null | never made in bulk; heaviest reactor-producible element |
+| 101 | Md | null | null | first one-atom-at-a-time discovery (17 atoms, 1955) |
+| 102 | No | null | null | disputed discovery ("Transfermium Wars") |
+| 103 | Lr | null | null | Lr-266 t½ ~10 h |
+
+Claims: Ac Debierne 1899, *aktis*, Ac-225 targeted alpha therapy trials
+[RSC/NCI]. Th Berzelius 1829, Thor naming, gas mantle history, thorium
+fuel-cycle research (India) [RSC/WNA]. Pa Meitner & Hahn 1917–18,
+"before actinium", Pa/Th ocean-circulation proxies [RSC/Nature]. U 1789
+Klaproth, Uranus naming, Becquerel 1896, fuel pellet ≈ 1 ton coal (NEI),
+U-Pb dating of Earth 4.5 Gy (Patterson 1956), vaseline glass, geothermal
+contribution [RSC/NEI]. Np McMillan & Abelson 1940, Nobel 1951, planet
+chain, Np-237 → Pu-238 production [RSC/DOE]. Pu Seaborg 1940–41, RTGs on
+Voyager/Cassini/New Horizons/MSL/Perseverance, self-heating Pu-238, NASA
+Pu-238 restart [RSC/NASA]. Am Seaborg 1944, Quiz Kids radio announcement
+1945, Am-241 smoke detectors (EPA guidance on disposal) [RSC/EPA].
+Cm 1944, Curie honor, red-violet glow, APXS instruments on Mars rovers
+[RSC/NASA]. Bk 1949, Berkeley naming series, ~250-day irradiation for the
+Ts campaign [RSC/ORNL]. Cf 1950, reactor start-up sources, neutron
+activation prospecting/moisture probes, extreme price [RSC/ORNL].
+Es Ivy Mike 1952 fallout, 3-year secrecy, Einstein naming, blue glow, 2021
+<250 ng chemistry (Nature) [RSC]. Fm Fermi honor, reactor production
+limit, CP-1 under Stagg Field 1942 [RSC]. Md Mendeleev honor, 17 atoms
+1955, Cold War gesture [RSC]. No Nobel naming, tri-lab dispute resolved
+1990s IUPAC [RSC]. Lr Lawrence/cyclotron honor, 1961, medical cyclotrons
+[RSC].
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |

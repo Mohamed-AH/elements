@@ -1500,6 +1500,261 @@
       "uses": ["Science history", "Early cancer treatments (replaced now)"],
       "props": {"hardness": null, "density": 5.5, "meltC": 700, "conduct": 3},
       "state": "solid"
+    },
+    "89": {
+      "superpower": "The ray of light",
+      "facts": [
+        "Actinium is so radioactive that it glows pale blue in the dark — the energy from its atoms lights up the air around it.",
+        "Its name comes from 'aktis', Greek for ray or beam.",
+        "Doctors are testing actinium-225 as a precision weapon that delivers radiation to single cancer cells."
+      ],
+      "imagine": "Actinium is a nightlight powered by its own atoms — beautiful from a distance, handled only by robots and thick gloves up close.",
+      "origin": "Discovered in 1899 by André Debierne, a close friend of the Curies, in the same pitchblende leftovers that gave the world polonium and radium.",
+      "trivia": [
+        "The whole bottom row of the periodic table — the actinides — is named after actinium.",
+        "A speck of actinium is millions of times more radioactive than uranium."
+      ],
+      "uses": ["Targeted cancer therapy research", "Science of radioactivity"],
+      "props": {"hardness": null, "density": 10.07, "meltC": 1051, "conduct": 3},
+      "state": "solid"
+    },
+    "90": {
+      "superpower": "Thor's slow burner",
+      "facts": [
+        "Thorium is named after Thor, the Norse god of thunder.",
+        "Its atoms decay incredibly slowly — thorium lasts about as long as the universe has existed so far (14 billion years).",
+        "Some countries are researching thorium as a future nuclear fuel — Earth has much more thorium than uranium."
+      ],
+      "imagine": "Thorium is a campfire log that burns for the age of the universe — Thor packed it for a very, very long trip.",
+      "origin": "Discovered in 1829 by Jöns Jacob Berzelius in a black Norwegian mineral sent to him by a curious mineral collector.",
+      "trivia": [
+        "Old camping lantern mantles glowed bright white thanks to thorium — replaced once its radioactivity was understood.",
+        "India's long-term energy plan features thorium reactors."
+      ],
+      "uses": ["Future reactor research", "Dating ancient rocks", "History of lantern light"],
+      "props": {"hardness": 3, "density": 11.7, "meltC": 1750, "conduct": 4},
+      "state": "solid"
+    },
+    "91": {
+      "superpower": "The ocean's stopwatch",
+      "facts": [
+        "Protactinium means 'before actinium' — its atoms decay INTO actinium, so it's the parent standing before it.",
+        "Scientists measure protactinium and thorium in seafloor mud to clock how ocean currents moved over thousands of years.",
+        "It's one of the rarest and most expensive natural elements — and has almost no everyday use."
+      ],
+      "imagine": "Protactinium is the mysterious middle sibling — barely seen, rarely useful, but scientists read ocean history from its footprints.",
+      "origin": "Identified in 1917–18 by Lise Meitner and Otto Hahn in Berlin, filling one of the last gaps among natural elements.",
+      "trivia": [
+        "The UK once extracted about 125 grams of it — most of the world's supply ever since.",
+        "A gram of protactinium would cost a small fortune."
+      ],
+      "uses": ["Ocean current history", "Pure science"],
+      "props": {"hardness": null, "density": 15.4, "meltC": 1572, "conduct": 4},
+      "state": "solid"
+    },
+    "92": {
+      "superpower": "The planet's power pellet",
+      "facts": [
+        "One fingertip-sized pellet of uranium fuel holds about as much energy as a whole ton of coal.",
+        "Uranium's slow decay is Earth's clock: measuring it in rocks told us our planet is 4.5 billion years old.",
+        "It's the heaviest element found in nature in large amounts, named after the planet Uranus."
+      ],
+      "imagine": "Uranium is a sleeping dragon: mostly calm for billions of years, but inside a power plant its energy heats water for whole cities.",
+      "origin": "Discovered in 1789 in pitchblende ore and named after Uranus, spotted just 8 years earlier. Its radioactivity — noticed by Becquerel in 1896 — opened the entire atomic age.",
+      "trivia": [
+        "Antique 'vaseline glass' contains a little uranium and glows green under UV light.",
+        "Uranium decay heat helps keep Earth's insides warm and its continents moving."
+      ],
+      "uses": ["Nuclear power plants", "Submarines", "Dating the Earth"],
+      "props": {"hardness": 6, "density": 19.1, "meltC": 1135, "conduct": 3},
+      "state": "solid"
+    },
+    "93": {
+      "superpower": "The planet chain continues",
+      "facts": [
+        "Neptunium was the first element made beyond uranium — and just as Neptune orbits after Uranus, neptunium sits right after uranium.",
+        "It was created in 1940 by nudging uranium with neutrons at Berkeley.",
+        "Tiny traces of natural neptunium exist in uranium ores, but almost all of it is made in reactors."
+      ],
+      "imagine": "Neptunium is the first step off the map — the moment scientists realized they could BUILD new elements, not just find them.",
+      "origin": "Made by Edwin McMillan and Philip Abelson in 1940. McMillan shared a Nobel Prize for opening the transuranium frontier.",
+      "trivia": [
+        "Reactor-made neptunium-237 is the source material for plutonium-238, the fuel of deep-space probes.",
+        "The planet-name chain Uranus→Neptune→Pluto matches uranium→neptunium→plutonium."
+      ],
+      "uses": ["Making spacecraft fuel", "Science research"],
+      "props": {"hardness": null, "density": 20.45, "meltC": 644, "conduct": 3},
+      "state": "solid"
+    },
+    "94": {
+      "superpower": "The star-probe heart",
+      "facts": [
+        "Voyager, Cassini, New Horizons, and the Curiosity and Perseverance Mars rovers all run on the steady warmth of plutonium-238.",
+        "A lump of Pu-238 keeps itself hot from its own radioactivity — in the dark it glows with heat.",
+        "Named after Pluto, completing the planet chain after uranium and neptunium."
+      ],
+      "imagine": "Plutonium-238 is a pocket sun for robots — on worlds where sunlight is too weak, space probes carry their own tiny star.",
+      "origin": "First made in 1940–41 by Glenn Seaborg's team at Berkeley. Its discovery was kept secret until after World War II.",
+      "trivia": [
+        "Voyager 1 has been running on plutonium warmth for nearly 50 years — it's now the farthest human-made object ever.",
+        "NASA restarted Pu-238 production in the 2010s because space missions need it."
+      ],
+      "uses": ["Deep-space probe power", "Mars rovers"],
+      "props": {"hardness": null, "density": 19.85, "meltC": 640, "conduct": 2},
+      "state": "solid"
+    },
+    "95": {
+      "superpower": "The smoke detective in your hallway",
+      "facts": [
+        "Almost every home has americium: a sealed speck of americium-241 inside smoke detectors helps sense smoke particles instantly.",
+        "The amount is tiny and safely sealed — it quietly protects families for years (though old detectors belong at recycling centers, never in the trash).",
+        "It's named after the Americas, mirroring europium's naming after Europe."
+      ],
+      "imagine": "Americium is the night guard who never sleeps — standing watch on your ceiling, sniffing the air for the first hint of smoke.",
+      "origin": "Made in 1944 by Glenn Seaborg's team. Its existence was first announced not in a science journal — but on a children's radio quiz show in 1945!",
+      "trivia": [
+        "A kid on the 'Quiz Kids' radio show asked Seaborg if new elements had been found — and he said yes, revealing americium and curium to the world.",
+        "Americium is probably the synthetic element you live closest to."
+      ],
+      "uses": ["Smoke detectors", "Industrial gauges"],
+      "props": {"hardness": null, "density": 13.69, "meltC": 1176, "conduct": 2},
+      "state": "solid"
+    },
+    "96": {
+      "superpower": "The Mars rock zapper",
+      "facts": [
+        "Curium powered the instruments that analyzed rocks on Mars: its particles bombard a rock, and the echo reveals which elements are inside.",
+        "It's named to honor Marie and Pierre Curie, the pioneers of radioactivity.",
+        "Curium is so radioactive that a sample glows in the dark."
+      ],
+      "imagine": "Curium is the family torch passed on: the Curies studied the glow of atoms, and now their element makes rocks on Mars confess their secrets.",
+      "origin": "Made in 1944 by Seaborg's team (just before americium, though announced together on that same radio show).",
+      "trivia": [
+        "Mars rovers Spirit, Opportunity, and Curiosity all carried curium in their rock-analyzing instruments.",
+        "Its glow is an eerie deep red-violet."
+      ],
+      "uses": ["Mars rover instruments", "Element analysis"],
+      "props": {"hardness": null, "density": 13.51, "meltC": 1345, "conduct": 2},
+      "state": "solid"
+    },
+    "97": {
+      "superpower": "The town with its name on the map",
+      "facts": [
+        "Berkelium is named after Berkeley, California — the town whose lab made it in 1949, echoing how terbium was named after Ytterby.",
+        "The world produces only tiny pinches of berkelium, and only in a couple of special reactors.",
+        "Its main job: being the target material that let scientists create element 117, tennessine."
+      ],
+      "imagine": "Berkelium is the rare stamp collectors trade only to make something rarer still — scientists saved up berkelium for years just to build a brand-new element.",
+      "origin": "Created by Seaborg, Ghiorso, and Thompson in 1949. The naming series runs: americium (continent), curium (people), berkelium (town).",
+      "trivia": [
+        "It took ~250 days of reactor time to make the berkelium used to discover tennessine.",
+        "Fewer than a few grams exist at any time."
+      ],
+      "uses": ["Making new elements", "Research"],
+      "props": {"hardness": null, "density": 14.78, "meltC": 986, "conduct": 2},
+      "state": "solid"
+    },
+    "98": {
+      "superpower": "The neutron cannon",
+      "facts": [
+        "Californium-252 sprays neutrons — used to kick-start nuclear reactors, find hidden explosives, and scan for gold and oil deep underground.",
+        "It's one of the most expensive substances ever sold: on the order of tens of millions of dollars per gram.",
+        "It completes the naming chain: element for the state of California."
+      ],
+      "imagine": "Californium is a tiny neutron flashlight — point it at the ground and it lights up treasures (and troubles) hiding meters deep.",
+      "origin": "Made in 1950 at Berkeley by Seaborg's team — the sixth synthetic element from that legendary lab.",
+      "trivia": [
+        "Neutron probes with californium can find water in soil for farming.",
+        "A few micrograms is a typical 'large' order."
+      ],
+      "uses": ["Starting reactors", "Finding gold and oil", "Airport security research"],
+      "props": {"hardness": null, "density": 15.1, "meltC": 900, "conduct": 2},
+      "state": "solid"
+    },
+    "99": {
+      "superpower": "Born in a fireball",
+      "facts": [
+        "Einsteinium was discovered in the debris of the first hydrogen bomb test in 1952 — scientists found a brand-new element in the fallout dust.",
+        "The discovery was kept top secret for three years.",
+        "It's named for Albert Einstein, and it glows blue from its own radioactivity."
+      ],
+      "imagine": "Einsteinium is the phoenix of the elements — born inside the most violent fireball humans ever made, and named after the gentlest genius.",
+      "origin": "Identified by Albert Ghiorso's team in filter papers from planes that flew through the 1952 'Ivy Mike' test cloud.",
+      "trivia": [
+        "In 2021, scientists finally measured basic chemistry of einsteinium with less than 250 nanograms.",
+        "It has never had a practical use — pure discovery science."
+      ],
+      "uses": ["Pure research", "Making heavier elements"],
+      "props": {"hardness": null, "density": 8.84, "meltC": 860, "conduct": 2},
+      "state": "solid"
+    },
+    "100": {
+      "superpower": "The reactor's last stop",
+      "facts": [
+        "Fermium also emerged from that 1952 hydrogen-bomb debris, named for nuclear pioneer Enrico Fermi.",
+        "It's the heaviest element that can still be made in a nuclear reactor — everything beyond needs an atom-smashing accelerator.",
+        "No one has ever seen a piece of fermium; it's studied atom by atom."
+      ],
+      "imagine": "Fermium is the last train station on the reactor line — to travel any further into the table, you must switch to the particle-accelerator express.",
+      "origin": "Discovered by the same secret 1952–53 fallout studies as einsteinium; announced in 1955.",
+      "trivia": [
+        "Fermi built the world's first nuclear reactor under a university football stand in 1942.",
+        "About 20 atoms per quintillion in the bomb debris was enough to prove fermium existed."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
+    },
+    "101": {
+      "superpower": "One atom at a time",
+      "facts": [
+        "Mendelevium was the first element discovered literally one atom at a time — the first experiment made just 17 atoms.",
+        "It's named after Dmitri Mendeleev, the inventor of the periodic table itself.",
+        "Scientists proved it existed by catching single atoms and watching each one decay."
+      ],
+      "imagine": "Mendelevium is the thank-you card of the periodic table — element 101, addressed to the man who drew the map, delivered 17 atoms at a time.",
+      "origin": "Made in 1955 at Berkeley by Ghiorso, Seaborg and team, firing helium nuclei at einsteinium — counting successes on a literal chart recorder ping.",
+      "trivia": [
+        "Naming it after a Russian scientist during the Cold War was a deliberate gesture of scientific friendship.",
+        "The team celebrated each created atom individually."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
+    },
+    "102": {
+      "superpower": "The disputed prize",
+      "facts": [
+        "Nobelium is named for Alfred Nobel — inventor of dynamite and founder of the Nobel Prizes.",
+        "Three different labs (in Sweden, the USA, and the USSR) claimed its discovery — the argument lasted decades.",
+        "The name stuck even though the first claim turned out to be wrong."
+      ],
+      "imagine": "Nobelium is the trophy three teams grabbed at once — the referee took 30 years to decide, and by then everyone had engraved the same name on it.",
+      "origin": "First convincing production: Dubna, Russia, in the 1960s; official credit sorted out only in the 1990s.",
+      "trivia": [
+        "Element-naming disputes of this era are called the 'Transfermium Wars' — fought with journals, not weapons.",
+        "Its most stable atoms last under an hour."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
+    },
+    "103": {
+      "superpower": "The row closer",
+      "facts": [
+        "Lawrencium completes the actinide row — after it, the table returns to the main grid.",
+        "It honors Ernest Lawrence, inventor of the cyclotron — the original atom-smashing machine that made element hunting possible.",
+        "Its longest-lived atoms survive about 10 hours; most last minutes."
+      ],
+      "imagine": "Lawrencium is the closing act of the atomic-age orchestra — it takes a bow for the whole bottom row, holding the inventor of the instrument's name.",
+      "origin": "First made in 1961 at Berkeley — in a lab named after Lawrence, using the machine family he invented.",
+      "trivia": [
+        "Cyclotrons that Lawrence pioneered now treat cancer patients in hospitals worldwide.",
+        "Chemists have managed to study lawrencium chemistry a few atoms at a time."
+      ],
+      "uses": ["Pure research", "Testing the edges of the periodic table"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
     }
   }
 }

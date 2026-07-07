@@ -133,6 +133,27 @@
       "emoji": "🔦",
       "tagline": "The elements that amplify the internet, time the universe, and scan your bones.",
       "elements": [67, 68, 69, 70, 71]
+    },
+    {
+      "id": "atomic",
+      "title": "The Atomic Age",
+      "emoji": "⚛️",
+      "tagline": "Glowing pioneers, planet names, and the power pellet that changed the world.",
+      "elements": [89, 90, 91, 92, 93]
+    },
+    {
+      "id": "starmakers",
+      "title": "The Star Makers",
+      "emoji": "🌠",
+      "tagline": "Elements built by humans — now powering space probes and guarding your ceiling.",
+      "elements": [94, 95, 96, 97, 98]
+    },
+    {
+      "id": "vanishing",
+      "title": "The Vanishing Five",
+      "emoji": "⏳",
+      "tagline": "Born in fireballs and counted atom by atom — science at its absolute edge.",
+      "elements": [99, 100, 101, 102, 103]
     }
   ]
 }
