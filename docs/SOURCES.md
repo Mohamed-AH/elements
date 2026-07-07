@@ -259,7 +259,28 @@ electronics, Paris green history, Albertus Magnus ~1250 [RSC]. Se
 photoconductivity (xerography), Berzelius 1817, Brazil nuts, red glass,
 Selene naming [RSC].
 
-## Field-by-field uncertainty summary
+### Phase C — heavy alkali & alkaline earth (Rb, Sr, Cs, Ba, Fr, Ra)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 37 | Rb | 1.53 | 39 | 0.3 | melt 39.3 [CRC] |
+| 38 | Sr | 2.64 | 777 | 1.5 | [CRC] |
+| 55 | Cs | 1.93 | 28 | 0.2 | melt 28.5 [CRC] |
+| 56 | Ba | 3.62 | 727 | 1.25 | [CRC] |
+| 87 | Fr | null | null | null | never isolated in weighable amounts; Fr-223 half-life 22 min; crustal inventory ~tens of grams |
+| 88 | Ra | 5.5 | 700 | null | [CRC]; Ra-226 half-life 1600 y |
+
+Claims: Rb spectroscopic discovery 1861 Bunsen/Kirchhoff, *rubidus* red
+lines, GPS rubidium clocks [RSC/NIST]. Sr Strontian (Scotland) naming, red
+pyrotechnics, SrAl₂O₄ glow pigments, bone chemistry, CRT X-ray blocking
+[RSC]. Cs SI second = 9,192,631,770 Cs-133 oscillations (BIPM), golden
+color, melt 28.5 °C, first spectroscope discovery 1860, *caesius* [RSC/BIPM].
+Ba *barys* (heavy), BaSO₄ contrast meals (insoluble → safe), green
+fireworks, Davy 1808, Bologna stone [RSC]. Fr Perey 1939 (Curie's
+assistant), last naturally-discovered element, 22-min half-life, first
+woman in French Academy of Sciences [RSC]. Ra Curies 1898, ~1M× uranium
+activity, radioluminescence, dial-painter history (framed as safety
+lesson), Curie's radioactive notebooks, dual Nobels [RSC].
 
 | Where | Field | Status |
 |---|---|---|

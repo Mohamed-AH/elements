@@ -617,6 +617,40 @@
       "props": {"hardness": null, "density": 0.0037, "meltC": -157, "conduct": 0},
       "state": "gas"
     },
+    "37": {
+      "superpower": "The clock keeper",
+      "facts": [
+        "Rubidium atomic clocks ride on GPS satellites — your map app works because rubidium atoms tick with incredible steadiness.",
+        "It's even more reactive than potassium: pure rubidium must be sealed away from air and water.",
+        "It was discovered through a spectroscope — spotted by the deep red lines in its light, which gave it its name (rubidus = deep red)."
+      ],
+      "imagine": "Rubidium is the world's most reliable drummer — it never, ever misses a beat, so we let it keep time for the whole planet.",
+      "origin": "Discovered in 1861 by Bunsen and Kirchhoff (of Bunsen-burner fame) using their brand-new invention: reading elements from the colors of their light.",
+      "trivia": [
+        "Rubidium burns with a red-violet flame.",
+        "It's soft enough to cut with a butter knife — but you'd better not, because it ignites in air."
+      ],
+      "uses": ["Atomic clocks", "GPS satellites", "Special glass"],
+      "props": {"hardness": 0.3, "density": 1.53, "meltC": 39, "conduct": 6},
+      "state": "solid"
+    },
+    "38": {
+      "superpower": "The crimson glow",
+      "facts": [
+        "The brilliant crimson-red bursts in fireworks are strontium salts burning.",
+        "Glow-in-the-dark toys and stickers often use strontium aluminate — it soaks up light, then glows for hours.",
+        "Your bones treat strontium like calcium's cousin and happily store tiny amounts of it."
+      ],
+      "imagine": "Strontium is the firework artist who paints the sky red, then heads home to charge up your glow stars.",
+      "origin": "Named after Strontian, a small village in Scotland where its mineral was first found in 1790.",
+      "trivia": [
+        "It's one of the few elements named after a place in Scotland.",
+        "Old TV screens contained strontium to block stray X-rays."
+      ],
+      "uses": ["Red fireworks", "Glow-in-the-dark toys", "Special ceramics"],
+      "props": {"hardness": 1.5, "density": 2.64, "meltC": 777, "conduct": 5},
+      "state": "solid"
+    },
     "47": {
       "superpower": "The champion conductor",
       "facts": [
@@ -684,6 +718,40 @@
       "uses": ["Spacecraft ion engines", "Bright headlights", "Movie projector lamps"],
       "props": {"hardness": null, "density": 0.0059, "meltC": -112, "conduct": 0},
       "state": "gas"
+    },
+    "55": {
+      "superpower": "The second's heartbeat",
+      "facts": [
+        "One SECOND is officially defined by cesium: the time it takes a cesium atom to vibrate exactly 9,192,631,770 times.",
+        "It's one of the very few metals with a golden color, and it melts on a hot day (28 °C).",
+        "It's the most reactive metal you could ever actually keep in a lab (its cousin francium is too rare to bottle)."
+      ],
+      "imagine": "Cesium is the golden metronome of the universe — every clock, phone, and satellite on Earth ultimately checks its beat.",
+      "origin": "Discovered in 1860 by Bunsen and Kirchhoff — the first element ever found with a spectroscope. Named from 'caesius', Latin for sky-blue, after its bright blue spectral lines.",
+      "trivia": [
+        "Cesium atomic clocks won't drift by even one second in millions of years.",
+        "Drop cesium in water and it explodes instantly — which is why nobody ever does (except in sealed lab demos!)."
+      ],
+      "uses": ["Atomic clocks", "Defining the second", "Drilling sensors"],
+      "props": {"hardness": 0.2, "density": 1.93, "meltC": 28, "conduct": 5},
+      "state": "solid"
+    },
+    "56": {
+      "superpower": "The X-ray milkshake",
+      "facts": [
+        "Doctors give patients a perfectly safe 'barium meal' — a thick barium drink that makes the stomach and intestines show up clearly on X-rays.",
+        "Barium's name comes from the Greek 'barys', meaning heavy.",
+        "Green fireworks get their color from barium salts."
+      ],
+      "imagine": "Barium is the stage crew that paints your insides with highlighter so the X-ray camera can see the show.",
+      "origin": "Isolated in 1808 by Humphry Davy — the same electricity wizard who first separated sodium, potassium, calcium, and magnesium.",
+      "trivia": [
+        "The safe barium drink is barium sulfate — it passes straight through without dissolving.",
+        "A barium compound was part of the first known glow-in-the-dark material, the 'Bologna stone' of the 1600s."
+      ],
+      "uses": ["X-ray imaging drinks", "Green fireworks", "Drilling muds"],
+      "props": {"hardness": 1.25, "density": 3.62, "meltC": 727, "conduct": 4},
+      "state": "solid"
     },
     "74": {
       "superpower": "The unmeltable",
@@ -786,6 +854,40 @@
       "uses": ["Home safety testing (knowing about it!)", "Tracing underground air and water", "Earthquake research"],
       "props": {"hardness": null, "density": 0.0097, "meltC": -71, "conduct": 0},
       "state": "gas"
+    },
+    "87": {
+      "superpower": "The 22-minute wonder",
+      "facts": [
+        "Francium is the most unstable element found in nature — half of any francium disappears every 22 minutes.",
+        "At any moment, Earth's entire crust holds only a small pinch of it.",
+        "It was discovered in 1939 by Marguerite Perey, a scientist who started as Marie Curie's lab assistant at age 19 — she named it after France."
+      ],
+      "imagine": "Francium is a snowman in the summer sun — real, but melting away almost as fast as it appears.",
+      "origin": "The last element ever discovered in nature (rather than made by machines). Marguerite Perey found it hiding in the decay of actinium.",
+      "trivia": [
+        "Scientists have never gathered enough francium to see it with the naked eye.",
+        "Perey became the first woman elected to the French Academy of Sciences."
+      ],
+      "uses": ["Pure science research", "Testing theories about atoms"],
+      "props": {"hardness": null, "density": null, "meltC": null, "conduct": null},
+      "state": "solid"
+    },
+    "88": {
+      "superpower": "The glowing pioneer",
+      "facts": [
+        "Radium was discovered in 1898 by Marie and Pierre Curie, who worked through tonnes of rock to collect a tiny speck of it.",
+        "It's about a million times more radioactive than uranium, and it glows a ghostly pale blue-green.",
+        "A century ago it was painted on watch dials before people understood radiation — a sad lesson that made science much safer today."
+      ],
+      "imagine": "Radium is the too-bright firefly of the elements: dazzling, famous, and handled today only by scientists in serious protective gear.",
+      "origin": "The Curies' discovery of radium (and polonium) won Marie Curie her place in history — she remains the only person with Nobel Prizes in two different sciences.",
+      "trivia": [
+        "Marie Curie's own notebooks are still radioactive and are kept in lead-lined boxes.",
+        "Radium's glow gave us the word 'radioactivity' itself — coined by Marie Curie."
+      ],
+      "uses": ["Science history", "Early cancer treatments (replaced now)"],
+      "props": {"hardness": null, "density": 5.5, "meltC": 700, "conduct": 3},
+      "state": "solid"
     }
   }
 }
