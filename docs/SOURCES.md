@@ -350,6 +350,52 @@ subsalicylate remedies, lead-replacement uses, freeze expansion [RSC/Nature 2003
 Po Curies July 1898, Poland naming as political statement, extreme
 specific activity, RTG/antistatic history, lunar-soil traces [RSC].
 
+### Phase F — lanthanides (57–71)
+
+| n | El | density | melt °C | notes |
+|---|----|---------|---------|-------|
+| 57 | La | 6.15 | 920 | hardness 2.5 [MOHS] |
+| 58 | Ce | 6.77 | 799 | hardness 2.5 [MOHS] |
+| 59 | Pr | 6.77 | 931 | [CRC] |
+| 60 | Nd | 7.01 | 1016 | [CRC] |
+| 61 | Pm | 7.26 | 1042 | radioactive; density calculated from crystal structure — **⚠ FLAG** (no bulk measurement); Pm-145 t½ 17.7 y |
+| 62 | Sm | 7.52 | 1072 | [CRC] |
+| 63 | Eu | 5.24 | 822 | [CRC] |
+| 64 | Gd | 7.90 | 1313 | [CRC] |
+| 65 | Tb | 8.23 | 1359 | [CRC] |
+| 66 | Dy | 8.55 | 1412 | [CRC] |
+| 67 | Ho | 8.80 | 1472 | [CRC] |
+| 68 | Er | 9.07 | 1529 | [CRC] |
+| 69 | Tm | 9.32 | 1545 | [CRC] |
+| 70 | Yb | 6.90 | 824 | [CRC] |
+| 71 | Lu | 9.84 | 1663 | [CRC] |
+
+Claims: La *lanthanein* (hidden), Mosander 1839, La glass optics, NiMH
+(LaNi₅) batteries, mischmetal flints [RSC]. Ce Ceres naming (1801
+asteroid), crustal abundance ≈ Cu, ferrocerium sparks, CeO₂ polishing/
+oxygen-storage catalysts [RSC/USGS]. Pr "green twin" (didymium split,
+Auer von Welsbach 1885), didymium goggles, PrMg aero alloys [RSC].
+Nd NdFeB strongest permanent magnets (1984, GM/Sumitomo), earbuds/EV/wind
+uses [RSC]. Pm only unstable lanthanide, confirmed ORNL 1945, Prometheus
+naming, crustal inventory <1 kg, historic luminous dials/RTG batteries
+[RSC]. Sm SmCo high-temp magnets, samarskite/Samarsky (first person-linked
+element name), Sm-153 palliative therapy, 1879 Boisbaudran [RSC]. Eu euro
+UV inks, red phosphor (Y₂O₃:Eu), most reactive REE, 1901 Demarçay, Europe
+naming [RSC/ECB]. Gd MRI contrast agents, highest thermal-neutron capture
+of stable elements, magnetocaloric effect, gadolinite/Gadolin naming
+[RSC]. Tb Ytterby naming, green phosphors, Terfenol-D magnetostriction
+(Navy sonar → surface speakers) [RSC]. Dy *dysprositos* (hard to get),
+Boisbaudran 1886 (~30+ separations), high-temp magnet dopant for EV/wind
+[RSC]. Ho Holmia/Stockholm, highest magnetic moment of elements, Ho:YAG
+surgical lasers, single-atom magnet memory experiments (IBM 2017) [RSC].
+Er EDFA fiber amplifiers (undersea internet), pink glass, Er:YAG
+dental/derm lasers, Mosander 1843 [RSC]. Tm least abundant stable REE,
+Tm-170 portable X-ray sources, Thule naming, Cleve 1879, still commoner
+than gold [RSC/USGS]. Yb optical lattice clocks (~10⁻¹⁸ precision, NIST),
+Ytterby fourth naming, Marignac 1878, pressure sensors [RSC/NIST].
+Lu hardest/densest REE, LYSO PET crystals, Lu-177 targeted therapy,
+Lutetia/Paris naming, ~1907 triple discovery, price >> gold [RSC].
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |

@@ -957,6 +957,261 @@
       "props": {"hardness": 1.25, "density": 3.62, "meltC": 727, "conduct": 4},
       "state": "solid"
     },
+    "57": {
+      "superpower": "The hidden one who leads",
+      "facts": [
+        "Lanthanum's name comes from Greek for 'to lie hidden' — it hid inside another element's mineral for years.",
+        "Camera and telescope lenses use lanthanum glass for extra-sharp images.",
+        "Older hybrid car batteries (nickel-metal hydride) contain kilograms of lanthanum."
+      ],
+      "imagine": "Lanthanum is the shy kid whose name got given to the whole row — the 'lanthanides' — the table's famous hidden family.",
+      "origin": "Discovered in 1839 by Carl Mosander, hiding inside cerium — the first of many rare earths found nesting inside each other like Russian dolls.",
+      "trivia": [
+        "Lighter 'flints' spark thanks to a lanthanum-cerium alloy called mischmetal.",
+        "The whole lanthanide row is named after this one element."
+      ],
+      "uses": ["Camera lenses", "Hybrid car batteries", "Lighter flints"],
+      "props": {"hardness": 2.5, "density": 6.15, "meltC": 920, "conduct": 4},
+      "state": "solid"
+    },
+    "58": {
+      "superpower": "The spark maker",
+      "facts": [
+        "Flick a lighter: that spark is cerium alloy being scratched.",
+        "Cerium isn't rare at all for a 'rare earth' — there's about as much cerium in Earth's crust as copper.",
+        "Cerium oxide helps self-cleaning ovens burn off grease and polishes glass mirror-smooth."
+      ],
+      "imagine": "Cerium is the flint-and-steel wizard of the modern world — billions of tiny fires a day start with its spark.",
+      "origin": "Discovered in 1803 and named after Ceres, the dwarf planet spotted just two years earlier — space news inspired element names even then!",
+      "trivia": [
+        "Movie 'flint' sparks in survival kits are mostly cerium.",
+        "Catalytic converters use cerium oxide to store and release oxygen."
+      ],
+      "uses": ["Lighter sparks", "Glass polishing", "Self-cleaning ovens"],
+      "props": {"hardness": 2.5, "density": 6.77, "meltC": 799, "conduct": 4},
+      "state": "solid"
+    },
+    "59": {
+      "superpower": "The glassblower's shades",
+      "facts": [
+        "Glassblowers and welders wear praseodymium-tinted goggles that filter the blinding yellow glare — while letting them see their work.",
+        "Its tongue-twister name means 'green twin' in Greek, for its green salts.",
+        "Mixed with magnesium it makes extra-strong alloys for aircraft engines."
+      ],
+      "imagine": "Praseodymium is the twin with green hair who makes sunglasses for dragons — er, glassblowers.",
+      "origin": "In 1885, chemist Carl Auer von Welsbach split the 'element' didymium into TWO new elements: the green twin (praseodymium) and the new twin (neodymium).",
+      "trivia": [
+        "Didymium glasses are still sold today for glass artists.",
+        "It colors some yellow-green glass and ceramic glazes."
+      ],
+      "uses": ["Safety goggles", "Aircraft alloys", "Glass colors"],
+      "props": {"hardness": null, "density": 6.77, "meltC": 931, "conduct": 4},
+      "state": "solid"
+    },
+    "60": {
+      "superpower": "The magnet king",
+      "facts": [
+        "Neodymium magnets are the strongest permanent magnets ever made — they're in your earbuds, phone speakers, and the motors of electric cars and wind turbines.",
+        "A coin-sized neodymium magnet can lift over a thousand times its own weight in iron.",
+        "It's the 'new twin' split from didymium in 1885."
+      ],
+      "imagine": "Neodymium is the tiny kid who wins every tug-of-war — pound for pound, no magnet on Earth pulls harder.",
+      "origin": "Separated by Carl Auer von Welsbach in 1885; the world-changing neodymium-iron-boron magnet was invented a century later, in 1984.",
+      "trivia": [
+        "Big neodymium magnets are so strong they must be shipped with special spacers.",
+        "Every modern wind turbine generator can contain hundreds of kilograms of neodymium."
+      ],
+      "uses": ["Earbuds and speakers", "Electric car motors", "Wind turbines"],
+      "props": {"hardness": null, "density": 7.01, "meltC": 1016, "conduct": 4},
+      "state": "solid"
+    },
+    "61": {
+      "superpower": "The fire-thief's ghost",
+      "facts": [
+        "Promethium is the only lanthanide with no stable atoms — all of it slowly breaks apart.",
+        "Natural promethium is vanishingly rare: Earth's crust holds barely a bag-of-sugar's worth at any moment.",
+        "It once powered glowing watch dials and tiny nuclear batteries for space probes."
+      ],
+      "imagine": "Promethium is a ghost in the rare-earth family photo — you know it belongs, but it always fades before the picture develops.",
+      "origin": "Finally confirmed in 1945 in a nuclear reactor lab, and named after Prometheus, the Titan who stole fire from the gods — a nod to the power of the atom.",
+      "trivia": [
+        "Scientists hunted for 'element 61' for decades before reactors finally made enough to prove it.",
+        "Its glow-paint days ended as safer materials arrived."
+      ],
+      "uses": ["Space battery research", "Science history"],
+      "props": {"hardness": null, "density": 7.26, "meltC": 1042, "conduct": 4},
+      "state": "solid"
+    },
+    "62": {
+      "superpower": "The heatproof magnet",
+      "facts": [
+        "Samarium-cobalt magnets stay strongly magnetic even when scorching hot — so they work inside jet engines and racing motors where neodymium gives up.",
+        "A samarium medicine (samarium-153) helps doctors ease bone pain in cancer patients.",
+        "It was the first element named (indirectly) after a person: the mineral samarskite honors a mining engineer named Samarsky."
+      ],
+      "imagine": "Samarium is the firefighter of the magnet family — when things get too hot for the magnet king, samarium walks in.",
+      "origin": "Discovered in 1879 in the mineral samarskite by Lecoq de Boisbaudran — the same scientist who found gallium.",
+      "trivia": [
+        "Samarium-cobalt magnets guided early precision electronics before neodymium existed.",
+        "Some headphones still choose samarium magnets for reliability."
+      ],
+      "uses": ["Heat-proof magnets", "Jet engine sensors", "Cancer pain medicine"],
+      "props": {"hardness": null, "density": 7.52, "meltC": 1072, "conduct": 4},
+      "state": "solid"
+    },
+    "63": {
+      "superpower": "The banknote guardian",
+      "facts": [
+        "Euro banknotes glow with secret colors under UV light thanks to europium inks — instant counterfeit protection.",
+        "Europium made the red in old TV screens and makes brilliant reds and blues in modern displays and LED bulbs.",
+        "It's the most reactive of all the rare-earth metals."
+      ],
+      "imagine": "Europium is the secret-service agent of the elements — invisible by day, glowing in coded colors under the UV flashlight.",
+      "origin": "Discovered in 1901 by Eugène-Anatole Demarçay and named after the continent of Europe.",
+      "trivia": [
+        "Shine a UV lamp on a euro note and europium lights up stars and bridges.",
+        "Without europium's red phosphor, early color TV would have looked washed out."
+      ],
+      "uses": ["Anti-counterfeit inks", "Screen colors", "LED bulbs"],
+      "props": {"hardness": null, "density": 5.24, "meltC": 822, "conduct": 4},
+      "state": "solid"
+    },
+    "64": {
+      "superpower": "The scan sharpener",
+      "facts": [
+        "Doctors inject a safe gadolinium compound before some MRI scans — it makes the pictures dramatically clearer.",
+        "Gadolinium is the neutron-absorbing champion of all stable elements, useful in reactor safety.",
+        "It warms up in a magnetic field and cools when removed — scientists are testing it for refrigerators with no gas at all."
+      ],
+      "imagine": "Gadolinium is the photographer's assistant for body scans — it holds up the reflector so every detail shines.",
+      "origin": "Named after the mineral gadolinite, which honors Johan Gadolin — the chemist who started the whole rare-earth story in 1794.",
+      "trivia": [
+        "Millions of MRI scans a year use gadolinium contrast.",
+        "Magnetic refrigeration research could one day cool your kitchen with gadolinium."
+      ],
+      "uses": ["MRI contrast", "Reactor safety", "Magnetic cooling research"],
+      "props": {"hardness": null, "density": 7.9, "meltC": 1313, "conduct": 4},
+      "state": "solid"
+    },
+    "65": {
+      "superpower": "The green glow-up",
+      "facts": [
+        "Terbium phosphors make the bright green in screens and energy-saving lamps.",
+        "The alloy 'Terfenol-D' stretches and squeezes in magnetic fields — it can turn a window or table into a loudspeaker!",
+        "It's another child of the famous Ytterby quarry in Sweden."
+      ],
+      "imagine": "Terbium is the special-effects artist: green neon glow by day, making furniture sing by night.",
+      "origin": "Discovered in 1843 by Carl Mosander in — where else — the minerals from Ytterby, the tiny village that named four elements.",
+      "trivia": [
+        "Terfenol-D was invented for Navy sonar.",
+        "Terbium green + europium red + blue phosphors = the white light of fluorescent lamps."
+      ],
+      "uses": ["Screen greens", "Vibrating speakers", "Low-energy lamps"],
+      "props": {"hardness": null, "density": 8.23, "meltC": 1359, "conduct": 4},
+      "state": "solid"
+    },
+    "66": {
+      "superpower": "Hard to get, hard to stop",
+      "facts": [
+        "Dysprosium's name means 'hard to get' in Greek — its discoverer needed dozens of tries to separate it.",
+        "Added to neodymium magnets, dysprosium keeps them working at the high temperatures inside electric car motors.",
+        "It's one of the most magnetizable elements in existence."
+      ],
+      "imagine": "Dysprosium is the rare teammate every electric car is searching for — hard to recruit, impossible to replace.",
+      "origin": "Discovered in 1886 by Lecoq de Boisbaudran (his third element!) after more than 30 painstaking separation attempts.",
+      "trivia": [
+        "Demand for dysprosium is a big reason scientists work on magnet recycling.",
+        "It shares the 'most magnetic' crown with its neighbor holmium at low temperatures."
+      ],
+      "uses": ["Electric car magnets", "Wind turbines", "Magnet research"],
+      "props": {"hardness": null, "density": 8.55, "meltC": 1412, "conduct": 4},
+      "state": "solid"
+    },
+    "67": {
+      "superpower": "The magnetic maximum",
+      "facts": [
+        "Holmium has the strongest magnetic response of any element — scientists use it to concentrate magnetic fields to record strengths.",
+        "Holmium lasers are surgical stars: precise, gentle cutters used in operations every day.",
+        "It's named after Holmia — Latin for Stockholm."
+      ],
+      "imagine": "Holmium is the lens for magnetism itself — put it in a magnetic field and it focuses the force like a magnifying glass focuses sunlight.",
+      "origin": "Discovered in 1878–79 by Swedish and Swiss chemists working through the endless surprises inside Ytterby-style minerals.",
+      "trivia": [
+        "Single holmium atoms have been tested as the world's smallest magnetic memory bits.",
+        "Holmium-doped crystals power some eye-safe laser rangefinders."
+      ],
+      "uses": ["Surgical lasers", "Super-magnets", "Atomic memory research"],
+      "props": {"hardness": null, "density": 8.8, "meltC": 1472, "conduct": 4},
+      "state": "solid"
+    },
+    "68": {
+      "superpower": "The internet's amplifier",
+      "facts": [
+        "The internet literally runs on erbium: inside undersea fiber-optic cables, erbium-doped sections boost the light signal so your video call can cross an ocean.",
+        "Erbium gives glass and cubic zirconia a soft pink tint.",
+        "Ytterby child number four — the quarry that keeps on giving."
+      ],
+      "imagine": "Erbium is the relay runner of the internet — every few dozen kilometers under the sea, it grabs the fading light and sprints it forward at full brightness.",
+      "origin": "Discovered by Mosander in 1843 in Ytterby minerals, alongside terbium — he found both in one incredible year.",
+      "trivia": [
+        "Without erbium amplifiers, intercontinental internet would need bulky electronics every few kilometers.",
+        "Erbium lasers are used by dentists and skin doctors."
+      ],
+      "uses": ["Undersea internet cables", "Pink glass", "Medical lasers"],
+      "props": {"hardness": null, "density": 9.07, "meltC": 1529, "conduct": 4},
+      "state": "solid"
+    },
+    "69": {
+      "superpower": "The portable X-ray",
+      "facts": [
+        "Thulium is the rarest of the stable rare earths — yet it has a neat job: powering portable X-ray machines that work without wall electricity.",
+        "Activated thulium glows blue under UV light.",
+        "It's named after Thule, the mythical far-north land, honoring Scandinavia."
+      ],
+      "imagine": "Thulium is the field medic of the elements — it carries a whole X-ray machine in a suitcase to wherever it's needed.",
+      "origin": "Discovered in 1879 by Per Teodor Cleve in Sweden — yet another element teased out of the tangled rare-earth minerals.",
+      "trivia": [
+        "Euro banknotes' blue UV glow comes partly from thulium.",
+        "Even the 'rarest' rare earth is more common than gold in Earth's crust."
+      ],
+      "uses": ["Portable X-ray sources", "Banknote inks", "Lasers"],
+      "props": {"hardness": null, "density": 9.32, "meltC": 1545, "conduct": 4},
+      "state": "solid"
+    },
+    "70": {
+      "superpower": "The perfect timekeeper",
+      "facts": [
+        "Ytterbium optical clocks are among the most precise machines ever built — they wouldn't drift by one second in billions of years.",
+        "Under high pressure, ytterbium's electrical behavior flips — useful for stress sensors.",
+        "It's the fourth and final element named directly after the village of Ytterby."
+      ],
+      "imagine": "If cesium is the world's drummer, ytterbium is the orchestra conductor tuning time itself — a clock so perfect the universe would wear out first.",
+      "origin": "Discovered in 1878 by Jean Charles Galissard de Marignac, closing the circle on Ytterby's four-element legacy.",
+      "trivia": [
+        "Scientists compare ytterbium clocks across continents to test Einstein's theories.",
+        "One tiny Swedish quarry named yttrium, terbium, erbium, and ytterbium."
+      ],
+      "uses": ["Ultra-precise clocks", "Quantum computing research", "Stress sensors"],
+      "props": {"hardness": null, "density": 6.9, "meltC": 824, "conduct": 4},
+      "state": "solid"
+    },
+    "71": {
+      "superpower": "The last and toughest",
+      "facts": [
+        "Lutetium is the hardest and densest of all the rare earths — the family's final member.",
+        "Hospitals use lutetium crystals (LYSO) in PET scanners to catch flashes of light from inside the body, and lutetium-177 is a modern targeted cancer therapy.",
+        "It's one of the most expensive metals you can buy."
+      ],
+      "imagine": "Lutetium is the family's quiet oldest sibling — last in line, toughest of all, and working the night shift in hospital scanners.",
+      "origin": "Discovered independently by three chemists around 1907; the name comes from Lutetia, the Roman name for Paris.",
+      "trivia": [
+        "Lutetium-based therapy (Lu-177) is one of the newest tools against certain cancers.",
+        "Pure lutetium costs several times more than gold."
+      ],
+      "uses": ["PET scanners", "Cancer therapy", "Catalysts"],
+      "props": {"hardness": null, "density": 9.84, "meltC": 1663, "conduct": 4},
+      "state": "solid"
+    },
     "72": {
       "superpower": "The identical twin",
       "facts": [

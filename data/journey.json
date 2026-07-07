@@ -112,6 +112,27 @@
       "emoji": "🏋️",
       "tagline": "Rainbow crystals, phantom poisons, and Marie Curie's first discovery.",
       "elements": [81, 83, 84]
+    },
+    {
+      "id": "rare1",
+      "title": "Rare Earths: The Magnet Makers",
+      "emoji": "🧲",
+      "tagline": "One tiny Swedish quarry, fifteen hidden elements — starting with the strongest magnets on Earth.",
+      "elements": [57, 58, 59, 60, 61]
+    },
+    {
+      "id": "rare2",
+      "title": "Rare Earths: The Glow Team",
+      "emoji": "🌟",
+      "tagline": "Banknote guardians, MRI helpers, and phosphors that light every screen.",
+      "elements": [62, 63, 64, 65, 66]
+    },
+    {
+      "id": "rare3",
+      "title": "Rare Earths: The Laser Crew",
+      "emoji": "🔦",
+      "tagline": "The elements that amplify the internet, time the universe, and scan your bones.",
+      "elements": [67, 68, 69, 70, 71]
     }
   ]
 }
