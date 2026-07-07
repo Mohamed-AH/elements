@@ -96,26 +96,17 @@ lab/badges grids widened; experiment detail = `.exp-cols` 35/65 recipe.
 SW CACHE_VERSION v5. User's reference screenshots are the root
 `Screenshot 2026-07-07 *.png` files (commit 61ca0ca).
 
-## Games & Lab expansion (started 2026-07-07) — resume at first unticked
+## Games & Lab expansion — COMPLETE (2026-07-07)
 
-Rule: every clue/pair/experiment is a factual claim → cite in SOURCES.md
-"Games & Lab expansion" section. New quiz games derive from already-cited
-data (elements.json categories, kid-content props) — no new facts.
-
-- [ ] Phase 1: detective 10→24 (+14 cases), match 12→24 (+12 pairs) in
-      games.json (same schema); SOURCES rows; validate; commit+push.
-- [ ] Phase 2: experiments 6→12 (+6: cabbage-indicator, lemon-battery,
-      invisible-ink, rubber-egg, balloon-gas, salt-float) — all classic,
-      household-safe, grown-up-gated; SOURCES rows; validate; commit+push.
-- [ ] Phase 3: two new games in js/games.js — Family Finder (#/family,
-      category quiz over all 118, options from CATEGORIES) and Heavier or
-      Lighter (#/heavier, density duel over the 97 measurable, ratio ≥1.15
-      to avoid unfair near-ties). Play hub cards, routes, progress fields
-      (familyCorrect, heavierBest — additive, backward compatible), badges
-      6→8 (Family Expert: 15 correct sorts; Density Genius: streak of 8).
-      SW v6. Commit+push.
-- [ ] Phase 4: Chromium verify (play both games, new detective case count,
-      offline), README games section, CLAUDE.md close-out, commit+push.
+All 4 phases done + pushed: detective 24 cases, match 24 pairs,
+experiments 12, new games Family Finder (#/family, all 118 via
+elements.json categories) and Heavier or Lighter (#/heavier, 97
+measurable, ratio ≥1.15 guard), badges 8 (familyCorrect ≥15,
+heavierBest ≥8 — additive progress fields), Play hub 5 cards, SW v6.
+Authenticity rule held: every new clue/pair/experiment cited in
+SOURCES.md "Games & Lab expansion"; quiz games derive from already-cited
+data so they introduce no new facts. Verified in Chromium (both games
+playable, counts correct, offline OK, zero console errors).
 
 ## Progress log
 

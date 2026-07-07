@@ -28,14 +28,21 @@ after the first visit.
 - **Compare Lab** — side-by-side property bars (hardness, density, melting
   point, conductivity) that teach kids to think like material engineers:
   *why is a plane aluminum and not lead?*
-- **Material Detective 🔍** — deduce a mystery material from three clues.
-  Wrong guesses unlock hints; nothing punishes.
-- **Material Match 🧠** — pair elements with the objects they're famous for.
+- **Material Detective 🔍** — 24 mysteries: deduce a material from three
+  clues. Wrong guesses unlock hints; nothing punishes.
+- **Material Match 🧠** — pair elements with the objects they're famous for
+  (24-pair pool, 6 per round).
+- **Family Finder 🎨** — sort any of the 118 elements into its family;
+  questions derive straight from the verified dataset.
+- **Heavier or Lighter 🏋️** — density-streak duels between the 97
+  measurable elements (near-tie pairs excluded so answers are always fair).
 - **Crystal viewer** — spin simplified 3D lattices (salt cube, diamond,
   graphite sheets, iron) rendered on Canvas 2D.
-- **The Lab 🧪** — six parent-approved kitchen experiments, each gated with
-  "Ask a grown-up first" and a safety note.
-- **Badges 🏅** — progress tracking stored only on the device.
+- **The Lab 🧪** — twelve parent-approved kitchen experiments (classic,
+  documented demos only), each gated with "Ask a grown-up first" and a
+  safety note.
+- **Badges 🏅** — eight badges tracking exploration, games, and lab reading;
+  stored only on the device.
 
 Learning goals: recognize major elements and their signature properties,
 connect elements to everyday materials, and build recall through play.
