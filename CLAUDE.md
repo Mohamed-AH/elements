@@ -41,7 +41,7 @@ Key facts for future sessions:
    bordered cards, journey/intro components). Table itself untouched.
 6. **Verified + shipped** — smoke tests + offline pass; README updated.
 
-## Constraints (unchanged — read before editing)
+## Constraints (read before editing)
 
 - **JSON schema frozen:** never change field names/structure of data/*.json;
   citations only in docs/SOURCES.md; new data = new files.
@@ -49,11 +49,22 @@ Key facts for future sessions:
   first"; hazards framed "never do this", never as activities.
 - **Accuracy:** facts true; metaphors only in `imagine`; uncertain values
   flagged in SOURCES.md, never guessed silently.
-- **Tech:** zero deps, no build, offline-first, < 200 KB, no external
-  fonts/CDNs. Bump `CACHE_VERSION` in sw.js whenever any precached file
-  changes (currently **v2**), and add new files to its PRECACHE list.
+- **Tech (frontend):** zero deps, no build, offline-first, < 200 KB, no
+  external fonts/CDNs (exception: Google Identity Services script, loaded
+  on demand, online + server-configured only). Bump `CACHE_VERSION` in
+  sw.js whenever any precached file changes (currently **v7**), and add new
+  files to its PRECACHE list.
+- **Tech (server, amended 2026-07-07):** server/ is optional; only dep is
+  `mongodb` (dynamically imported; file store without it). The app must
+  ALWAYS work fully on pure-static hosting.
+- **Privacy (amended 2026-07-07):** LOCAL-FIRST. No accounts/tracking by
+  default; localStorage is source of truth; merge-on-login = union/max
+  (never loses progress). Accounts = school-managed, admin-added rosters,
+  no self-signup; only active when GOOGLE_CLIENT_ID is configured.
 - **Process:** `node tools/validate-data.mjs` after any data edit; commit +
   push per phase; smoke-test all tabs + offline before finishing.
+  ⚠ NEVER `rm -rf data` — that's the app's dataset (server store lives in
+  server/data). This mistake happened once; restored from git.
 
 ## Preserved decisions
 
@@ -108,12 +119,16 @@ SOURCES.md "Games & Lab expansion"; quiz games derive from already-cited
 data so they introduce no new facts. Verified in Chromium (both games
 playable, counts correct, offline OK, zero console errors).
 
-## Auth + Render + Admin dashboard (started 2026-07-07) — resume at first unticked
+## Auth + Render + Admin dashboard — COMPLETE (2026-07-07)
 
-Principle: LOCAL-FIRST, CLOUD-OPTIONAL. Static PWA keeps working unchanged
-(offline, localStorage, no accounts). Server features activate only when
-served by server/index.mjs with GOOGLE_CLIENT_ID set. localStorage stays
-the source of truth; login MERGES (union arrays, max counters).
+All phases done + pushed. server/index.mjs (Google auth via tokeninfo,
+HMAC sessions, progress API, roster; MongoDB Atlas via MONGODB_URI or
+file store), js/auth.js (chip, GIS on demand, debounced sync,
+merge-on-login), js/admin.js (#/admin dashboard: roster CRUD + stats +
+per-student table), render.yaml, docs/DEPLOY.md, docs/LAUNCH.md (B2C+B2B
+copy), SW v7 (/api/ + cross-origin bypass). E2E verified with
+DEV_FAKE_AUTH: sync, cross-device merge, dashboard metrics, non-admin
+guard, static-mode regression (chip hidden, app fully functional).
 
 - [ ] Phase 1: server/index.mjs (zero npm deps: http/crypto/fetch) —
       static serving, POST /api/auth/google (tokeninfo verify, aud check),

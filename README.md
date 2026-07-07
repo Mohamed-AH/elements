@@ -43,6 +43,12 @@ after the first visit.
   safety note.
 - **Badges 🏅** — eight badges tracking exploration, games, and lab reading;
   stored only on the device.
+- **Optional accounts & school dashboard 🏫** — when deployed with the
+  companion server (see [docs/DEPLOY.md](docs/DEPLOY.md)): Google sign-in,
+  cross-device progress sync (local-first — localStorage always works and
+  merging never loses progress), and an institution dashboard where admins
+  add students and monitor class-wide metrics. Pure-static hosting keeps
+  all of this hidden and the app 100% account-free.
 
 Learning goals: recognize major elements and their signature properties,
 connect elements to everyday materials, and build recall through play.
@@ -90,10 +96,15 @@ You only need a static file server (service workers require `http(s)`, not `file
 # any of these:
 python3 -m http.server 8000
 npx serve .
+# or the companion server (adds the optional auth/sync/dashboard APIs):
+node server/index.mjs
 ```
 
-Then open `http://localhost:8000`. There are no build commands, environment
-variables, or dependencies.
+Then open `http://localhost:8000` (or `:8080` for the companion server).
+The frontend has no build commands, environment variables, or dependencies;
+the optional server's single dependency (`mongodb`) is only needed when
+deploying with MongoDB — see [docs/DEPLOY.md](docs/DEPLOY.md) for Render
+free-tier + MongoDB Atlas instructions.
 
 **Testing:**
 
