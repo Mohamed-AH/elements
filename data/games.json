@@ -427,6 +427,98 @@
         "Which nail rusts first? Which stays shiny?"
       ],
       "science": "Rust needs iron + water + oxygen. The oil coat blocks water and oxygen — exactly like the zinc coating engineers put on real steel (galvanizing). This is material engineering: stopping nature from eating your bridge!"
+    },
+    {
+      "id": "cabbage-indicator",
+      "title": "Purple Cabbage Color Magic",
+      "emoji": "🥬",
+      "teaches": "Acids and bases — and how chemists detect them",
+      "safety": "A grown-up makes the hot cabbage water. Don't drink any of the mixtures.",
+      "materials": ["Red (purple) cabbage", "Hot water (grown-up's job)", "A few clear cups", "Vinegar", "Baking soda", "Lemon juice (optional)"],
+      "steps": [
+        "Have a grown-up chop some red cabbage and soak it in hot water for 10 minutes — the water turns purple.",
+        "Pour a little purple 'potion' into each cup.",
+        "Add a splash of vinegar to one cup: it turns pink-red!",
+        "Stir baking soda into another: it turns blue-green!",
+        "Test other safe kitchen liquids and line up your color rainbow."
+      ],
+      "science": "Cabbage juice contains a pigment that changes color with acids and bases. Acids are molecules that give away hydrogen (element 1!) particles — the more they give, the redder the potion. Chemists use indicator dyes exactly like this."
+    },
+    {
+      "id": "lemon-battery",
+      "title": "Lemon Power Plant",
+      "emoji": "🍋",
+      "teaches": "Electricity from chemistry — how batteries really work",
+      "safety": "Safe, but don't eat the lemons afterward. A grown-up helps push in the metal pieces.",
+      "materials": ["3–4 fresh lemons", "3–4 copper coins or copper strips", "3–4 galvanized (zinc-coated) nails", "Wires with clips (from a hobby kit)", "A small LED"],
+      "steps": [
+        "Roll each lemon on the table to get the juice flowing inside.",
+        "Push a copper coin and a zinc nail into each lemon — not touching each other.",
+        "Use the wires to connect copper from one lemon to zinc on the next, in a chain.",
+        "Connect the last free copper and zinc to the LED's legs.",
+        "Dim the lights: with 3–4 lemons in a chain, the LED glows faintly!"
+      ],
+      "science": "Zinc (element 30) gives up electrons more easily than copper (element 29). The lemon juice lets those electrons flow from zinc to copper through your wires — a real electric current. Every battery ever made works on this same idea: two different materials passing electrons."
+    },
+    {
+      "id": "invisible-ink",
+      "title": "Secret Carbon Messages",
+      "emoji": "🕵️",
+      "teaches": "Carbon chemistry — why heat turns things brown",
+      "safety": "The reveal step uses gentle heat — that part is 100% a grown-up's job.",
+      "materials": ["Lemon juice", "A cotton swab or thin paintbrush", "White paper", "A grown-up with a hair dryer, iron on low, or warm lamp"],
+      "steps": [
+        "Dip the swab in lemon juice and write a secret message on the paper.",
+        "Let it dry completely — the message disappears!",
+        "Hand it to a grown-up to warm the paper gently and evenly.",
+        "Watch the message reappear in brown, like magic (but it's chemistry)."
+      ],
+      "science": "Lemon juice is full of carbon-rich molecules like sugars. Gentle heat breaks them down and they turn brown — the same carbon (element 6) chemistry that toasts bread and caramelizes marshmallows. Spies really used lemon-juice ink long ago!"
+    },
+    {
+      "id": "rubber-egg",
+      "title": "The Naked Egg",
+      "emoji": "🥚",
+      "teaches": "Acids vs. calcium — dissolving a shell without touching it",
+      "safety": "Safe. Wash hands after handling the egg, and don't eat it.",
+      "materials": ["A raw egg (in its shell)", "A jar or glass", "White vinegar", "Patience: 2–3 days"],
+      "steps": [
+        "Gently place the egg in the jar and cover it completely with vinegar.",
+        "Look closely: tiny bubbles form all over the shell right away.",
+        "Wait 2–3 days (change the vinegar after day 1 for best results).",
+        "Rinse gently: the hard shell is GONE, leaving a squishy, bouncy 'naked' egg held by a thin skin."
+      ],
+      "science": "Eggshell is calcium carbonate — calcium (element 20) again! The vinegar (an acid) slowly dissolves it, releasing carbon dioxide gas: those are the bubbles. Your bones are protected from this fate because they live safely inside you, but this is why dentists say acids are tough on teeth."
+    },
+    {
+      "id": "balloon-gas",
+      "title": "The Self-Blowing Balloon",
+      "emoji": "🫧",
+      "teaches": "Chemical reactions that make gas — carbon dioxide in action",
+      "safety": "Safe and fizzy. Do it over a sink or tray; it can foam.",
+      "materials": ["An empty plastic bottle", "A balloon", "Vinegar", "Baking soda", "A spoon and a funnel (or a rolled paper cone)"],
+      "steps": [
+        "Pour vinegar into the bottle until it's about one-quarter full.",
+        "Using the funnel, spoon 2–3 teaspoons of baking soda INTO the balloon.",
+        "Stretch the balloon's neck over the bottle top — don't spill the powder yet!",
+        "Lift the balloon so the baking soda falls into the vinegar, and watch the balloon inflate itself."
+      ],
+      "science": "Vinegar (an acid) and baking soda react, releasing carbon dioxide gas — one carbon (element 6) atom holding two oxygens (element 8). The gas needs somewhere to go, so it fills the balloon. The same CO₂ makes soda fizzy and bread rise."
+    },
+    {
+      "id": "salt-float",
+      "title": "The Floating Egg Trick",
+      "emoji": "🌊",
+      "teaches": "Density — why the Dead Sea makes swimmers float",
+      "safety": "Totally safe. Just salty water and an egg.",
+      "materials": ["2 tall glasses of water", "A raw egg", "Table salt", "A spoon"],
+      "steps": [
+        "Gently lower the egg into plain water: it sinks to the bottom.",
+        "In the second glass, stir in salt — a spoonful at a time, about 6–8 spoons — until it dissolves.",
+        "Lower the egg into the salty water: it floats!",
+        "Bonus: carefully pour a little plain water on top of the salty glass, and the egg can hover in the middle."
+      ],
+      "science": "Dissolving sodium chloride — sodium (11) + chlorine (17) — packs more matter into the same water, raising its density above the egg's, so the egg floats. It's exactly why people float so easily in the super-salty Dead Sea."
     }
   ]
 }
