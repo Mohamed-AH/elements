@@ -957,6 +957,40 @@
       "props": {"hardness": 1.25, "density": 3.62, "meltC": 727, "conduct": 4},
       "state": "solid"
     },
+    "72": {
+      "superpower": "The identical twin",
+      "facts": [
+        "Hafnium is zirconium's chemical twin — the two are so alike they're the hardest pair of elements to separate.",
+        "But they have opposite nuclear personalities: hafnium GULPS neutrons, so it makes control rods for submarines' reactors, while zirconium lets neutrons pass.",
+        "A hafnium compound layer inside modern computer chips helped keep transistors shrinking after 2007."
+      ],
+      "imagine": "Hafnium is the twin who dresses exactly like zirconium but has the opposite job — one twin waves neutrons through, the other stops them cold.",
+      "origin": "Predicted to hide in zirconium ores, and found there in 1923 in Copenhagen — its name comes from 'Hafnia', Latin for Copenhagen.",
+      "trivia": [
+        "Hafnium hid inside zirconium minerals for 134 years after zirconium was identified.",
+        "Hafnium carbide compounds are among the most heat-resistant materials known."
+      ],
+      "uses": ["Reactor control rods", "Computer chip layers", "Rocket nozzles"],
+      "props": {"hardness": 5.5, "density": 13.3, "meltC": 2233, "conduct": 4},
+      "state": "solid"
+    },
+    "73": {
+      "superpower": "The phone shrinker",
+      "facts": [
+        "Tiny tantalum capacitors store charge so well that phones and laptops could shrink to pocket size — there's tantalum in almost every phone.",
+        "Tantalum ignores body fluids completely, so it's used for skull plates, bone screws, and implants.",
+        "Almost no acid can touch it."
+      ],
+      "imagine": "Tantalum is the patient bodyguard of your phone's electronics — tiny, silent, and utterly unbothered by anything.",
+      "origin": "Named after King Tantalus of Greek myth, who stood in water he could never drink — because tantalum sits in acid without 'drinking' (reacting with) it.",
+      "trivia": [
+        "Its daughter element in myth, Niobe, names its inseparable partner niobium.",
+        "Recycling old phones recovers real tantalum."
+      ],
+      "uses": ["Phone capacitors", "Medical implants", "Chemistry equipment"],
+      "props": {"hardness": 6.5, "density": 16.4, "meltC": 3017, "conduct": 5},
+      "state": "solid"
+    },
     "74": {
       "superpower": "The unmeltable",
       "facts": [
@@ -972,6 +1006,23 @@
       ],
       "uses": ["Light bulb filaments", "Drill bits", "Rocket engine parts"],
       "props": {"hardness": 7.5, "density": 19.25, "meltC": 3422, "conduct": 5},
+      "state": "solid"
+    },
+    "75": {
+      "superpower": "The last one found",
+      "facts": [
+        "Rhenium was the last stable element ever discovered on Earth — in 1925, completing that part of the map.",
+        "It has the second-highest melting point of all metals (3,186 °C), just behind tungsten.",
+        "Jet engines owe it big: rhenium superalloys let turbine blades survive temperatures that would melt ordinary metals."
+      ],
+      "imagine": "Rhenium is the explorer who arrived last to the party — then immediately took the hottest seat in the house and didn't flinch.",
+      "origin": "Discovered in Germany in 1925 by Ida and Walter Noddack, and named after the river Rhine.",
+      "trivia": [
+        "Rhenium is one of the rarest metals in Earth's crust.",
+        "A single jet engine can contain kilograms of rhenium alloy."
+      ],
+      "uses": ["Jet engine blades", "Rocket parts", "High-temperature science"],
+      "props": {"hardness": 7, "density": 20.8, "meltC": 3186, "conduct": 5},
       "state": "solid"
     },
     "76": {
@@ -1059,6 +1110,23 @@
       "props": {"hardness": null, "density": 13.53, "meltC": -39, "conduct": 2},
       "state": "liquid"
     },
+    "81": {
+      "superpower": "The green-twig phantom",
+      "facts": [
+        "Thallium is named after 'thallos' — Greek for green shoot — because of the bright green line it paints in a spectroscope.",
+        "It's seriously toxic: it was banned as rat poison because it was too dangerous to have around. Never touch — strictly a scientists-only element.",
+        "In tiny, carefully controlled doses, a thallium tracer helps doctors take pictures of blood flow in the heart."
+      ],
+      "imagine": "Thallium is the phantom of the element opera — beautiful green signature, dark reputation, and it only appears on stage under strict supervision.",
+      "origin": "Discovered in 1861 by William Crookes, spotted purely by its green spectral flash.",
+      "trivia": [
+        "Detective novelist Agatha Christie made thallium famous as a plot twist — and her book once helped real doctors diagnose a case!",
+        "Thallium compounds were once used in infrared glass."
+      ],
+      "uses": ["Heart scan tracers", "Special infrared glass", "Detective stories"],
+      "props": {"hardness": 1.2, "density": 11.8, "meltC": 304, "conduct": 4},
+      "state": "solid"
+    },
     "82": {
       "superpower": "The heavyweight shield",
       "facts": [
@@ -1074,6 +1142,40 @@
       ],
       "uses": ["X-ray shields", "Car batteries", "Diving weights"],
       "props": {"hardness": 1.5, "density": 11.34, "meltC": 327, "conduct": 3},
+      "state": "solid"
+    },
+    "83": {
+      "superpower": "The rainbow staircase",
+      "facts": [
+        "Bismuth grows the coolest crystals in the mineral world: staircase-shaped 'hopper' crystals shimmering in rainbow colors from an ultra-thin oxide skin.",
+        "It's the heaviest element with a (basically) stable atom — technically it decays, but so slowly it would take a billion times the age of the universe.",
+        "The pink tummy-soothing medicine in pharmacies is a bismuth compound!"
+      ],
+      "imagine": "Bismuth is the gentle giant artist at the heavy end of the table — while its neighbors glow ominously, it builds rainbow castles and settles stomach aches.",
+      "origin": "Known since medieval times but long confused with lead and tin; shown to be its own element in the 1700s.",
+      "trivia": [
+        "Bismuth melts at just 271 °C, and it EXPANDS when it freezes — like water does.",
+        "It replaces lead in modern 'green' shot and solders because it's so much safer."
+      ],
+      "uses": ["Stomach medicine", "Rainbow crystals", "Safe replacement for lead"],
+      "props": {"hardness": 2.25, "density": 9.79, "meltC": 271, "conduct": 2},
+      "state": "solid"
+    },
+    "84": {
+      "superpower": "Marie's homeland honor",
+      "facts": [
+        "Polonium was the first element Marie Curie discovered (1898) — she named it after her homeland, Poland, which wasn't even on the map as a country then.",
+        "It's one of the most radioactive natural elements — a speck releases so much energy it warms itself. Scientists handle it with extreme protection.",
+        "Its heat has powered small generators, and antistatic brushes once used tiny sealed amounts."
+      ],
+      "imagine": "Polonium is a tiny ember of an element — glowing with its own warmth, honored with a country's name, and kept safely behind thick lab walls.",
+      "origin": "The Curies found polonium in July 1898 and radium five months later — sifting through tonnes of uranium ore sludge to find both.",
+      "trivia": [
+        "Naming it 'polonium' was a political statement — Marie Curie's way of putting partitioned Poland back on the map.",
+        "The Moon's soil contains traces of polonium from radioactive decay."
+      ],
+      "uses": ["Science history", "Spacecraft heater research", "Antistatic devices (historic)"],
+      "props": {"hardness": null, "density": 9.2, "meltC": 254, "conduct": 3},
       "state": "solid"
     },
     "85": {

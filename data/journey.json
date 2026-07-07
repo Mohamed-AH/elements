@@ -98,6 +98,20 @@
       "emoji": "💎",
       "tagline": "The platinum family: denser than lead, rarer than gold, tougher than everything.",
       "elements": [44, 45, 46, 76, 77, 78]
+    },
+    {
+      "id": "heat",
+      "title": "The Heat Champions",
+      "emoji": "🔥",
+      "tagline": "Twins, phone-shrinkers, and the last element found on Earth — all unmeltable.",
+      "elements": [72, 73, 75]
+    },
+    {
+      "id": "heavy",
+      "title": "Heavy Legends",
+      "emoji": "🏋️",
+      "tagline": "Rainbow crystals, phantom poisons, and Marie Curie's first discovery.",
+      "elements": [81, 83, 84]
     }
   ]
 }

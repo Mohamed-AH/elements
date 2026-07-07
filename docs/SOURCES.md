@@ -325,6 +325,31 @@ Tennant 1803, *osme*, pen/needle tips [RSC/CRC]. Ir K-Pg iridium anomaly
 Pt platina naming, International Prototype Kilogram (retired 2019,
 SI redefinition), cisplatin, converters, rarer than gold [RSC/BIPM].
 
+### Phase E — refractory & post-transition heavies (Hf, Ta, Re, Tl, Bi, Po)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 72 | Hf | 13.3 | 2233 | 5.5 | [CRC] |
+| 73 | Ta | 16.4 | 3017 | 6.5 | **⚠ FLAG**: published density 16.4 [CRC] vs 16.69 elsewhere |
+| 75 | Re | 20.8 | 3186 | 7 | **⚠ FLAG**: published density 20.8 [CRC] vs 21.02 (X-ray) |
+| 81 | Tl | 11.8 | 304 | 1.2 | [CRC] |
+| 83 | Bi | 9.79 | 271 | 2.25 | [CRC]; expands on freezing; α-decay t½ ≈ 2×10¹⁹ y (2003 measurement) |
+| 84 | Po | 9.2 | 254 | — | α-Po [CRC]; Po-210 t½ 138 d |
+
+Claims: Hf Hafnia/Copenhagen 1923 (Coster & Hevesy), Zr/Hf separation
+difficulty, opposite neutron cross-sections (Hf rods vs Zr cladding), HfO₂
+high-k gate dielectric (45 nm era, 2007) [RSC/Intel]. Ta Tantalus naming,
+capacitor miniaturization, implant biocompatibility, acid resistance
+[RSC]. Re last stable element discovered (1925, Noddacks), 2nd-highest
+metal melting point, single-crystal superalloy turbine blades, Rhine
+naming, crustal rarity [RSC/ASM]. Tl *thallos* green line, Crookes 1861,
+rodenticide bans, Tl-201 cardiac imaging, Christie's "The Pale Horse"
+diagnostic anecdote [RSC]. Bi hopper crystals/iridescent oxide, heaviest
+quasi-stable element (α-decay measured 2003, t½ ~2×10¹⁹ y), bismuth
+subsalicylate remedies, lead-replacement uses, freeze expansion [RSC/Nature 2003].
+Po Curies July 1898, Poland naming as political statement, extreme
+specific activity, RTG/antistatic history, lunar-soil traces [RSC].
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |
