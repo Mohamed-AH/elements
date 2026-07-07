@@ -77,6 +77,27 @@
       "emoji": "⚡",
       "tagline": "The most reactive metals of all — timekeepers, firework artists, and vanishing acts.",
       "elements": [37, 38, 55, 56, 87, 88]
+    },
+    {
+      "id": "steel",
+      "title": "The Super-Steel Squad",
+      "emoji": "🔩",
+      "tagline": "The metals that make steel mightier, magnets colder, and scans possible.",
+      "elements": [39, 40, 41, 42, 43]
+    },
+    {
+      "id": "gadgets",
+      "title": "The Gadget Gang",
+      "emoji": "📱",
+      "tagline": "Touchscreens, famous paints, solar panels, and printing-press history.",
+      "elements": [48, 49, 51, 52]
+    },
+    {
+      "id": "precious",
+      "title": "The Precious Six",
+      "emoji": "💎",
+      "tagline": "The platinum family: denser than lead, rarer than gold, tougher than everything.",
+      "elements": [44, 45, 46, 76, 77, 78]
     }
   ]
 }

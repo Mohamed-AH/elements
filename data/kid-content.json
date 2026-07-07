@@ -651,6 +651,142 @@
       "props": {"hardness": 1.5, "density": 2.64, "meltC": 777, "conduct": 5},
       "state": "solid"
     },
+    "39": {
+      "superpower": "The white-light wizard",
+      "facts": [
+        "White LED bulbs work thanks to yttrium: a yttrium crystal coating turns a blue LED's light into warm white light.",
+        "Yttrium helped make the first superconductor that works above liquid-nitrogen temperatures — a huge science breakthrough in 1987.",
+        "It's named after Ytterby, a tiny Swedish village whose quarry gave FOUR elements their names."
+      ],
+      "imagine": "Yttrium is the lighting director of the element world — hiding in the ceiling, turning harsh blue beams into cozy white light.",
+      "origin": "Found in 1794 in a strange black rock from the Ytterby quarry near Stockholm — the first of a whole family of 'rare earth' discoveries from that one hole in the ground.",
+      "trivia": [
+        "Ytterby village named yttrium, ytterbium, terbium, AND erbium.",
+        "Powerful YAG lasers — used by doctors and in factories — are built on yttrium crystals."
+      ],
+      "uses": ["White LED bulbs", "Lasers", "Superconductor research"],
+      "props": {"hardness": null, "density": 4.47, "meltC": 1522, "conduct": 4},
+      "state": "solid"
+    },
+    "40": {
+      "superpower": "The time capsule",
+      "facts": [
+        "Zircon crystals (zirconium's mineral) are the oldest known pieces of Earth — some are 4.4 billion years old.",
+        "Sparkly 'cubic zirconia' gems in cheap rings are lab-made zirconium crystals that mimic diamonds.",
+        "Nuclear power plants wrap their fuel in zirconium tubes, because it lets neutrons pass through and shrugs off corrosion."
+      ],
+      "imagine": "Zirconium is the elder of the elements' village — it was already keeping records when the Earth was brand new.",
+      "origin": "Known as a gem mineral since ancient times (zircon), identified as an element in 1789, and purified much later.",
+      "trivia": [
+        "Scientists read Earth's earliest history from tiny zircon crystals the width of a hair.",
+        "Zirconium ceramics are so tough they're used for knife blades."
+      ],
+      "uses": ["Fake diamonds (cubic zirconia)", "Nuclear fuel tubes", "Super-tough ceramics"],
+      "props": {"hardness": 5, "density": 6.52, "meltC": 1855, "conduct": 4},
+      "state": "solid"
+    },
+    "41": {
+      "superpower": "The MRI muscle",
+      "facts": [
+        "Niobium-titanium wire becomes superconducting when very cold — it's what the giant magnets inside MRI machines and particle accelerators are wound from.",
+        "Anodized niobium jewelry shimmers in rainbow colors without any paint — the colors come from ultra-thin oxide layers.",
+        "It's gentle on the human body, so it's used in implants and hypoallergenic jewelry."
+      ],
+      "imagine": "Niobium is the gentle giant who lifts the heaviest magnetic weights in science — but only after chilling out completely.",
+      "origin": "Named after Niobe from Greek myth — daughter of King Tantalus — because niobium and tantalum are nearly-identical 'family' elements always found together.",
+      "trivia": [
+        "The Large Hadron Collider contains thousands of kilometers of niobium alloy wire.",
+        "Some countries' coins are colored using anodized niobium."
+      ],
+      "uses": ["MRI magnets", "Particle accelerators", "Rainbow jewelry", "Rocket nozzles"],
+      "props": {"hardness": 6, "density": 8.57, "meltC": 2477, "conduct": 5},
+      "state": "solid"
+    },
+    "42": {
+      "superpower": "The quiet strongman",
+      "facts": [
+        "A pinch of molybdenum makes steel much stronger and heat-proof — it toughened armor plate and still hardens tools and bike frames today.",
+        "Your body runs several enzymes on trace amounts of molybdenum — you eat a tiny bit every day in beans and grains.",
+        "'Moly grease' with slippery molybdenum disulfide keeps machines running — it works like graphite, in flat sliding sheets."
+      ],
+      "imagine": "Molybdenum is the gym coach for steel: a few words from moly and the whole alloy lifts twice as much.",
+      "origin": "Its name comes from 'molybdos', Greek for lead — miners confused its ore with lead for centuries until 1778, when it was identified as new.",
+      "trivia": [
+        "Molybdenum's melting point (2,623 °C) is one of the highest of all elements.",
+        "WWII tank armor owed its toughness partly to molybdenum steel."
+      ],
+      "uses": ["Tool steel", "Slippery grease", "Trace nutrition"],
+      "props": {"hardness": 5.5, "density": 10.2, "meltC": 2623, "conduct": 5},
+      "state": "solid"
+    },
+    "43": {
+      "superpower": "The first artificial element",
+      "facts": [
+        "Technetium was the first element ever MADE by humans (in 1937) — its name literally means 'artificial'.",
+        "It filled a gap in the periodic table that Mendeleev had predicted 66 years earlier.",
+        "Hospitals use a short-lived form (technetium-99m) for millions of medical scans every year — it lights up organs for the camera, then fades away within hours."
+      ],
+      "imagine": "Technetium is the missing puzzle piece that scientists finally 3D-printed themselves — and it turned out to be a medical superhero.",
+      "origin": "Created in Italy by Perrier and Segrè from a molybdenum plate that had been zapped in Ernest Lawrence's cyclotron in California.",
+      "trivia": [
+        "All technetium on Earth today is made in reactors — any natural technetium decayed away long ago.",
+        "A technetium heart scan is one of the most common nuclear-medicine tests in the world."
+      ],
+      "uses": ["Medical body scans", "Science history"],
+      "props": {"hardness": null, "density": 11, "meltC": 2157, "conduct": 4},
+      "state": "solid"
+    },
+    "44": {
+      "superpower": "The data keeper",
+      "facts": [
+        "A whisper-thin layer of ruthenium inside hard drives helped multiply how much data they can hold.",
+        "Ruthenium alloys tip the nibs of fancy fountain pens, because they barely wear down.",
+        "It's one of the six 'platinum-group' metals — rare, tough, and corrosion-proof."
+      ],
+      "imagine": "Ruthenium is the invisible librarian inside your hard drive, keeping billions of pages of data neatly stacked.",
+      "origin": "Discovered in 1844 by Karl Klaus in Russia and named after Ruthenia, the Latin name for his homeland.",
+      "trivia": [
+        "The 'pixie dust' layer hard-drive engineers added in 2001 was ruthenium, three atoms thick.",
+        "Ruthenium catalysts help build medicines and won a share of a Nobel Prize (2005, olefin metathesis)."
+      ],
+      "uses": ["Hard drives", "Fountain pen nibs", "Chemistry catalysts"],
+      "props": {"hardness": 6.5, "density": 12.1, "meltC": 2334, "conduct": 5},
+      "state": "solid"
+    },
+    "45": {
+      "superpower": "The priciest shine",
+      "facts": [
+        "Rhodium is often the most expensive metal on Earth — usually costing even more than gold.",
+        "Nearly every gasoline car carries a little rhodium in its catalytic converter, scrubbing harmful gases from the exhaust.",
+        "White gold jewelry is usually plated with a mirror-bright rhodium skin."
+      ],
+      "imagine": "Rhodium is the celebrity bodyguard of metals: dazzling, ultra-rare, and quietly cleaning up after every car on the road.",
+      "origin": "Discovered in 1803 by William Wollaston, who named it after 'rhodon' (rose) for the rose-red color of its salts.",
+      "trivia": [
+        "A single gram of rhodium has at times cost hundreds of dollars.",
+        "It's one of the rarest stable elements in Earth's crust."
+      ],
+      "uses": ["Car exhaust cleaners", "White gold plating", "Mirrors for special optics"],
+      "props": {"hardness": 6, "density": 12.4, "meltC": 1964, "conduct": 6},
+      "state": "solid"
+    },
+    "46": {
+      "superpower": "The hydrogen sponge",
+      "facts": [
+        "Palladium can soak up around 900 times its own volume of hydrogen gas — like a metal sponge for the lightest element.",
+        "Together with rhodium and platinum, it cleans car exhaust in catalytic converters.",
+        "Jewelers mix it with gold to make 'white gold'."
+      ],
+      "imagine": "Palladium is the magician's endless suitcase — somehow it keeps packing in more and more hydrogen.",
+      "origin": "Discovered in 1803 by Wollaston (same scientist, same year as rhodium!) and named after the newly spotted asteroid Pallas.",
+      "trivia": [
+        "Wollaston secretly sold palladium in a shop before revealing he'd discovered it.",
+        "Most of the world's palladium goes into cleaning car exhaust."
+      ],
+      "uses": ["Catalytic converters", "White gold", "Hydrogen storage research"],
+      "props": {"hardness": 4.75, "density": 12, "meltC": 1555, "conduct": 5},
+      "state": "solid"
+    },
     "47": {
       "superpower": "The champion conductor",
       "facts": [
@@ -683,6 +819,74 @@
       ],
       "uses": ["Bronze statues", "Food can coatings", "Solder in electronics"],
       "props": {"hardness": 1.5, "density": 7.31, "meltC": 232, "conduct": 5},
+      "state": "solid"
+    },
+    "48": {
+      "superpower": "The sunshine yellow",
+      "facts": [
+        "Cadmium yellow was a favorite paint of artists like Monet and Van Gogh — brilliant, sunny, and long-lasting.",
+        "Cadmium is toxic, so today it's being replaced in paints and batteries — engineers redesigning materials to be safer is material science in action.",
+        "In nuclear reactors, cadmium control rods soak up neutrons to keep the reaction steady."
+      ],
+      "imagine": "Cadmium is the retired star painter of the elements — glorious colors, but the museum now keeps it safely behind glass.",
+      "origin": "Discovered in 1817 in Germany, hiding inside zinc ore — cadmium and zinc are chemical cousins usually found together.",
+      "trivia": [
+        "Rechargeable 'NiCd' batteries powered early gadgets before safer lithium batteries took over.",
+        "Some deep-red and orange artist colors were cadmium too."
+      ],
+      "uses": ["Famous yellow paints", "Reactor control rods", "Old rechargeable batteries"],
+      "props": {"hardness": 2, "density": 8.69, "meltC": 321, "conduct": 5},
+      "state": "solid"
+    },
+    "49": {
+      "superpower": "The touchscreen ghost",
+      "facts": [
+        "Your tablet obeys your finger thanks to indium: a see-through, electricity-carrying layer of indium tin oxide covers the screen.",
+        "Like tin, a bar of indium 'cries' with a crackling sound when you bend it.",
+        "It's named after the brilliant indigo-blue line it shows in a spectroscope."
+      ],
+      "imagine": "Indium is the invisible butler of your tablet — you never see it, but it feels every tap and swipe.",
+      "origin": "Discovered in 1863 in Germany by chemists hunting for a different element — the surprise indigo spectral line gave it away.",
+      "trivia": [
+        "Almost every phone, tablet, and flat TV screen contains indium.",
+        "Indium is so soft you can dent it with a fingernail."
+      ],
+      "uses": ["Touchscreens", "Flat-screen TVs", "Low-melting solders"],
+      "props": {"hardness": 1.2, "density": 7.31, "meltC": 157, "conduct": 5},
+      "state": "solid"
+    },
+    "51": {
+      "superpower": "The ancient eyeliner",
+      "facts": [
+        "Ground antimony mineral (kohl) was used as dramatic black eyeliner in ancient Egypt thousands of years ago — its symbol Sb comes from the Latin 'stibium' for that makeup.",
+        "Mixed into lead, antimony makes it hard enough for battery plates — and long ago, for printing-press type that printed the world's books.",
+        "Today its compounds slow down fires in fabrics and plastics."
+      ],
+      "imagine": "Antimony is the theater veteran of the elements: eyeliner in ancient Egypt, printing books for centuries, now working backstage as a fire marshal.",
+      "origin": "Known for millennia; described in detail by alchemists long before modern chemistry named it an element.",
+      "trivia": [
+        "Gutenberg-era printing type was a lead-tin-antimony alloy — antimony made the letters crisp.",
+        "Antimony expands slightly as it freezes, which made type-metal fill every corner of the mold."
+      ],
+      "uses": ["Fire-resistant materials", "Car battery plates", "History of printing"],
+      "props": {"hardness": 3, "density": 6.68, "meltC": 631, "conduct": 3},
+      "state": "solid"
+    },
+    "52": {
+      "superpower": "The garlic trickster",
+      "facts": [
+        "Tellurium is one of the rarest stable elements in Earth's crust — much of Earth's original share boiled away into space long ago.",
+        "Touch even a trace of it and your breath can smell of garlic for weeks (scientists learned this the hard way!).",
+        "Cadmium-telluride films make thin, low-cost solar panels, and tellurium alloys store data in rewritable discs."
+      ],
+      "imagine": "Tellurium is the rare prankster of the elements — helpful in solar panels, but shake its hand and you'll smell like garlic bread for a month.",
+      "origin": "Discovered in 1782 in gold ore from Transylvania and named after 'tellus' — Latin for Earth.",
+      "trivia": [
+        "Tellurium is often found chemically bonded to gold — one of the few things gold bonds with in nature.",
+        "It's roughly as rare as platinum in the Earth's crust."
+      ],
+      "uses": ["Solar panels", "Rewritable discs", "Special alloys"],
+      "props": {"hardness": 2.25, "density": 6.24, "meltC": 450, "conduct": 2},
       "state": "solid"
     },
     "53": {
@@ -768,6 +972,57 @@
       ],
       "uses": ["Light bulb filaments", "Drill bits", "Rocket engine parts"],
       "props": {"hardness": 7.5, "density": 19.25, "meltC": 3422, "conduct": 5},
+      "state": "solid"
+    },
+    "76": {
+      "superpower": "The heavyweight champion",
+      "facts": [
+        "Osmium is the densest element of all: a soccer-ball-sized lump would weigh more than a grown adult (~130 kg).",
+        "Its alloys are extremely wear-proof — they tipped fountain pens and record-player needles.",
+        "Its name comes from 'osme', Greek for smell, because its oxide has a sharp odor."
+      ],
+      "imagine": "Osmium is the sumo champion of the periodic table — nothing packs more heft into the same space.",
+      "origin": "Discovered in 1803 by Smithson Tennant in the gritty black residue left when platinum ore dissolved in acid — along with iridium, on the same day!",
+      "trivia": [
+        "Osmium is roughly twice as dense as lead.",
+        "A one-liter bottle filled with osmium would weigh about 22.6 kg."
+      ],
+      "uses": ["Ultra-hard pen and needle tips", "Science records (densest!)"],
+      "props": {"hardness": 7, "density": 22.59, "meltC": 3033, "conduct": 5},
+      "state": "solid"
+    },
+    "77": {
+      "superpower": "The dinosaur detective",
+      "facts": [
+        "A thin layer of iridium-rich clay circles the whole planet — the fingerprint of the asteroid impact that ended the dinosaurs 66 million years ago (asteroids carry far more iridium than Earth's crust).",
+        "Iridium is the most corrosion-resistant metal known — acids, water, and air barely touch it.",
+        "Long-life spark plug tips are iridium."
+      ],
+      "imagine": "Iridium is the detective who solved history's biggest mystery — by leaving its calling card in rocks all over the world.",
+      "origin": "Discovered with osmium in 1803 and named after Iris, goddess of the rainbow, for its colorful salts.",
+      "trivia": [
+        "The iridium layer was the key evidence for the asteroid-extinction theory, proposed in 1980.",
+        "It's the second-densest element, a whisker behind osmium."
+      ],
+      "uses": ["Spark plugs", "Crucibles for growing crystals", "Asteroid science"],
+      "props": {"hardness": 6.5, "density": 22.56, "meltC": 2446, "conduct": 5},
+      "state": "solid"
+    },
+    "78": {
+      "superpower": "The forever standard",
+      "facts": [
+        "For 130 years, the world's official kilogram WAS a platinum-alloy cylinder locked in a Paris vault — platinum barely changes, ever.",
+        "Platinum is rarer than gold and doesn't tarnish, which is why it's the fanciest jewelry metal.",
+        "Platinum medicines (like cisplatin) are important cancer fighters, and platinum in catalytic converters cleans exhaust worldwide."
+      ],
+      "imagine": "Platinum is the element the world trusted to define 'exactly one kilogram' — the most dependable metal in the room.",
+      "origin": "Spanish explorers called it 'platina' — 'little silver' — and tossed it aside while panning for gold. It turned out to be the greater treasure.",
+      "trivia": [
+        "The platinum kilogram cylinder retired in 2019, when the kilogram was redefined using physics constants.",
+        "Most 'white gold' rings are plated with platinum-family metals."
+      ],
+      "uses": ["Fine jewelry", "Cancer medicines", "Catalytic converters", "Lab equipment"],
+      "props": {"hardness": 3.5, "density": 21.5, "meltC": 1768, "conduct": 6},
       "state": "solid"
     },
     "79": {

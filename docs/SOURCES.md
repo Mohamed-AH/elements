@@ -282,6 +282,51 @@ woman in French Academy of Sciences [RSC]. Ra Curies 1898, ~1M× uranium
 activity, radioluminescence, dial-painter history (framed as safety
 lesson), Curie's radioactive notebooks, dual Nobels [RSC].
 
+### Phase D — 4d metals, gadget metals, platinum group (15)
+
+| n | El | density | melt °C | hardness | notes |
+|---|----|---------|---------|----------|-------|
+| 39 | Y | 4.47 | 1522 | — | [CRC] |
+| 40 | Zr | 6.52 | 1855 | 5 | [CRC] |
+| 41 | Nb | 8.57 | 2477 | 6 | [CRC] |
+| 42 | Mo | 10.2 | 2623 | 5.5 | [CRC] |
+| 43 | Tc | 11 | 2157 | — | **⚠ FLAG**: density estimates 11.0–11.5 across sources (tiny samples) |
+| 44 | Ru | 12.1 | 2334 | 6.5 | **⚠ FLAG**: published density 12.1 [CRC] vs 12.45 (X-ray) |
+| 45 | Rh | 12.4 | 1964 | 6 | [CRC] |
+| 46 | Pd | 12.0 | 1555 | 4.75 | [CRC] |
+| 48 | Cd | 8.69 | 321 | 2 | [CRC] |
+| 49 | In | 7.31 | 157 | 1.2 | [CRC] |
+| 51 | Sb | 6.68 | 631 | 3 | [CRC] |
+| 52 | Te | 6.24 | 450 | 2.25 | [CRC] |
+| 76 | Os | 22.59 | 3033 | 7 | densest element [CRC] |
+| 77 | Ir | 22.56 | 2446 | 6.5 | [CRC] |
+| 78 | Pt | 21.5 | 1768 | 3.5 | [CRC] |
+
+Claims: Y Ytterby naming (Y/Yb/Tb/Er), YAG:Ce phosphor in white LEDs,
+YBCO 1987 superconductor, 1794 Gadolin [RSC]. Zr Hadean zircons ~4.4 Ga
+(Jack Hills), cubic zirconia, reactor cladding (low neutron capture) [RSC/USGS].
+Nb NbTi superconducting magnets (MRI/LHC), Niobe/Tantalus naming, anodize
+colors, biocompatibility [RSC/CERN]. Mo *molybdos*, alloy steel, MoS₂
+lubricant, essential trace enzymes, 1778 Scheele [RSC]. Tc first synthetic
+element 1937 Perrier & Segrè, name = artificial, Tc-99m imaging (~tens of
+millions scans/yr) [RSC/IAEA]. Ru Klaus 1844, Ruthenia naming, hard-drive
+"pixie dust" layer (2001), pen nibs, Grubbs catalysis Nobel 2005 [RSC].
+Rh Wollaston 1803, *rhodon*, priciest precious metal in recent markets,
+three-way catalysts, white-gold plating [RSC]. Pd Wollaston 1803, asteroid
+Pallas, H₂ absorption ~900 volumes, catalysts [RSC/CRC]. Cd 1817
+Stromeyer, cadmium yellow (Monet/Van Gogh), NiCd, control rods, toxicity
+phase-out [RSC]. In 1863 Reich & Richter, indigo line, ITO touchscreens,
+"tin cry" analog [RSC]. Sb stibium/kohl, type metal (expands on freezing),
+flame retardants, battery grids [RSC]. Te 1782 Müller von Reichenstein,
+*tellus*, crustal rarity (volatile loss), garlic breath effect, CdTe solar,
+phase-change discs, gold tellurides [RSC/USGS]. Os densest (22.59),
+Tennant 1803, *osme*, pen/needle tips [RSC/CRC]. Ir K-Pg iridium anomaly
+(Alvarez 1980), most corrosion-resistant, Iris naming, spark plugs [RSC].
+Pt platina naming, International Prototype Kilogram (retired 2019,
+SI redefinition), cisplatin, converters, rarer than gold [RSC/BIPM].
+
+## Field-by-field uncertainty summary
+
 | Where | Field | Status |
 |---|---|---|
 | elements.json | all masses | ✅ matches [IUPAC] abridged |
