@@ -130,6 +130,188 @@
       "options": ["Ice", "Clear plastic", "Glass window", "Diamond"],
       "reveal": "Glass is melted sand — mostly silicon (Si, 14) and oxygen (O, 8). Cooled fast, the atoms freeze in place before forming crystals.",
       "element": 14
+    },
+    {
+      "id": "nd-magnet",
+      "material": "Neodymium magnet",
+      "emoji": "🧲",
+      "clues": [
+        "I'm hiding inside your earbuds and phone, making sound and buzz alerts.",
+        "I'm the strongest kind of permanent magnet ever made.",
+        "I team up with iron and boron to get my mighty grip."
+      ],
+      "options": ["Neodymium magnet", "Steel spring", "Copper coil", "Rubber band"],
+      "reveal": "Neodymium (Nd, element 60) makes the strongest permanent magnets in the world — every earbud, phone speaker, and electric car motor depends on them.",
+      "element": 60
+    },
+    {
+      "id": "li-battery",
+      "material": "Phone battery",
+      "emoji": "🔋",
+      "clues": [
+        "I store the energy that keeps a phone alive all day.",
+        "I'm built around the lightest metal of all.",
+        "Plug in the charger at night and I fill back up."
+      ],
+      "options": ["Phone battery", "Solar panel", "Power cord", "Light switch"],
+      "reveal": "Rechargeable phone batteries are lithium batteries — lithium (Li, element 3) is the lightest metal and carries a mighty charge for its weight.",
+      "element": 3
+    },
+    {
+      "id": "bi-crystal",
+      "material": "Bismuth crystal",
+      "emoji": "🌈",
+      "clues": [
+        "I grow into rainbow-colored staircase crystals.",
+        "My element is also the secret ingredient in pink tummy-soothing medicine.",
+        "I'm the gentle giant at the heavy end of the periodic table."
+      ],
+      "options": ["Bismuth crystal", "Quartz crystal", "Salt crystal", "Diamond"],
+      "reveal": "Bismuth (Bi, element 83) grows 'hopper' crystals with rainbow oxide skins — and its compounds calm upset stomachs.",
+      "element": 83
+    },
+    {
+      "id": "ne-sign",
+      "material": "Neon sign",
+      "emoji": "🌃",
+      "clues": [
+        "I only glow when electricity runs through me.",
+        "My light is always red-orange — other colors come from my gas cousins.",
+        "You'll spot me shining in shop windows at night."
+      ],
+      "options": ["Neon sign", "Traffic light", "Flashlight", "Candle"],
+      "reveal": "True neon signs glow red-orange: that's neon gas (Ne, element 10) lighting up when electricity excites its atoms.",
+      "element": 10
+    },
+    {
+      "id": "ca-chalk",
+      "material": "Chalk stick",
+      "emoji": "🖊️",
+      "clues": [
+        "Teachers drag me across blackboards.",
+        "I'm made of the same stuff as seashells and limestone cliffs.",
+        "My main element also builds your bones and teeth."
+      ],
+      "options": ["Chalk stick", "Crayon", "Eraser", "Pencil"],
+      "reveal": "Chalk is calcium carbonate — the same calcium (Ca, element 20) compound that forms seashells, limestone, and eggshells.",
+      "element": 20
+    },
+    {
+      "id": "k-banana",
+      "material": "Banana",
+      "emoji": "🍌",
+      "clues": [
+        "I'm a curvy yellow fruit famous for one particular element.",
+        "My special element helps your nerves send messages.",
+        "That element's symbol is K, from its old Latin name."
+      ],
+      "options": ["Banana", "Lemon", "Corn cob", "Cheese"],
+      "reveal": "Bananas are famously rich in potassium (K, element 19, from 'kalium') — the element your nerves and muscles use to send signals.",
+      "element": 19
+    },
+    {
+      "id": "cl-pool",
+      "material": "Pool chlorine",
+      "emoji": "🏊",
+      "clues": [
+        "Take a sniff at the swimming pool — that's me on the job.",
+        "I destroy germs in the water so it's safe to swim.",
+        "Teamed up with sodium, I sit on your dinner table instead."
+      ],
+      "options": ["Pool chlorine", "Soap", "Sunscreen", "Toothpaste"],
+      "reveal": "Pool water is kept safe by chlorine (Cl, element 17) — fierce on germs, yet as sodium chloride it's ordinary table salt.",
+      "element": 17
+    },
+    {
+      "id": "hg-thermometer",
+      "material": "Antique mercury thermometer",
+      "emoji": "🌡️",
+      "clues": [
+        "Inside antique thermometers, I rose up the tube when you had a fever.",
+        "I'm the only metal that's liquid at room temperature.",
+        "I'm toxic, so modern thermometers replaced me."
+      ],
+      "options": ["Antique mercury thermometer", "Ice cube", "Silver spoon", "Glass marble"],
+      "reveal": "Old thermometers used mercury (Hg, element 80), the only room-temperature liquid metal. Safer liquids and electronics do the job today.",
+      "element": 80
+    },
+    {
+      "id": "ti-implant",
+      "material": "Titanium hip implant",
+      "emoji": "🦿",
+      "clues": [
+        "Doctors put me inside people — as new hips and tooth roots.",
+        "I'm as strong as steel but much lighter.",
+        "I'm named after the giants of Greek myths."
+      ],
+      "options": ["Titanium hip implant", "Plaster cast", "Rubber bandage", "Wooden crutch"],
+      "reveal": "Replacement hips and dental implants are titanium (Ti, element 22): strong, light, rust-proof, and friendly to the human body.",
+      "element": 22
+    },
+    {
+      "id": "ar-welding",
+      "material": "Argon gas",
+      "emoji": "🛡️",
+      "clues": [
+        "I'm in every breath you take — about 1 of every 100 parts of air — but I never react.",
+        "My name means 'the lazy one' in Greek.",
+        "Welders spray me over hot metal to keep the air away."
+      ],
+      "options": ["Argon gas", "Steam", "Smoke", "Oxygen"],
+      "reveal": "Welders shield hot metal with argon (Ar, element 18) — the 'lazy' noble gas that refuses to react, so the weld stays clean.",
+      "element": 18
+    },
+    {
+      "id": "am-detector",
+      "material": "Smoke detector",
+      "emoji": "🚨",
+      "clues": [
+        "I sit on your ceiling, keeping watch day and night.",
+        "A sealed speck of a lab-made element helps me sense smoke instantly.",
+        "When I start chirping, ask a grown-up to change my battery!"
+      ],
+      "options": ["Smoke detector", "Ceiling fan", "Light bulb", "Doorbell"],
+      "reveal": "Many smoke detectors hold a tiny sealed speck of americium (Am, element 95) — a human-made element quietly guarding millions of homes.",
+      "element": 95
+    },
+    {
+      "id": "zn-coating",
+      "material": "Galvanized bucket",
+      "emoji": "🪣",
+      "clues": [
+        "I'm the dull-gray protective coat on buckets, fences, and crash barriers.",
+        "I take the rust hit myself so the steel underneath stays safe.",
+        "Mix my element with copper and you get brass."
+      ],
+      "options": ["Galvanized bucket", "Chrome bumper", "Painted door", "Aluminum foil"],
+      "reveal": "Galvanized steel wears a zinc jacket (Zn, element 30). Zinc corrodes first — a bodyguard sacrificing itself for the iron below.",
+      "element": 30
+    },
+    {
+      "id": "mg-flare",
+      "material": "Magnesium flare",
+      "emoji": "🎇",
+      "clues": [
+        "I burn with a light so white and bright it can hurt your eyes.",
+        "Sailors fire me into the sky in emergencies.",
+        "Green plants keep my element at the heart of their chlorophyll."
+      ],
+      "options": ["Magnesium flare", "Candle", "Glow stick", "Laser pointer"],
+      "reveal": "Emergency flares and old camera flashes burn magnesium (Mg, element 12) — the same element every green leaf needs to catch sunlight.",
+      "element": 12
+    },
+    {
+      "id": "cs-clock",
+      "material": "Atomic clock",
+      "emoji": "⏰",
+      "clues": [
+        "I'm the most exact timekeeper humans have ever built.",
+        "The official second is defined by my atoms vibrating exactly 9,192,631,770 times.",
+        "GPS satellites carry my cousins so your map app knows where you are."
+      ],
+      "options": ["Atomic clock", "Sundial", "Hourglass", "Cuckoo clock"],
+      "reveal": "Atomic clocks count the vibrations of cesium atoms (Cs, element 55) — the world's definition of one second, and the heartbeat of GPS.",
+      "element": 55
     }
   ],
   "match": [
@@ -144,7 +326,19 @@
     {"element": 20, "symbol": "Ca", "name": "Calcium", "object": "Bones", "emoji": "🦴"},
     {"element": 10, "symbol": "Ne", "name": "Neon", "object": "Glowing sign", "emoji": "🪧"},
     {"element": 47, "symbol": "Ag", "name": "Silver", "object": "Mirror", "emoji": "🪞"},
-    {"element": 8, "symbol": "O", "name": "Oxygen", "object": "Air you breathe", "emoji": "🌬️"}
+    {"element": 8, "symbol": "O", "name": "Oxygen", "object": "Air you breathe", "emoji": "🌬️"},
+    {"element": 3, "symbol": "Li", "name": "Lithium", "object": "Phone battery", "emoji": "🔋"},
+    {"element": 60, "symbol": "Nd", "name": "Neodymium", "object": "Earbuds", "emoji": "🎧"},
+    {"element": 22, "symbol": "Ti", "name": "Titanium", "object": "Racing bike", "emoji": "🚴"},
+    {"element": 19, "symbol": "K", "name": "Potassium", "object": "Banana", "emoji": "🍌"},
+    {"element": 12, "symbol": "Mg", "name": "Magnesium", "object": "Fireworks", "emoji": "🎆"},
+    {"element": 24, "symbol": "Cr", "name": "Chromium", "object": "Shiny faucet", "emoji": "🚰"},
+    {"element": 16, "symbol": "S", "name": "Sulfur", "object": "Car tire", "emoji": "🛞"},
+    {"element": 17, "symbol": "Cl", "name": "Chlorine", "object": "Swimming pool", "emoji": "🏊"},
+    {"element": 83, "symbol": "Bi", "name": "Bismuth", "object": "Tummy medicine", "emoji": "💊"},
+    {"element": 50, "symbol": "Sn", "name": "Tin", "object": "Food can", "emoji": "🥫"},
+    {"element": 63, "symbol": "Eu", "name": "Europium", "object": "Euro banknote", "emoji": "💶"},
+    {"element": 55, "symbol": "Cs", "name": "Cesium", "object": "Atomic clock", "emoji": "⏰"}
   ],
   "experiments": [
     {

@@ -476,6 +476,30 @@ RIKEN, ORNL, LLNL):
   2016), predicted solid/non-noble behavior; element 119/120 searches
   ongoing (RIKEN, JINR, GSI).
 
+## Games & Lab expansion (2026-07-07)
+
+### Detective cases 11–24 & match pairs 13–24
+
+Every clue restates a claim already verified in the per-element sections
+above (Nd magnets, Li batteries, Bi crystals/remedy, Ne discharge color,
+Ca in chalk/shells/bones, K in bananas & nerves, Cl disinfection/NaCl,
+Hg liquid metal & phase-out, Ti implants/Titans, Ar 0.93% of air/welding,
+Am-241 smoke detectors, Zn galvanizing/brass, Mg flares/chlorophyll,
+Cs SI second 9,192,631,770 Hz/GPS). New specifics: chalk = CaCO₃ ✅
+[RSC]; galvanized crash barriers/buckets ✅ standard practice [ASM];
+distress flares use Mg ✅ [RSC]; smoke-detector low-battery chirp ✅
+(manufacturer documentation, trivial). Match pairs: Cr faucet plating,
+S vulcanized tires, Sn-plated food cans, Eu euro-note UV inks [ECB],
+Ti bike frames — all covered above.
+
+### New quiz games (no new facts by design)
+
+- **Family Finder** derives questions/answers from `elements.json`
+  categories (cited in the elements.json section).
+- **Heavier or Lighter** derives from `kid-content.json` `props.density`
+  (cited per element above); pairs with density ratio < 1.15 are excluded
+  so rounding/uncertainty flags can never flip an answer.
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |
