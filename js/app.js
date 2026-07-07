@@ -268,11 +268,10 @@ function homeView() {
 
   const tiles = DATA.elements.map((el) => {
     const { row, col } = gridPosition(el);
-    const featured = DATA.featured[el.n] ? `<span class="star">${iconFilled('star')}</span>` : '';
     return `<button class="el-tile ${visited.has(el.n) ? 'visited' : ''}"
       style="--row:${row};--col:${col};--cat:${CATEGORIES[el.c].color}"
       data-el="${el.n}" aria-label="${esc(el.name)}, element ${el.n}">
-      ${featured}<span class="sym">${esc(el.s)}</span><span class="num">${el.n}</span>
+      <span class="sym">${esc(el.s)}</span><span class="num">${el.n}</span>
     </button>`;
   }).join('');
 
@@ -284,7 +283,7 @@ function homeView() {
     `<span class="legend-item"><span class="legend-dot" style="background:${meta.color}"></span>${meta.label}</span>`).join('');
 
   viewEl.innerHTML = `
-    ${nova(`Welcome to the periodic table — every single thing in the universe is built from these! Tap a tile to meet an element. The star-marked ${iconFilled('star', 'icon-star')} ones have full stories.`)}
+    ${nova('Welcome to the periodic table — every single thing in the universe is built from these! Tap any tile to meet an element: all 118 have full stories, superpowers, and secrets.')}
     <div class="table-scroll"><div class="ptable">${tiles}${seriesTags}<div class="fblock-gap"></div></div></div>
     <div class="legend">${legend}</div>
   `;

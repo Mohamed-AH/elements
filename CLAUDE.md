@@ -5,45 +5,23 @@ for goals, constraints, and active tasks. Update it at the end of each phase.
 
 ## Current phase
 
-**Task: feature ALL 118 elements (started 2026-07-06).** Add the remaining
-90 elements to kid-content.json + journey.json in 8 phased batches, same
-workflow as before (SOURCES.md rows → entries → chapter(s) → validator →
-commit+push per phase). Roadmap below; tick as completed so a crashed
-session can resume at the first unticked phase.
+**ALL 118 ELEMENTS FEATURED — task complete (2026-07-07).** Phases 0 + A–H
+all done and pushed (one commit each). Final state: 118 featured entries in
+kid-content.json, 25 journey chapters covering each element exactly once,
+validator green, Chromium smoke + offline test green, SW CACHE_VERSION v4.
+Also completed en route: Lucide SVG icon redesign (js/icons.js; emoji UI
+chrome removed; content pictograms in games.json intentionally kept).
 
-- [x] Phase 0 — Infra: null-props support (mystery card, validator, compare
-      filter) — done.
-- [x] Phase A (7): done, pushed. 35 featured.
-- [x] Phase B (11): done, pushed. 46 featured.
-- [x] (interleaved) Icon redesign: emoji UI chrome replaced with inline
-      Lucide SVGs (js/icons.js, ISC license). Tabs/back-btn in index.html,
-      section headers/prop bars/hub cards/chapters/badges/intro/buttons via
-      icon() helper. CHAPTER_ICONS maps chapter id → icon (future chapter ids
-      wild/steel/gadgets/precious/heat/heavy/rare1-3/atomic/starmakers/
-      vanishing/lab1/lab2/edge are pre-mapped — USE THESE IDS in journey.json).
-      Content emojis in games.json (object pictures) intentionally kept.
-      SW bumped to v3 with js/icons.js precached.
-- [ ] Phase C (6): Rb Sr Cs Ba Fr Ra. Chapter: "The Wild Bunch"
-      (37,38,55,56,87,88). Fr = null props.
-- [ ] Phase D (15): chapters "The Super-Steel Squad" (39,40,41,42,43),
-      "The Gadget Gang" (48,49,51,52), "The Precious Six" (44,45,46,76,77,78).
-- [ ] Phase E (6): chapters "The Heat Champions" (72,73,75),
-      "Heavy Legends" (81,83,84).
-- [ ] Phase F (15): lanthanides. "Rare Earths: The Magnet Makers" (57-61),
-      "Rare Earths: The Glow Team" (62-66), "Rare Earths: The Laser Crew" (67-71).
-- [ ] Phase G (15): actinides. "The Atomic Age" (89-93), "The Star Makers"
-      (94-98), "The Vanishing Five" (99-103). Fm Md No Lr = null props.
-- [ ] Phase H (15): superheavies, ALL null props, state "unknown".
-      "Lab Legends I" (104-108), "Lab Legends II" (109-113),
-      "The Edge of the Map" (114-118).
-- [ ] Final: bump sw.js CACHE_VERSION → v3 (precached data changed), full
-      Chromium smoke + offline test, README count updates, CLAUDE.md close-out.
-
-Content rules for radioactive/synthetic elements: radioactivity explained
-as "atoms that slowly break apart, releasing energy — handled by scientists
-with special protection, never found loose at home"; radon framed around
-home test kits (useful safety knowledge); no poisoning stories; synthesis
-stories (labs, naming, atom-counting) are the hook.
+Key facts for future sessions:
+- 21 elements have null props (At, Fr, Fm, Md, No, Lr, 104–118) → app shows
+  the honest "mystery" card; Compare picker filters to the 97 measurable.
+- Featured tile star was removed (everything is featured now).
+- Chapter ids are mapped to icons in js/icons.js CHAPTER_ICONS — new
+  chapters need an id there (or they fall back to their emoji field).
+- Radioactive/synthetic content rules (preserved): decay = "atoms that
+  slowly break apart, releasing energy — scientists use special
+  protection"; radon → home test kits; no poisoning stories; synthesis/
+  naming stories are the hook. Ra/Tl/As/Po framed as history + safety.
 
 ## Completed work (this task)
 
@@ -103,14 +81,18 @@ stories (labs, naming, atom-counting) are the hook.
 ## Progress log
 
 - 2026-07-05 — MVP built + verified (see git history).
-- 2026-07-06 — Verification+redesign task, phases 1–6 complete and pushed
-  (one commit per phase). App re-verified end-to-end incl. offline.
+- 2026-07-06 — Verification+redesign task, phases 1–6 complete and pushed.
+- 2026-07-06/07 — All-118 task: Phase 0 (null-props infra), A (nobles/
+  halogens), B (metalloids/3d), Lucide icon redesign, C (wild alkali),
+  D (4d/gadgets/platinum group), E (refractory/heavies), F (lanthanides),
+  G (actinides), H (superheavies), final cleanup. 118/118 featured,
+  25 chapters, SOURCES.md phases A–H, SW v4. Full smoke + offline green.
 
 ## Next steps
 
-- [ ] Pre-release: re-check ⚠-flagged rows in docs/SOURCES.md against live
-      CIAAW + CRC; mark each verified row.
+- [ ] Pre-release: re-check ALL ⚠-flagged rows in docs/SOURCES.md against
+      live CIAAW + CRC (needs networked environment); mark each row.
 - [ ] Generate PNG icons (192/512 + apple-touch-icon), add to manifest +
-      index.html + sw.js precache, bump CACHE_VERSION to v3.
-- [ ] Optional: add detective cases / match pairs featuring Li, F, Mg, P, K,
-      Ni; validator + smoke-test.
+      index.html + sw.js precache, bump CACHE_VERSION to v5.
+- [ ] Optional: grow detective cases / match pairs using newly featured
+      elements (Nd magnets, He→Xe engines, Bi crystals are good candidates).
