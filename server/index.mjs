@@ -101,7 +101,7 @@ class MongoStore {
 
 const store = process.env.MONGODB_URI
   ? await new MongoStore(process.env.MONGODB_URI).init()
-  : await new FileStore(process.env.DATA_DIR || path.join(ROOT, 'data')).init();
+  : await new FileStore(process.env.DATA_DIR || path.join(ROOT, 'server', 'data')).init();
 console.log(`[elements] store: ${store.kind}`);
 
 /* ---------------- sessions ---------------- */
@@ -334,7 +334,8 @@ function serveStatic(req, res, url) {
   let p = decodeURIComponent(url.pathname);
   if (p === '/') p = '/index.html';
   const file = path.join(ROOT, path.normalize(p));
-  if (!file.startsWith(ROOT) || file.includes('..') || p.startsWith('/server') || p.startsWith('/data')) {
+  // Never serve the server code or its data store (app data/*.json is fine).
+  if (!file.startsWith(ROOT) || file.includes('..') || p.startsWith('/server')) {
     return send(res, 404, { error: 'not found' });
   }
   const ext = path.extname(file).toLowerCase();
