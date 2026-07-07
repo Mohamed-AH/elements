@@ -108,6 +108,45 @@ SOURCES.md "Games & Lab expansion"; quiz games derive from already-cited
 data so they introduce no new facts. Verified in Chromium (both games
 playable, counts correct, offline OK, zero console errors).
 
+## Auth + Render + Admin dashboard (started 2026-07-07) — resume at first unticked
+
+Principle: LOCAL-FIRST, CLOUD-OPTIONAL. Static PWA keeps working unchanged
+(offline, localStorage, no accounts). Server features activate only when
+served by server/index.mjs with GOOGLE_CLIENT_ID set. localStorage stays
+the source of truth; login MERGES (union arrays, max counters).
+
+- [ ] Phase 1: server/index.mjs (zero npm deps: http/crypto/fetch) —
+      static serving, POST /api/auth/google (tokeninfo verify, aud check),
+      HMAC cookie sessions, GET/PUT /api/progress, roster CRUD
+      /api/admin/students, GET /api/config|/api/me|/api/health.
+      Stores: MongoDB Atlas M0 free tier via MONGODB_URI (official driver,
+      dynamically imported — the ONLY npm dep, scoped to server/package.json;
+      frontend stays zero-dep) with file fallback (DATA_DIR/store.json,
+      atomic rename) when no URI, for local dev. Mongo Data API is EOL
+      (2025) — driver is the supported path. DEV_FAKE_AUTH=1 enables
+      /api/auth/dev for local/e2e only. render.yaml + .node-version (22).
+- [ ] Phase 2: js/auth.js (header account chip, GIS script loaded on
+      demand online-only, debounced PUT on progress-changed event,
+      merge-on-login via progress.mergeProgress/replaceAll), progress.js
+      event dispatch + merge helpers, index.html #account-slot,
+      sw.js v7 (bypass /api/ + cross-origin).
+- [ ] Phase 3: #/admin view (js/admin.js): guard via /api/me.admin;
+      add/remove students; stats cards (students, active 7d, avg elements
+      met, avg badges) + per-student table (reuses badges() logic).
+      Admin = ADMIN_EMAILS env (comma-separated, lowercase). One
+      institution per deployment (school runs own instance).
+- [ ] Phase 4: docs/DEPLOY.md (Render free tier: blueprint, Google OAuth
+      client origins, env vars, Upstash persistence — free disk is
+      EPHEMERAL; cold start ~1 min after 15-min idle), README updates,
+      child-privacy note (school-managed Workspace accounts, no
+      self-signup; localStorage default). CLAUDE.md privacy constraint
+      amended: "no accounts" → "no accounts by default; optional
+      school-deployment accounts, local-first".
+- [ ] Phase 5: e2e verify with DEV_FAKE_AUTH (student sync + admin
+      dashboard), screenshots; docs/LAUNCH.md — B2C (parents/homeschool)
+      AND B2B (schools/institutions) copy for Twitter/X + LinkedIn,
+      honest claims only, no invented metrics; commits per phase.
+
 ## Progress log
 
 - 2026-07-05 — MVP built + verified (see git history).
