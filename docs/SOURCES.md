@@ -519,6 +519,31 @@ All are classic, widely documented classroom/kitchen demonstrations:
   (cited per element above); pairs with density ratio < 1.15 are excluded
   so rounding/uncertainty flags can never flip an answer.
 
+## Scientist biographies (data/scientists.json, 2026-07-07)
+
+50 short bios for every scientist named in kid-facing content. All facts
+are standard biographical record, cross-checkable against **[NOBEL]**
+nobelprize.org laureate biographies, **[RSC]** element-discovery histories,
+and **[BRIT]** Encyclopaedia Britannica. Specifics worth noting:
+
+- Dates verified against the standard record; living scientists
+  (Oganessian b. 1933, Morita b. 1957, Armbruster b. 1931, Münzenberg
+  b. 1940) are given as "b. YYYY" with **no death dates asserted**.
+  **⚠ FLAG**: re-confirm living status before public release.
+- Hennig Brand's dates are approximate by historical consensus →
+  written "c. 1630 – c. 1692".
+- Marie Curie "only person with Nobels in two sciences" — correct as of
+  writing (Pauling's two were Chemistry + Peace) [NOBEL].
+- Ghiorso "record 12 elements" — widely cited count (Guinness) [BRIT].
+- Seaborg "ten elements" and first living-person element naming [NOBEL/RSC].
+- Perey first woman elected to the French Academy of Sciences (1962,
+  corresponding member) [BRIT].
+- Meitner epitaph, refugee history, Nobel omission — standard record [BRIT].
+- Klaus's chemical-tasting habit is documented in RSC/historical accounts
+  and framed with an explicit "nobody should copy" warning.
+- Aliases are exact case-sensitive name forms appearing in content;
+  validator enforces cross-scientist uniqueness.
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |

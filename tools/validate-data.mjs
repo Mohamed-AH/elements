@@ -101,6 +101,25 @@ for (const n of featuredNums) {
   check(seenInJourney.has(n), `featured element ${n} is missing from the journey`);
 }
 
+// --- scientists.json ---
+const { scientists } = read('data/scientists.json');
+const allAliases = new Set();
+for (const [id, sci] of Object.entries(scientists)) {
+  const where = `scientists[${id}]`;
+  check(/^[a-z-]+$/.test(id), `${where}: id must be lowercase-kebab`);
+  check(typeof sci.name === 'string' && sci.name.length > 0, `${where}: missing name`);
+  check(typeof sci.years === 'string' && /(\d{4}|c\. \d{4})/.test(sci.years), `${where}: bad years "${sci.years}"`);
+  check(typeof sci.knownFor === 'string' && sci.knownFor.length > 0, `${where}: missing knownFor`);
+  check(typeof sci.bio === 'string' && sci.bio.length >= 80, `${where}: bio too short`);
+  check(Array.isArray(sci.elements) && sci.elements.length >= 1, `${where}: needs >= 1 element`);
+  for (const n of sci.elements) check(numbers.has(n), `${where}: bad element ref ${n}`);
+  check(Array.isArray(sci.aliases) && sci.aliases.length >= 1, `${where}: needs >= 1 alias`);
+  for (const a of sci.aliases) {
+    check(!allAliases.has(a), `${where}: alias "${a}" duplicated across scientists`);
+    allAliases.add(a);
+  }
+}
+
 if (errors.length) {
   console.error(`✗ ${errors.length} problem(s):`);
   for (const e of errors) console.error('  -', e);
@@ -108,4 +127,4 @@ if (errors.length) {
 }
 console.log(`✓ Data valid: ${elements.length} elements, ${Object.keys(featured).length} featured, ` +
   `${games.detective.length} detective cases, ${games.match.length} match pairs, ${games.experiments.length} experiments, ` +
-  `${journey.chapters.length} journey chapters.`);
+  `${journey.chapters.length} journey chapters, ${Object.keys(scientists).length} scientists.`);

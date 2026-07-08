@@ -188,6 +188,22 @@ guard, static-mode regression (chip hidden, app fully functional).
       AND B2B (schools/institutions) copy for Twitter/X + LinkedIn,
       honest claims only, no invented metrics; commits per phase.
 
+## Scientists + SEO + a11y (started 2026-07-07) — resume at first unticked
+
+- [ ] Phase 1: data/scientists.json (~50 people named in kid content;
+      name/years/knownFor/bio/elements/aliases; living people use
+      "b. YYYY"); validator coverage; SOURCES.md bio citations.
+- [ ] Phase 2: js/scientists.js (gallery #/scientists w/ filter, bio
+      #/scientists/:id w/ element chips + breadcrumb), linkify pass
+      (longest-alias-first single regex) applied to facts/origin/trivia +
+      intro Mendeleev; Learn sidebar banner entry; routes; SW v8
+      (+scientists.json +js/scientists.js).
+- [ ] Phase 3: SEO (document.title per route, OG/Twitter meta, JSON-LD
+      LearningResource, robots.txt, sitemap.xml w/ hash-route caveat,
+      noscript) + a11y (skip link, focus-to-main on route change,
+      aria-current, role=status game feedback, :focus-visible, SR text for
+      intro dots) + e2e tests for bio nav + a11y; README; close-out.
+
 ## Progress log
 
 - 2026-07-05 — MVP built + verified (see git history).
