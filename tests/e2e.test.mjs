@@ -20,8 +20,11 @@ const BASE = `http://127.0.0.1:${PORT}`;
 let chromium = null;
 try { ({ chromium } = await import('playwright-core')); } catch { /* not installed */ }
 
-const executablePath = [process.env.PLAYWRIGHT_CHROMIUM_PATH, '/opt/pw-browsers/chromium']
-  .find((p) => p && existsSync(p));
+const executablePath = [
+  process.env.PLAYWRIGHT_CHROMIUM_PATH,
+  '/opt/pw-browsers/chromium-1194/chrome-linux/chrome',
+  '/opt/pw-browsers/chromium/chrome'
+].find((p) => p && existsSync(p));
 
 const available = Boolean(chromium && (executablePath || process.env.PLAYWRIGHT_BROWSERS_PATH));
 const t = (name, fn) => test(name, { skip: available ? false : 'playwright-core/Chromium not available' }, fn);
@@ -177,6 +180,73 @@ t('works offline via service worker', async () => {
   await page.goto(BASE + '/#/element/79');
   await page.waitForSelector('.superpower', { timeout: 5000 });
   await context.setOffline(false);
+});
+
+t('scientists gallery, bio page, and linkify in element profiles', async () => {
+  await page.goto(BASE + '/#/scientists');
+  await page.waitForSelector('.sci-card');
+  assert.ok(await page.locator('.sci-card').count() >= 40, 'gallery shows 40+ scientists');
+
+  await page.fill('#sci-filter', 'curie');
+  await page.waitForTimeout(200);
+  assert.ok(await page.locator('.sci-card:not([hidden])').count() >= 1, 'filter finds Curie');
+
+  await page.locator('.sci-card:not([hidden])').first().click();
+  await page.waitForSelector('.sci-hero');
+  assert.ok(await page.locator('.sci-el-chip').count() >= 1, 'bio page shows element chips');
+
+  await page.locator('.breadcrumb .text-link').click();
+  await page.waitForSelector('.sci-grid');
+
+  await page.goto(BASE + '/#/element/9');
+  await page.waitForSelector('.el-hero');
+  assert.ok(await page.locator('.sci-link').count() >= 1, 'Fluorine links to a scientist');
+  const href = await page.locator('.sci-link').first().getAttribute('href');
+  await page.locator('.sci-link').first().click();
+  await page.waitForSelector('.sci-hero');
+  assert.ok(href.startsWith('#/scientists/'), 'navigated to scientist bio');
+});
+
+t('accessibility: skip link, focus management, aria-current, game status', async () => {
+  await page.goto(BASE + '/#/learn');
+  await page.waitForSelector('.chapter');
+  assert.ok(await page.locator('.skip-link').count(), 'skip-to-content link exists');
+  assert.equal(await page.locator('.tab[aria-current="page"]').count(), 1, 'one tab has aria-current');
+  assert.match(await page.locator('.tab[aria-current="page"]').textContent(), /Learn/);
+
+  await page.goto(BASE + '/#/home');
+  await page.waitForSelector('.el-tile');
+  assert.match(await page.locator('.tab[aria-current="page"]').textContent(), /Explore/);
+
+  const title = await page.title();
+  assert.ok(title.includes('Elements'), 'title includes app name');
+
+  await page.goto(BASE + '/#/intro');
+  await page.waitForSelector('.intro-card');
+  assert.ok(await page.locator('.intro-dots .sr-only').count(), 'intro dots have SR text');
+
+  await page.goto(BASE + '/#/heavier');
+  await page.waitForSelector('.versus-card');
+  const statusRole = await page.locator('#status').getAttribute('role');
+  assert.equal(statusRole, 'status', 'game status has role=status');
+});
+
+t('SEO: document.title updates per route', async () => {
+  await page.goto(BASE + '/#/learn');
+  await page.waitForSelector('.chapter');
+  assert.match(await page.title(), /Your Journey/);
+
+  await page.goto(BASE + '/#/home');
+  await page.waitForSelector('.el-tile');
+  assert.match(await page.title(), /Elements/);
+
+  await page.goto(BASE + '/#/scientists');
+  await page.waitForSelector('.sci-card');
+  assert.match(await page.title(), /Scientists/);
+
+  await page.goto(BASE + '/#/element/79');
+  await page.waitForSelector('.superpower');
+  assert.match(await page.title(), /Gold/);
 });
 
 t('no console or page errors across the whole run', async () => {

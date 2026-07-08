@@ -27,11 +27,16 @@ function nova(text) {
 
 function setChrome(title, { back = false, tab = null } = {}) {
   titleEl.textContent = title;
+  document.title = title === 'Elements' ? 'Elements — Material Science for Kids' : `${title} — Elements`;
   backBtn.classList.toggle('hidden', !back);
   document.querySelectorAll('.tab').forEach((t) => {
-    t.classList.toggle('active', t.dataset.tab === tab);
+    const isActive = t.dataset.tab === tab;
+    t.classList.toggle('active', isActive);
+    if (isActive) t.setAttribute('aria-current', 'page');
+    else t.removeAttribute('aria-current');
   });
   window.scrollTo(0, 0);
+  viewEl.focus({ preventScroll: true });
 }
 
 /* ---------- Intro: atoms → atomic number → why the table matters ---------- */
@@ -156,8 +161,10 @@ function introView() {
           ${pages[page].body()}
           <div class="intro-nav">
             <button class="big-btn secondary" id="intro-back" ${page === 0 ? 'style="visibility:hidden"' : ''}>${icon('arrow-left')} Back</button>
-            <div class="intro-dots">${pages.map((_, i) =>
-              `<span class="dot ${i === page ? 'on' : ''}"></span>`).join('')}</div>
+            <div class="intro-dots" role="status" aria-live="polite">
+              <span class="sr-only">Page ${page + 1} of ${pages.length}</span>
+              ${pages.map((_, i) =>
+              `<span class="dot ${i === page ? 'on' : ''}" aria-hidden="true"></span>`).join('')}</div>
             ${last
               ? `<a class="big-btn" href="#/learn">${icon('rocket')} Start the journey</a>`
               : `<button class="big-btn" id="intro-next">Next ${icon('arrow-right')}</button>`}

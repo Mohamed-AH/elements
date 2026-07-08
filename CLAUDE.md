@@ -52,7 +52,7 @@ Key facts for future sessions:
 - **Tech (frontend):** zero deps, no build, offline-first, < 200 KB, no
   external fonts/CDNs (exception: Google Identity Services script, loaded
   on demand, online + server-configured only). Bump `CACHE_VERSION` in
-  sw.js whenever any precached file changes (currently **v7**), and add new
+  sw.js whenever any precached file changes (currently **v9**), and add new
   files to its PRECACHE list.
 - **Tech (server, amended 2026-07-07):** server/ is optional; only dep is
   `mongodb` (dynamically imported; file store without it). The app must
@@ -80,14 +80,16 @@ Key facts for future sessions:
   progress round-trip + sanitization (dupes/invalid/out-of-range dropped),
   me/logout, admin guard + roster CRUD + student summaries, unconfigured
   Google rejection, forged-cookie rejection.
-- `tests/e2e.test.mjs` — 11 browser tests via playwright-core (the only
+- `tests/e2e.test.mjs` — 14 browser tests via playwright-core (the only
   test dep, isolated in tests/package.json; skips if Chromium missing).
   Covers: 118 tiles, featured profile + crystal canvas, mystery card,
   journey unlock (visit ch1 → ch2 unlocks), proton counter, detective
   solvable, match winnable (12/12), family finder + heavier round won,
   compare = 97 options, dev-auth sync, desktop sidebar + hover preview,
-  offline via SW, zero console errors overall.
-- All green as of 2026-07-07 (7 + 11 pass). E2E serves the app through
+  offline via SW, scientists gallery + bio + linkify, a11y (skip link,
+  aria-current, game role=status, SR text), SEO (document.title per
+  route), zero console errors overall.
+- All green as of 2026-07-08 (7 + 14 pass). E2E serves the app through
   server/index.mjs so auth paths are exercised; static-only behavior is
   additionally covered by the "chip hidden" logic in initAuth (no-op when
   /api/config unreachable).
@@ -188,21 +190,22 @@ guard, static-mode regression (chip hidden, app fully functional).
       AND B2B (schools/institutions) copy for Twitter/X + LinkedIn,
       honest claims only, no invented metrics; commits per phase.
 
-## Scientists + SEO + a11y (started 2026-07-07) — resume at first unticked
+## Scientists + SEO + a11y — COMPLETE (2026-07-08)
 
-- [ ] Phase 1: data/scientists.json (~50 people named in kid content;
-      name/years/knownFor/bio/elements/aliases; living people use
-      "b. YYYY"); validator coverage; SOURCES.md bio citations.
-- [ ] Phase 2: js/scientists.js (gallery #/scientists w/ filter, bio
-      #/scientists/:id w/ element chips + breadcrumb), linkify pass
-      (longest-alias-first single regex) applied to facts/origin/trivia +
-      intro Mendeleev; Learn sidebar banner entry; routes; SW v8
-      (+scientists.json +js/scientists.js).
-- [ ] Phase 3: SEO (document.title per route, OG/Twitter meta, JSON-LD
-      LearningResource, robots.txt, sitemap.xml w/ hash-route caveat,
-      noscript) + a11y (skip link, focus-to-main on route change,
-      aria-current, role=status game feedback, :focus-visible, SR text for
-      intro dots) + e2e tests for bio nav + a11y; README; close-out.
+All 3 phases done + pushed. 50 scientist biographies (data/scientists.json),
+gallery (#/scientists w/ search), bio pages (#/scientists/:id w/ element
+chips + breadcrumb), auto-linkify (longest-alias-first single-pass regex)
+in element profiles (facts/origin/trivia) + intro Mendeleev link. SEO:
+document.title per route, OG/Twitter meta, JSON-LD LearningResource,
+robots.txt, sitemap.xml (hash-route caveat noted), noscript fallback.
+A11y: skip-to-content link, focus moved to main on route change,
+aria-current on active tab, role=status + aria-live on all game feedback,
+:focus-visible outlines, SR-only text for intro dots. SW v9.
+E2e tests extended to 14 (scientists nav + a11y + SEO title checks).
+
+- [x] Phase 1: data/scientists.json, validator, SOURCES.md citations.
+- [x] Phase 2: js/scientists.js, linkify, routes, Learn sidebar banner, SW v8.
+- [x] Phase 3: SEO + a11y + e2e tests + SW v9.
 
 ## Progress log
 
@@ -213,6 +216,10 @@ guard, static-mode regression (chip hidden, app fully functional).
   D (4d/gadgets/platinum group), E (refractory/heavies), F (lanthanides),
   G (actinides), H (superheavies), final cleanup. 118/118 featured,
   25 chapters, SOURCES.md phases A–H, SW v4. Full smoke + offline green.
+- 2026-07-08 — Scientists + SEO + a11y: 50 bios, gallery/bio views,
+  auto-linkify, OG/Twitter/JSON-LD, robots.txt, sitemap.xml, skip link,
+  focus management, aria-current, role=status, :focus-visible, noscript.
+  14 e2e + 7 server tests all green. SW v9.
 
 ## Next steps
 
