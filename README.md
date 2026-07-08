@@ -28,14 +28,27 @@ after the first visit.
 - **Compare Lab** — side-by-side property bars (hardness, density, melting
   point, conductivity) that teach kids to think like material engineers:
   *why is a plane aluminum and not lead?*
-- **Material Detective 🔍** — deduce a mystery material from three clues.
-  Wrong guesses unlock hints; nothing punishes.
-- **Material Match 🧠** — pair elements with the objects they're famous for.
+- **Material Detective 🔍** — 24 mysteries: deduce a material from three
+  clues. Wrong guesses unlock hints; nothing punishes.
+- **Material Match 🧠** — pair elements with the objects they're famous for
+  (24-pair pool, 6 per round).
+- **Family Finder 🎨** — sort any of the 118 elements into its family;
+  questions derive straight from the verified dataset.
+- **Heavier or Lighter 🏋️** — density-streak duels between the 97
+  measurable elements (near-tie pairs excluded so answers are always fair).
 - **Crystal viewer** — spin simplified 3D lattices (salt cube, diamond,
   graphite sheets, iron) rendered on Canvas 2D.
-- **The Lab 🧪** — six parent-approved kitchen experiments, each gated with
-  "Ask a grown-up first" and a safety note.
-- **Badges 🏅** — progress tracking stored only on the device.
+- **The Lab 🧪** — twelve parent-approved kitchen experiments (classic,
+  documented demos only), each gated with "Ask a grown-up first" and a
+  safety note.
+- **Badges 🏅** — eight badges tracking exploration, games, and lab reading;
+  stored only on the device.
+- **Optional accounts & school dashboard 🏫** — when deployed with the
+  companion server (see [docs/DEPLOY.md](docs/DEPLOY.md)): Google sign-in,
+  cross-device progress sync (local-first — localStorage always works and
+  merging never loses progress), and an institution dashboard where admins
+  add students and monitor class-wide metrics. Pure-static hosting keeps
+  all of this hidden and the app 100% account-free.
 
 Learning goals: recognize major elements and their signature properties,
 connect elements to everyday materials, and build recall through play.
@@ -83,20 +96,32 @@ You only need a static file server (service workers require `http(s)`, not `file
 # any of these:
 python3 -m http.server 8000
 npx serve .
+# or the companion server (adds the optional auth/sync/dashboard APIs):
+node server/index.mjs
 ```
 
-Then open `http://localhost:8000`. There are no build commands, environment
-variables, or dependencies.
+Then open `http://localhost:8000` (or `:8080` for the companion server).
+The frontend has no build commands, environment variables, or dependencies;
+the optional server's single dependency (`mongodb`) is only needed when
+deploying with MongoDB — see [docs/DEPLOY.md](docs/DEPLOY.md) for Render
+free-tier + MongoDB Atlas instructions.
 
 **Testing:**
 
 ```bash
-node tools/validate-data.mjs   # validates all data files (run after any content edit)
+node tools/validate-data.mjs        # data schema + cross-reference validation
+node --test tests/server.test.mjs   # companion-server API suite (zero deps)
+
+cd tests && npm install             # one dev dep: playwright-core
+node --test e2e.test.mjs            # browser E2E: all views, games, journey
+                                    # unlock, auth sync, offline, desktop chrome
+# or run everything: cd tests && npm test
 ```
 
-To verify offline behavior: load the app once, then in DevTools → Network set
-"Offline" and reload — every screen should still work. On a tablet, use
-"Add to Home Screen" to install it as a standalone app.
+The E2E suite needs a Chromium binary (`PLAYWRIGHT_CHROMIUM_PATH`, or
+`npx playwright-core install chromium`); it skips cleanly when unavailable.
+Manual offline check: load the app once, then DevTools → Network → Offline
+and reload — every screen should still work.
 
 ## Adding or updating element content
 

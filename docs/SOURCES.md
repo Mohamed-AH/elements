@@ -476,6 +476,49 @@ RIKEN, ORNL, LLNL):
   2016), predicted solid/non-noble behavior; element 119/120 searches
   ongoing (RIKEN, JINR, GSI).
 
+## Games & Lab expansion (2026-07-07)
+
+### Detective cases 11–24 & match pairs 13–24
+
+Every clue restates a claim already verified in the per-element sections
+above (Nd magnets, Li batteries, Bi crystals/remedy, Ne discharge color,
+Ca in chalk/shells/bones, K in bananas & nerves, Cl disinfection/NaCl,
+Hg liquid metal & phase-out, Ti implants/Titans, Ar 0.93% of air/welding,
+Am-241 smoke detectors, Zn galvanizing/brass, Mg flares/chlorophyll,
+Cs SI second 9,192,631,770 Hz/GPS). New specifics: chalk = CaCO₃ ✅
+[RSC]; galvanized crash barriers/buckets ✅ standard practice [ASM];
+distress flares use Mg ✅ [RSC]; smoke-detector low-battery chirp ✅
+(manufacturer documentation, trivial). Match pairs: Cr faucet plating,
+S vulcanized tires, Sn-plated food cans, Eu euro-note UV inks [ECB],
+Ti bike frames — all covered above.
+
+### Experiments 7–12
+
+All are classic, widely documented classroom/kitchen demonstrations:
+- **Cabbage indicator**: anthocyanin pH color change; acid = H⁺ donor
+  (Brønsted) simplified to "gives away hydrogen particles" ✅ standard
+  chemistry [ACS kids resources].
+- **Lemon battery**: Zn/Cu galvanic cell; 3–4 cells in series ≈ 2.5–3.5 V,
+  faintly lights a low-current LED ✅ classic demo — copy honestly says
+  "glows faintly" and "dim the lights" [ACS/exploratorium-style demos].
+- **Invisible ink**: lemon-juice organics brown under gentle heat
+  (thermal decomposition/caramelization); historical use of organic
+  invisible inks ✅ documented.
+- **Naked egg**: CaCO₃ shell + acetic acid → CO₂ + soluble calcium salts,
+  membrane remains ✅ classic; 2–3 day timescale accurate.
+- **Balloon CO₂**: NaHCO₃ + acetic acid → CO₂ inflates balloon ✅ classic;
+  CO₂ in soda/bread ✅.
+- **Floating egg**: dissolved NaCl raises solution density above egg's
+  (~1.03 g/cm³); Dead Sea buoyancy ✅ standard physics.
+
+### New quiz games (no new facts by design)
+
+- **Family Finder** derives questions/answers from `elements.json`
+  categories (cited in the elements.json section).
+- **Heavier or Lighter** derives from `kid-content.json` `props.density`
+  (cited per element above); pairs with density ratio < 1.15 are excluded
+  so rounding/uncertainty flags can never flip an answer.
+
 ## Field-by-field uncertainty summary
 
 | Where | Field | Status |

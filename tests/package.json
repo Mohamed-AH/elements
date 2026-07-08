@@ -1,0 +1,15 @@
+{
+  "name": "elements-tests",
+  "private": true,
+  "type": "module",
+  "description": "Test suites for Elements. server.test.mjs is dependency-free; e2e.test.mjs needs playwright-core (this package's only dev dependency) plus a Chromium binary.",
+  "scripts": {
+    "test:data": "node ../tools/validate-data.mjs",
+    "test:server": "node --test server.test.mjs",
+    "test:e2e": "node --test e2e.test.mjs",
+    "test": "npm run test:data && npm run test:server && npm run test:e2e"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.45.0"
+  }
+}
