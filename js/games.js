@@ -65,7 +65,7 @@ function startCase(container, cases, kase) {
           <div class="case-emoji-big">${kase.emoji}</div>
           ${kase.clues.slice(0, revealed).map((clue, i) =>
             `<div class="clue-box"><span class="clue-n">Clue ${i + 1}:</span>${esc(clue)}</div>`).join('')}
-          <div class="game-status" id="status"></div>
+          <div class="game-status" id="status" role="status" aria-live="polite"></div>
           <div class="options" id="options">
             ${shuffle(kase.options).map((o) => `<button class="option-btn" data-answer="${esc(o)}">${esc(o)}</button>`).join('')}
           </div>
@@ -142,7 +142,7 @@ export function renderFamily(container, elements, categories) {
         <div class="family-name">${esc(el.name)}</div>
         <div class="family-meta">element #${el.n}</div>
       </div>
-      <div class="game-status" id="status">Sorted right this visit: ${sessionRight}${sessionTotal ? ` of ${sessionTotal}` : ''}</div>
+      <div class="game-status" id="status" role="status" aria-live="polite">Sorted right this visit: ${sessionRight}${sessionTotal ? ` of ${sessionTotal}` : ''}</div>
       <div class="options family-options" id="options">
         ${options.map((c) => `
           <button class="option-btn" data-cat="${c}">
@@ -223,7 +223,7 @@ export function renderHeavier(container, contenders) {
         <img src="assets/nova.svg" alt="">
         <div class="nova-bubble">Same-size blocks of each — which one is <strong>denser</strong> (heavier for its size)? Tap your pick!</div>
       </div>
-      <div class="game-status" id="status">Streak: ${streak} 🔥</div>
+      <div class="game-status" id="status" role="status" aria-live="polite">Streak: ${streak}</div>
       <div class="versus-grid">${cardHtml(a)}${cardHtml(b)}</div>
       <div id="after" style="margin-top:16px;text-align:center"></div>
     `;
@@ -241,7 +241,7 @@ export function renderHeavier(container, contenders) {
         if (won) {
           streak += 1;
           progress.heavierStreak(streak);
-          status.textContent = `Correct! Streak: ${streak} 🔥`;
+          status.textContent = `Correct! Streak: ${streak}`;
           if (streak > 0 && streak % 5 === 0) celebrate();
         } else {
           streak = 0;
@@ -272,7 +272,7 @@ export function renderMatch(container, pairs) {
       <img src="assets/nova.svg" alt="">
       <div class="nova-bubble">Match each element to the real-world thing it's famous for! Tap an element, then tap its object.</div>
     </div>
-    <div class="game-status" id="status"></div>
+    <div class="game-status" id="status" role="status" aria-live="polite"></div>
     <div class="match-grid" id="grid"></div>
     <div id="after" style="margin-top:16px;text-align:center"></div>
   `;

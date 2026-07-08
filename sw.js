@@ -1,6 +1,6 @@
 // Offline-first service worker: everything the app needs is precached on
 // install. Bump CACHE_VERSION on every deploy that changes any precached file.
-const CACHE_VERSION = 'elements-v7';
+const CACHE_VERSION = 'elements-v9';
 
 const PRECACHE = [
   './',
@@ -19,6 +19,8 @@ const PRECACHE = [
   './data/kid-content.json',
   './data/games.json',
   './data/journey.json',
+  './data/scientists.json',
+  './js/scientists.js',
   './assets/icon.svg',
   './assets/icon-maskable.svg',
   './assets/nova.svg'

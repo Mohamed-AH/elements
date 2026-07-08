@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Hash-based SPA caveat: search engines historically ignore URL fragments
+  (#/learn, #/element/6). These entries list the canonical fragment routes
+  for crawlers that DO follow them (Googlebot renders JS). For full SSR
+  indexing, a prerender service would be needed — out of scope for now.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://elements.app/</loc><priority>1.0</priority></url>
+  <url><loc>https://elements.app/#/learn</loc><priority>0.9</priority></url>
+  <url><loc>https://elements.app/#/home</loc><priority>0.9</priority></url>
+  <url><loc>https://elements.app/#/intro</loc><priority>0.8</priority></url>
+  <url><loc>https://elements.app/#/scientists</loc><priority>0.8</priority></url>
+  <url><loc>https://elements.app/#/play</loc><priority>0.7</priority></url>
+  <url><loc>https://elements.app/#/experiments</loc><priority>0.7</priority></url>
+  <url><loc>https://elements.app/#/badges</loc><priority>0.5</priority></url>
+</urlset>

@@ -1,0 +1,355 @@
+{
+  "$comment": "Short biographies for every scientist named in kid-facing content. Additive file — no existing schema changed. 'aliases' are the exact name forms that appear in content (matched case-sensitively, longest first, at render time to create links). Living people use 'b. YYYY'. Facts are standard biographical record; citations in docs/SOURCES.md 'Scientist biographies'.",
+  "scientists": {
+    "mendeleev": {
+      "name": "Dmitri Mendeleev", "years": "1834–1907",
+      "knownFor": "Creating the periodic table",
+      "bio": "A Russian chemist who, in 1869, arranged the known elements into the periodic table — and had the courage to leave gaps for elements nobody had found yet, predicting what they would be like. When gallium, scandium, and germanium were discovered and matched his predictions almost exactly, the world knew his map was real. Element 101, mendelevium, is his thank-you card.",
+      "elements": [31, 21, 32, 43, 101],
+      "aliases": ["Dmitri Mendeleev", "Mendeleev"]
+    },
+    "marie-curie": {
+      "name": "Marie Curie", "years": "1867–1934",
+      "knownFor": "Discovering radium and polonium; coining 'radioactivity'",
+      "bio": "Born Maria Skłodowska in Poland, she moved to Paris to study when universities at home wouldn't accept women. She discovered two elements (polonium and radium), invented the word 'radioactivity', and remains the only person ever to win Nobel Prizes in two different sciences — physics (1903) and chemistry (1911). Element 96, curium, honors her and Pierre.",
+      "elements": [84, 88, 96, 87],
+      "aliases": ["Marie Curie", "Marie and Pierre Curie", "the Curies", "Curies"]
+    },
+    "pierre-curie": {
+      "name": "Pierre Curie", "years": "1859–1906",
+      "knownFor": "Co-discovering radium and polonium",
+      "bio": "A French physicist who studied magnetism and crystals before joining forces — and lives — with Marie Curie. Together they processed tonnes of ore to uncover polonium and radium, sharing the 1903 Nobel Prize in Physics with Henri Becquerel.",
+      "elements": [84, 88, 96],
+      "aliases": ["Pierre Curie"]
+    },
+    "davy": {
+      "name": "Humphry Davy", "years": "1778–1829",
+      "knownFor": "Isolating six elements with electricity",
+      "bio": "An English chemist and dazzling public lecturer who realized the newly invented electric battery could split stubborn compounds apart. In just two years he isolated potassium, sodium, calcium, magnesium, barium, and strontium. He also invented a safety lamp that saved countless miners' lives.",
+      "elements": [19, 11, 20, 12, 56, 38],
+      "aliases": ["Humphry Davy", "Davy"]
+    },
+    "perey": {
+      "name": "Marguerite Perey", "years": "1909–1975",
+      "knownFor": "Discovering francium",
+      "bio": "She joined Marie Curie's institute as a 19-year-old lab technician and became so skilled that in 1939 she spotted a brand-new element hiding in actinium's decay — francium, named for her country. She was the first woman ever elected to the French Academy of Sciences.",
+      "elements": [87],
+      "aliases": ["Marguerite Perey", "Perey"]
+    },
+    "meitner": {
+      "name": "Lise Meitner", "years": "1878–1968",
+      "knownFor": "Explaining nuclear fission",
+      "bio": "An Austrian physicist who co-discovered protactinium and then — while a refugee, having fled Nazi Germany — worked out the physics of how atoms split, naming it 'fission'. The Nobel Prize unfairly passed her by, but element 109, meitnerium, carries her name forever. Her gravestone reads: 'a physicist who never lost her humanity'.",
+      "elements": [109, 91],
+      "aliases": ["Lise Meitner", "Meitner"]
+    },
+    "hahn": {
+      "name": "Otto Hahn", "years": "1879–1968",
+      "knownFor": "Fission experiments; co-discovering protactinium",
+      "bio": "A German chemist whose careful experiments with uranium produced the puzzling results that his longtime colleague Lise Meitner explained as nuclear fission. He and Meitner had earlier discovered protactinium together in 1917.",
+      "elements": [91],
+      "aliases": ["Otto Hahn"]
+    },
+    "seaborg": {
+      "name": "Glenn Seaborg", "years": "1912–1999",
+      "knownFor": "Co-discovering ten elements; redesigning the periodic table",
+      "bio": "An American chemist who helped discover ten elements — including plutonium, americium, and curium — and redrew the periodic table itself by inventing the actinide row. He won the Nobel Prize in 1951, advised ten US presidents, and became the first person to have an element named after them while still alive: seaborgium.",
+      "elements": [94, 95, 96, 97, 98, 106],
+      "aliases": ["Glenn Seaborg", "Seaborg"]
+    },
+    "ghiorso": {
+      "name": "Albert Ghiorso", "years": "1915–2010",
+      "knownFor": "Co-discovering a record 12 elements",
+      "bio": "An American engineer-turned-element-hunter who co-discovered twelve elements — more than anyone in history — from americium to seaborgium. He started out building radiation detectors so sensitive that Seaborg's team couldn't work without him.",
+      "elements": [95, 97, 99, 100, 101, 102, 103],
+      "aliases": ["Albert Ghiorso", "Ghiorso"]
+    },
+    "rutherford": {
+      "name": "Ernest Rutherford", "years": "1871–1937",
+      "knownFor": "Discovering the atomic nucleus",
+      "bio": "A New Zealand farm boy who became the father of nuclear physics: he discovered that atoms have a tiny, dense nucleus, identified the proton, and was first to split the atom. Element 104, rutherfordium, honors him — fittingly, the first element past the classical table.",
+      "elements": [104],
+      "aliases": ["Ernest Rutherford"]
+    },
+    "lawrence": {
+      "name": "Ernest Lawrence", "years": "1901–1958",
+      "knownFor": "Inventing the cyclotron",
+      "bio": "An American physicist who invented the cyclotron — the first machine that could whirl particles to enormous speeds and smash them into atoms. Cyclotrons made element-hunting (and modern cancer therapy) possible. Lawrencium, element 103, and two famous labs carry his name.",
+      "elements": [103, 43],
+      "aliases": ["Ernest Lawrence"]
+    },
+    "bohr": {
+      "name": "Niels Bohr", "years": "1885–1962",
+      "knownFor": "The model of the atom with electron shells",
+      "bio": "A Danish physicist whose picture of the atom — electrons circling a nucleus in set shells — is the one you see in this app's intro. He won the Nobel Prize in 1922, helped refugee scientists escape the Nazis, and mentored a generation of physicists. Element 107, bohrium, is his.",
+      "elements": [107],
+      "aliases": ["Niels Bohr"]
+    },
+    "rontgen": {
+      "name": "Wilhelm Röntgen", "years": "1845–1923",
+      "knownFor": "Discovering X-rays",
+      "bio": "A German physicist who noticed a mysterious glow while experimenting with electric tubes in 1895 — and within weeks had photographed the bones inside his wife's hand. He called the rays 'X' for unknown, refused to patent them so every hospital could use them, and won the very first Nobel Prize in Physics.",
+      "elements": [111],
+      "aliases": ["Wilhelm Röntgen", "Röntgen"]
+    },
+    "copernicus": {
+      "name": "Nicolaus Copernicus", "years": "1473–1543",
+      "knownFor": "Putting the Sun at the center",
+      "bio": "A Polish astronomer who dared to say that Earth orbits the Sun, not the other way around — an idea so big it started a scientific revolution. Element 112, copernicium, honors the original rule-breaker.",
+      "elements": [112],
+      "aliases": ["Nicolaus Copernicus", "Copernicus"]
+    },
+    "oganessian": {
+      "name": "Yuri Oganessian", "years": "b. 1933",
+      "knownFor": "Leading the hunt for superheavy elements",
+      "bio": "A Russian-Armenian physicist who has led the creation of more superheavy elements than anyone alive, completing the periodic table's seventh row from his lab in Dubna. In 2016, element 118 was named oganesson — making him only the second person ever honored with an element name during their lifetime.",
+      "elements": [114, 115, 117, 118],
+      "aliases": ["Yuri Oganessian", "Oganessian"]
+    },
+    "flyorov": {
+      "name": "Georgy Flyorov", "years": "1913–1990",
+      "knownFor": "Founding Russia's element-hunting lab",
+      "bio": "A Soviet physicist famous for noticing what was missing: during World War II he realized Western journals had gone silent about nuclear fission and wrote to warn Stalin. He founded the laboratory in Dubna that went on to discover many elements; flerovium, element 114, is named for him.",
+      "elements": [114],
+      "aliases": ["Georgy Flyorov", "Flyorov"]
+    },
+    "morita": {
+      "name": "Kosuke Morita", "years": "b. 1957",
+      "knownFor": "Discovering nihonium — Asia's first element",
+      "bio": "A Japanese physicist who led the RIKEN team through nine patient years of firing zinc at bismuth to catch just three atoms of element 113. Those three atoms made nihonium the first element ever discovered in Asia.",
+      "elements": [113],
+      "aliases": ["Kosuke Morita"]
+    },
+    "fermi": {
+      "name": "Enrico Fermi", "years": "1901–1954",
+      "knownFor": "Building the first nuclear reactor",
+      "bio": "An Italian-American physicist who built the world's first nuclear reactor in 1942 — under a university football stand in Chicago. Brilliant in both theory and experiment, he won the Nobel Prize in 1938 and used the trip to Stockholm to escape fascist Italy with his family. Fermium, element 100, honors him.",
+      "elements": [100],
+      "aliases": ["Enrico Fermi", "Fermi"]
+    },
+    "nobel": {
+      "name": "Alfred Nobel", "years": "1833–1896",
+      "knownFor": "Inventing dynamite; founding the Nobel Prizes",
+      "bio": "A Swedish chemist and inventor who made a fortune from dynamite — then left nearly all of it to create the Nobel Prizes, hoping to reward those who bring 'the greatest benefit to humankind'. Element 102, nobelium, carries his name.",
+      "elements": [102],
+      "aliases": ["Alfred Nobel"]
+    },
+    "einstein": {
+      "name": "Albert Einstein", "years": "1879–1955",
+      "knownFor": "Relativity and E=mc²",
+      "bio": "The German-born physicist whose theories reshaped how we understand space, time, and energy. His famous equation E=mc² explains why tiny amounts of matter hold enormous energy — the secret behind stars and reactors alike. Element 99, einsteinium, was named for him just after his death.",
+      "elements": [99],
+      "aliases": ["Albert Einstein", "Einstein"]
+    },
+    "ramsay": {
+      "name": "William Ramsay", "years": "1852–1916",
+      "knownFor": "Discovering the noble gases",
+      "bio": "A Scottish chemist who found an entire family of invisible elements: he co-discovered argon, isolated helium on Earth, and then — with Morris Travers — found neon, krypton, and xenon in a single amazing summer of 1898. He won the Nobel Prize in Chemistry in 1904.",
+      "elements": [18, 2, 10, 36, 54],
+      "aliases": ["William Ramsay", "Ramsay"]
+    },
+    "travers": {
+      "name": "Morris Travers", "years": "1872–1961",
+      "knownFor": "Co-discovering neon, krypton, and xenon",
+      "bio": "An English chemist who worked beside William Ramsay, chilling air into liquid and carefully boiling it apart until three new glowing gases appeared: krypton, neon, and xenon. He was later nicknamed 'Rare Gas Travers'.",
+      "elements": [10, 36, 54],
+      "aliases": ["Morris Travers", "Travers"]
+    },
+    "balard": {
+      "name": "Antoine Balard", "years": "1802–1876",
+      "knownFor": "Discovering bromine at age 23",
+      "bio": "A young French chemist studying salty marsh water who noticed a strange orange-brown liquid nobody could identify — bromine. He was just 23, proof that you don't have to be old to make a discovery that lasts forever.",
+      "elements": [35],
+      "aliases": ["Antoine Balard", "Balard"]
+    },
+    "courtois": {
+      "name": "Bernard Courtois", "years": "1777–1838",
+      "knownFor": "Discovering iodine by accident",
+      "bio": "A French saltpeter maker who, in 1811, added a bit too much acid to seaweed ash — and watched a beautiful violet vapor rise up and crystallize. He had accidentally discovered iodine, one of history's luckiest lab mistakes.",
+      "elements": [53],
+      "aliases": ["Bernard Courtois", "Courtois"]
+    },
+    "moissan": {
+      "name": "Henri Moissan", "years": "1852–1907",
+      "knownFor": "Taming fluorine",
+      "bio": "A French chemist who finally isolated fluorine in 1886 — the fierce element that had injured and even killed chemists who tried before him. He did it with clever platinum equipment and freezing temperatures, earning the 1906 Nobel Prize. He also invented the electric-arc furnace.",
+      "elements": [9],
+      "aliases": ["Henri Moissan", "Moissan"]
+    },
+    "welsbach": {
+      "name": "Carl Auer von Welsbach", "years": "1858–1929",
+      "knownFor": "Splitting didymium into two elements",
+      "bio": "An Austrian chemist with a rare double talent: pure discovery and practical invention. He proved 'didymium' was actually two elements — praseodymium and neodymium — and also invented the glowing gas mantle and the flint lighter spark that still lights barbecues today.",
+      "elements": [59, 60],
+      "aliases": ["Carl Auer von Welsbach", "Auer von Welsbach", "Welsbach"]
+    },
+    "boisbaudran": {
+      "name": "Paul-Émile Lecoq de Boisbaudran", "years": "1838–1912",
+      "knownFor": "Discovering gallium, samarium, and dysprosium",
+      "bio": "A largely self-taught French chemist and master of the spectroscope who discovered three elements by reading the light they emit. His gallium matched Mendeleev's predicted 'eka-aluminum' so well it made the periodic table famous; dysprosium took him more than 30 separation attempts.",
+      "elements": [31, 62, 66],
+      "aliases": ["Paul-Émile Lecoq de Boisbaudran", "Lecoq de Boisbaudran", "Boisbaudran"]
+    },
+    "mosander": {
+      "name": "Carl Gustaf Mosander", "years": "1797–1858",
+      "knownFor": "Discovering lanthanum, terbium, and erbium",
+      "bio": "A Swedish chemist who suspected that 'pure' rare-earth elements were hiding others inside — and proved it, teasing lanthanum out of cerium and finding terbium and erbium in the famous Ytterby minerals, both in one incredible year (1843).",
+      "elements": [57, 65, 68],
+      "aliases": ["Carl Gustaf Mosander", "Carl Mosander", "Mosander"]
+    },
+    "berzelius": {
+      "name": "Jöns Jacob Berzelius", "years": "1779–1848",
+      "knownFor": "Inventing chemical symbols; discovering four elements",
+      "bio": "A Swedish chemist considered one of the founders of modern chemistry. He invented the letter symbols we still use (H, O, Fe...), measured atomic weights with heroic patience, and discovered selenium, thorium, cerium, and silicon.",
+      "elements": [34, 90, 58, 14],
+      "aliases": ["Jöns Jacob Berzelius", "Berzelius"]
+    },
+    "bunsen": {
+      "name": "Robert Bunsen", "years": "1811–1899",
+      "knownFor": "Reading elements from their light",
+      "bio": "A German chemist who, with physicist Gustav Kirchhoff, invented spectroscopy — identifying elements by the colors of light they give off. Together they discovered cesium and rubidium, the first elements ever found by their light. Yes, the lab burner is named after him too.",
+      "elements": [55, 37],
+      "aliases": ["Robert Bunsen", "Bunsen"]
+    },
+    "kirchhoff": {
+      "name": "Gustav Kirchhoff", "years": "1824–1887",
+      "knownFor": "Co-inventing spectroscopy",
+      "bio": "A German physicist whose laws of radiation explained why each element paints its own unique lines of color in light. With Robert Bunsen he turned that insight into a discovery machine that found cesium and rubidium — and later let astronomers read what stars are made of.",
+      "elements": [55, 37],
+      "aliases": ["Gustav Kirchhoff", "Kirchhoff"]
+    },
+    "brand": {
+      "name": "Hennig Brand", "years": "c. 1630 – c. 1692",
+      "knownFor": "Discovering phosphorus — the first recorded element discovery",
+      "bio": "A German alchemist hunting for gold in a very strange place: boiled-down urine. In 1669 he found something arguably better — a waxy substance that glowed in the dark. Phosphorus made him the first person in history whose name we know as an element's discoverer.",
+      "elements": [15],
+      "aliases": ["Hennig Brand"]
+    },
+    "brandt": {
+      "name": "Georg Brandt", "years": "1694–1768",
+      "knownFor": "Discovering cobalt",
+      "bio": "A Swedish chemist who proved that the 'cursed' blue ore miners blamed on goblins actually contained a brand-new metal: cobalt. It was the first new metal discovered since ancient times — and he also fearlessly exposed fake gold-makers.",
+      "elements": [27],
+      "aliases": ["Georg Brandt"]
+    },
+    "wollaston": {
+      "name": "William Hyde Wollaston", "years": "1766–1828",
+      "knownFor": "Discovering palladium and rhodium",
+      "bio": "An English chemist who worked out how to process raw platinum — and in the leftovers found two new elements in a single year, 1803: palladium and rhodium. He famously sold palladium anonymously in a shop before revealing he had discovered it.",
+      "elements": [46, 45],
+      "aliases": ["William Hyde Wollaston", "William Wollaston", "Wollaston"]
+    },
+    "tennant": {
+      "name": "Smithson Tennant", "years": "1761–1815",
+      "knownFor": "Discovering osmium and iridium in one day",
+      "bio": "An English chemist who examined the gritty black sludge left over from dissolving platinum — and pulled out two new elements at once: osmium and iridium (1803). He also proved that diamond is nothing but pure carbon.",
+      "elements": [76, 77, 6],
+      "aliases": ["Smithson Tennant", "Tennant"]
+    },
+    "cleve": {
+      "name": "Per Teodor Cleve", "years": "1840–1905",
+      "knownFor": "Discovering thulium and holmium",
+      "bio": "A Swedish chemist who untangled two new rare earths — thulium and holmium — from the endless surprises of Scandinavian minerals, and co-discovered that helium, first seen in the Sun, also exists on Earth.",
+      "elements": [69, 67, 2],
+      "aliases": ["Per Teodor Cleve", "Cleve"]
+    },
+    "marignac": {
+      "name": "Jean Charles Galissard de Marignac", "years": "1817–1894",
+      "knownFor": "Discovering ytterbium and gadolinium",
+      "bio": "A Swiss chemist renowned for the most precise atomic-weight measurements of his century. His patience paid off twice over: he discovered ytterbium (1878) and co-discovered gadolinium (1880).",
+      "elements": [70, 64],
+      "aliases": ["Jean Charles Galissard de Marignac", "Marignac"]
+    },
+    "debierne": {
+      "name": "André Debierne", "years": "1874–1949",
+      "knownFor": "Discovering actinium",
+      "bio": "A French chemist and close friend of the Curies who, in 1899, found actinium in the same pitchblende residues that had yielded polonium and radium. He later helped Marie Curie isolate radium metal and directed her institute after her death.",
+      "elements": [89],
+      "aliases": ["André Debierne", "Debierne"]
+    },
+    "klaus": {
+      "name": "Karl Ernst Klaus", "years": "1796–1864",
+      "knownFor": "Discovering ruthenium",
+      "bio": "A Baltic-German chemist working in Kazan, Russia, who examined platinum-ore leftovers everyone else had given up on and found ruthenium (1844) — naming it for Russia. He was famous for (dangerously!) tasting his chemicals, a habit absolutely nobody should copy.",
+      "elements": [44],
+      "aliases": ["Karl Ernst Klaus", "Karl Klaus"]
+    },
+    "winkler": {
+      "name": "Clemens Winkler", "years": "1838–1904",
+      "knownFor": "Discovering germanium",
+      "bio": "A German chemist who found a new element in a silvery ore in 1886 and named it germanium for his homeland. Its properties matched Mendeleev's predicted 'eka-silicon' almost perfectly — the third and most famous confirmation of the periodic table's power.",
+      "elements": [32],
+      "aliases": ["Clemens Winkler", "Winkler"]
+    },
+    "nilson": {
+      "name": "Lars Fredrik Nilson", "years": "1840–1899",
+      "knownFor": "Discovering scandium",
+      "bio": "A Swedish chemist who in 1879 isolated a new element from Scandinavian minerals — scandium — and realized it filled the exact gap Mendeleev had labeled 'eka-boron' ten years earlier.",
+      "elements": [21],
+      "aliases": ["Lars Fredrik Nilson", "Nilson"]
+    },
+    "crookes": {
+      "name": "William Crookes", "years": "1832–1919",
+      "knownFor": "Discovering thallium",
+      "bio": "An English chemist who spotted a never-before-seen green line in a spectroscope in 1861 and traced it to a new element: thallium, the 'green twig'. His famous Crookes tubes — glowing electric vacuum tubes — later led others to X-rays and the electron.",
+      "elements": [81],
+      "aliases": ["William Crookes", "Crookes"]
+    },
+    "mcmillan": {
+      "name": "Edwin McMillan", "years": "1907–1991",
+      "knownFor": "Discovering neptunium — the first element beyond uranium",
+      "bio": "An American physicist who in 1940 proved that bombarding uranium created something entirely new: neptunium, the first element heavier than any found in nature. It opened the door to the whole synthetic-element era, and he shared the 1951 Nobel Prize with Glenn Seaborg.",
+      "elements": [93],
+      "aliases": ["Edwin McMillan", "McMillan"]
+    },
+    "abelson": {
+      "name": "Philip Abelson", "years": "1913–2004",
+      "knownFor": "Co-discovering neptunium",
+      "bio": "An American physicist who teamed up with Edwin McMillan to identify neptunium in 1940. He went on to a remarkably varied career — from uranium separation to exploring the chemistry of ancient fossils — and edited the journal Science for over 20 years.",
+      "elements": [93],
+      "aliases": ["Philip Abelson", "Abelson"]
+    },
+    "armbruster": {
+      "name": "Peter Armbruster", "years": "b. 1931",
+      "knownFor": "Co-creating elements 107–112",
+      "bio": "A German physicist who co-led the GSI laboratory team in Darmstadt that created six elements — bohrium through copernicium — using a gentle 'cold fusion' technique that let new superheavy atoms survive long enough to be counted.",
+      "elements": [107, 108, 109, 110, 111, 112],
+      "aliases": ["Peter Armbruster", "Armbruster"]
+    },
+    "munzenberg": {
+      "name": "Gottfried Münzenberg", "years": "b. 1940",
+      "knownFor": "Co-creating elements 107–112",
+      "bio": "A German physicist and Peter Armbruster's partner in discovery at GSI Darmstadt, where their team's detectors caught single atoms of six new elements — including hassium, named for the German state where the lab stands.",
+      "elements": [107, 108, 109, 110, 111, 112],
+      "aliases": ["Gottfried Münzenberg", "Münzenberg"]
+    },
+    "thompson": {
+      "name": "Stanley G. Thompson", "years": "1912–1976",
+      "knownFor": "Co-discovering berkelium and californium",
+      "bio": "An American chemist and Glenn Seaborg's high-school friend who became a master of separating brand-new elements from microscopic samples — key to the discoveries of berkelium, californium, and more.",
+      "elements": [97, 98],
+      "aliases": ["Stanley G. Thompson", "Thompson"]
+    },
+    "dorn": {
+      "name": "Friedrich Dorn", "years": "1848–1916",
+      "knownFor": "Discovering radon",
+      "bio": "A German physicist who noticed in 1900 that radium gives off a radioactive gas — at first just called 'radium emanation', later named radon. It completed the noble gas family's heaviest member.",
+      "elements": [86],
+      "aliases": ["Friedrich Dorn", "Dorn"]
+    },
+    "gadolin": {
+      "name": "Johan Gadolin", "years": "1760–1852",
+      "knownFor": "Starting the rare-earth story",
+      "bio": "A Finnish chemist who in 1794 analyzed a strange black rock from the Ytterby quarry and found a new 'earth' inside — the first rare-earth discovery, which eventually unfolded into more than a dozen elements. Gadolinium is named in his honor.",
+      "elements": [39, 64],
+      "aliases": ["Johan Gadolin", "Gadolin"]
+    },
+    "becquerel": {
+      "name": "Henri Becquerel", "years": "1852–1908",
+      "knownFor": "Discovering radioactivity",
+      "bio": "A French physicist who in 1896 left uranium salts on a photographic plate in a dark drawer — and found the plate fogged by invisible rays coming from the uranium itself. He had discovered radioactivity, and shared the 1903 Nobel Prize with Marie and Pierre Curie.",
+      "elements": [92],
+      "aliases": ["Henri Becquerel", "Becquerel"]
+    }
+  }
+}
