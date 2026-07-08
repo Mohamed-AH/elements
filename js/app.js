@@ -8,6 +8,7 @@ import { mountCrystal, LATTICE_TITLES } from './crystals.js';
 import { icon, iconFilled, CHAPTER_ICONS } from './icons.js';
 import { initAuth } from './auth.js';
 import { adminView } from './admin.js';
+import { scientistsView, scientistView, buildAliasIndex, linkify } from './scientists.js';
 
 const viewEl = document.getElementById('view');
 const titleEl = document.getElementById('app-title');
@@ -123,8 +124,9 @@ function introView() {
         <p class="intro-text">Scientists found <strong>118</strong> different elements — and arranged
         them into the <strong>periodic table</strong>: a map where element families line up in columns,
         like a bookshelf sorted by superpower.</p>
-        <p class="intro-text">Over 150 years ago, Dmitri Mendeleev spotted the pattern and even left
-        gaps for elements nobody had found yet. He was right — they were discovered later!</p>
+        <p class="intro-text">Over 150 years ago, <a class="sci-link" href="#/scientists/mendeleev">Dmitri
+        Mendeleev</a> spotted the pattern and even left gaps for elements nobody had found yet.
+        He was right — they were discovered later!</p>
         <p class="intro-text">Every material ever made — every toy, rocket, and cupcake — is a recipe
         using this one map. Ready to explore it?</p>`
     }
@@ -279,6 +281,12 @@ function learnView() {
           <div class="journey-progress-label"><span>Elements met</span><span>${metCount} / ${totalCount}</span></div>
           <div class="bar"><span style="width:${Math.max(2, (metCount / totalCount) * 100)}%"></span></div>
         </div>
+        <a class="intro-banner sci-banner" href="#/scientists">
+          <span class="hub-emoji">${icon('microscope')}</span>
+          <span><strong>Meet the Scientists</strong><br>
+          50 real people behind the discoveries — from gold-hunting alchemists to element factories.</span>
+          <span class="intro-banner-go">${icon('arrow-right')}</span>
+        </a>
         <div class="journey-progress side-badges">
           <div class="journey-progress-label"><span>Badges earned</span><span>${earnedBadges.length} / 6</span></div>
           <div class="side-badge-row">${badges(DATA.featuredNumbers).map((b) =>
@@ -388,8 +396,10 @@ function elementView(n) {
     return;
   }
 
-  const facts = kid.facts.map((f) => `<li>${esc(f)}</li>`).join('');
-  const trivia = kid.trivia.map((t) => `<li>${esc(t)}</li>`).join('');
+  const sci = DATA.sciIndex;
+  const facts = kid.facts.map((f) => `<li>${linkify(esc(f), sci)}</li>`).join('');
+  const trivia = kid.trivia.map((t) => `<li>${linkify(esc(t), sci)}</li>`).join('');
+  const origin = linkify(esc(kid.origin), sci);
   const uses = kid.uses.map((u) => `<span class="chip">${esc(u)}</span>`).join('');
 
   const crystalSection = kid.crystals ? `
@@ -409,7 +419,7 @@ function elementView(n) {
       <div class="col-story">
         <div class="card"><h3>${icon('microscope')} Science facts</h3><ul>${facts}</ul></div>
         <div class="card metaphor"><h3>${icon('cloud')} Imagine it like…</h3><p>${esc(kid.imagine)}</p></div>
-        <div class="card"><h3>${icon('scroll')} Origin story</h3><p>${esc(kid.origin)}</p></div>
+        <div class="card"><h3>${icon('scroll')} Origin story</h3><p>${origin}</p></div>
         <div class="card"><h3>${icon('sparkles')} Wow trivia</h3><ul>${trivia}</ul></div>
       </div>
       <div class="col-tech">
@@ -690,6 +700,12 @@ const routes = [
   { pattern: /^experiments$/, view: experimentsView },
   { pattern: /^experiments\/([\w-]+)$/, view: experimentView },
   { pattern: /^badges$/, view: badgesView },
+  { pattern: /^scientists$/, view: () => { setChrome('Meet the Scientists', { tab: 'learn' }); scientistsView(viewEl, DATA); } },
+  { pattern: /^scientists\/([a-z-]+)$/, view: (id) => {
+    const sci = DATA.scientists[id];
+    setChrome(sci ? sci.name : 'Scientist', { back: true, tab: 'learn' });
+    scientistView(viewEl, DATA, id, DATA.sciIndex);
+  } },
   { pattern: /^admin$/, view: () => { setChrome('Institution Dashboard', { back: true }); adminView(viewEl); } }
 ];
 
@@ -709,6 +725,7 @@ window.addEventListener('elements-progress-synced', render);
 
 loadData().then((data) => {
   DATA = data;
+  DATA.sciIndex = buildAliasIndex(DATA.scientists);
   render();
   initAuth(); // optional cloud layer; no-op on static hosting / offline
 }).catch(() => {
