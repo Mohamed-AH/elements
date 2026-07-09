@@ -52,7 +52,7 @@ Key facts for future sessions:
 - **Tech (frontend):** zero deps, no build, offline-first, < 200 KB, no
   external fonts/CDNs (exception: Google Identity Services script, loaded
   on demand, online + server-configured only). Bump `CACHE_VERSION` in
-  sw.js whenever any precached file changes (currently **v9**), and add new
+  sw.js whenever any precached file changes (currently **v10**), and add new
   files to its PRECACHE list.
 - **Tech (server, amended 2026-07-07):** server/ is optional; only dep is
   `mongodb` (dynamically imported; file store without it). The app must
@@ -220,6 +220,13 @@ E2e tests extended to 14 (scientists nav + a11y + SEO title checks).
   auto-linkify, OG/Twitter/JSON-LD, robots.txt, sitemap.xml, skip link,
   focus management, aria-current, role=status, :focus-visible, noscript.
   14 e2e + 7 server tests all green. SW v9.
+- 2026-07-09 — Institutional retheme (user request): CERN-style deep blue
+  (#0033a0) on light stage, Source Sans-style system font stack (zero
+  external fonts kept), 18px base type for kid readability, desktop
+  sidebar now institution blue. Dark theme fully swept (CSS vars +
+  hardcoded values + JS: atom SVG, confetti, category-color-as-text via
+  color-mix). Crystal viewer canvas intentionally stays a dark window.
+  theme-color/manifest updated. SW v10. All tests green.
 
 ## Next steps
 
