@@ -7,7 +7,9 @@ import { icon } from './icons.js';
 export function celebrate() {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const layer = document.getElementById('confetti-layer');
-  const colors = ['#0033a0', '#e8a000', '#c2186b', '#157f40', '#7a4dcc'];
+  const colors = matchMedia('(prefers-color-scheme: dark)').matches
+    ? ['#5e9eff', '#ffcf5c', '#ff7ab8', '#7dffa8', '#c9a7ff']   // bright on navy
+    : ['#0033a0', '#e8a000', '#c2186b', '#157f40', '#7a4dcc'];  // deep on white
   for (let i = 0; i < 60; i++) {
     const c = document.createElement('div');
     c.className = 'confetto';
