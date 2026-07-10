@@ -52,7 +52,7 @@ Key facts for future sessions:
 - **Tech (frontend):** zero deps, no build, offline-first, < 200 KB, no
   external fonts/CDNs (exception: Google Identity Services script, loaded
   on demand, online + server-configured only). Bump `CACHE_VERSION` in
-  sw.js whenever any precached file changes (currently **v10**), and add new
+  sw.js whenever any precached file changes (currently **v11**), and add new
   files to its PRECACHE list.
 - **Tech (server, amended 2026-07-07):** server/ is optional; only dep is
   `mongodb` (dynamically imported; file store without it). The app must
@@ -80,7 +80,7 @@ Key facts for future sessions:
   progress round-trip + sanitization (dupes/invalid/out-of-range dropped),
   me/logout, admin guard + roster CRUD + student summaries, unconfigured
   Google rejection, forged-cookie rejection.
-- `tests/e2e.test.mjs` — 14 browser tests via playwright-core (the only
+- `tests/e2e.test.mjs` — 15 browser tests via playwright-core (the only
   test dep, isolated in tests/package.json; skips if Chromium missing).
   Covers: 118 tiles, featured profile + crystal canvas, mystery card,
   journey unlock (visit ch1 → ch2 unlocks), proton counter, detective
@@ -88,7 +88,7 @@ Key facts for future sessions:
   compare = 97 options, dev-auth sync, desktop sidebar + hover preview,
   offline via SW, scientists gallery + bio + linkify, a11y (skip link,
   aria-current, game role=status, SR text), SEO (document.title per
-  route), zero console errors overall.
+  route), dark mode via prefers-color-scheme, zero console errors overall.
 - All green as of 2026-07-08 (7 + 14 pass). E2E serves the app through
   server/index.mjs so auth paths are exercised; static-only behavior is
   additionally covered by the "chip hidden" logic in initAuth (no-op when
@@ -227,6 +227,14 @@ E2e tests extended to 14 (scientists nav + a11y + SEO title checks).
   hardcoded values + JS: atom SVG, confetti, category-color-as-text via
   color-mix). Crystal viewer canvas intentionally stays a dark window.
   theme-color/manifest updated. SW v10. All tests green.
+- 2026-07-10 — Dark mode via prefers-color-scheme (system default, no
+  toggle): dark palette in a media-query :root override; accent split
+  into --accent (surfaces) vs --accent-ink (text/links/icons) so CERN
+  blue stays on buttons while links brighten on navy; new --violet var;
+  atom SVG fills moved to CSS classes; confetti palette + category-text
+  color-mix are scheme-aware; success green gets dark ink in dark mode;
+  scheme-scoped theme-color metas; desktop sidebar goes dark navy in
+  dark mode (dark block wins over blue). SW v11; e2e 15 tests.
 
 ## Next steps
 

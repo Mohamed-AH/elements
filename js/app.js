@@ -61,22 +61,22 @@ function atomSVG(protons) {
     const angle = i * 2.4, r = 4.5 * Math.sqrt(i);
     const x = 60 + r * Math.cos(angle), y = 60 + r * Math.sin(angle);
     const isProton = i % 2 === 0;
-    nucleons.push(`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6.5"
-      fill="${isProton ? '#e8447e' : '#8a95ad'}" stroke="rgba(0,0,0,.25)"/>`);
+    nucleons.push(`<circle class="${isProton ? 'atom-p' : 'atom-n'}"
+      cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="6.5"/>`);
   }
   const electrons = [];
   const shell1 = Math.min(protons, 2), shell2 = Math.max(0, protons - 2);
   for (let i = 0; i < shell1; i++) {
     const a = (i / shell1) * Math.PI * 2;
-    electrons.push(`<circle cx="${(60 + 32 * Math.cos(a)).toFixed(1)}" cy="${(60 + 32 * Math.sin(a)).toFixed(1)}" r="3.5" fill="#0055d4"/>`);
+    electrons.push(`<circle cx="${(60 + 32 * Math.cos(a)).toFixed(1)}" cy="${(60 + 32 * Math.sin(a)).toFixed(1)}" r="3.5" class="atom-e"/>`);
   }
   for (let i = 0; i < shell2; i++) {
     const a = (i / shell2) * Math.PI * 2 + 0.4;
-    electrons.push(`<circle cx="${(60 + 50 * Math.cos(a)).toFixed(1)}" cy="${(60 + 50 * Math.sin(a)).toFixed(1)}" r="3.5" fill="#0055d4"/>`);
+    electrons.push(`<circle cx="${(60 + 50 * Math.cos(a)).toFixed(1)}" cy="${(60 + 50 * Math.sin(a)).toFixed(1)}" r="3.5" class="atom-e"/>`);
   }
   return `<svg viewBox="0 0 120 120" class="atom-svg" aria-hidden="true">
-    ${shell1 ? '<circle cx="60" cy="60" r="32" fill="none" stroke="rgba(0,51,160,.35)" stroke-width="1.5"/>' : ''}
-    ${shell2 ? '<circle cx="60" cy="60" r="50" fill="none" stroke="rgba(0,51,160,.25)" stroke-width="1.5"/>' : ''}
+    ${shell1 ? '<circle class="atom-shell" cx="60" cy="60" r="32"/>' : ''}
+    ${shell2 ? '<circle class="atom-shell" cx="60" cy="60" r="50"/>' : ''}
     ${nucleons.join('')}${electrons.join('')}
   </svg>`;
 }
@@ -91,11 +91,11 @@ function introView() {
     {
       visual: () => `
         <div class="intro-art">
-          <span style="color:var(--accent)">${icon('globe')}</span>
+          <span style="color:var(--accent-ink)">${icon('globe')}</span>
           <span style="color:var(--pink)">${icon('heart')}</span>
           <span style="color:var(--green)">${icon('gift')}</span>
           <span style="color:var(--sun)">${icon('star')}</span>
-          <span style="color:#7a4dcc">${icon('rocket')}</span>
+          <span style="color:var(--violet)">${icon('rocket')}</span>
         </div>`,
       body: () => `
         <h2 class="intro-title">Everything is made of atoms</h2>
@@ -145,7 +145,7 @@ function introView() {
         <button class="round-btn" id="p-minus" aria-label="Remove a proton" ${protons <= 1 ? 'disabled' : ''}>−</button>
         <div class="proton-readout">
           <div class="proton-count">${protons} proton${protons > 1 ? 's' : ''}</div>
-          <div class="proton-element" style="color:color-mix(in srgb, ${CATEGORIES[el.c].color} 45%, #16294d)">${esc(el.name)} (${esc(el.s)})</div>
+          <div class="proton-element" style="color:color-mix(in srgb, ${CATEGORIES[el.c].color} 45%, var(--text))">${esc(el.name)} (${esc(el.s)})</div>
           <div class="proton-line">${esc(PROTON_LINES[protons])}</div>
         </div>
         <button class="round-btn" id="p-plus" aria-label="Add a proton" ${protons >= 10 ? 'disabled' : ''}>+</button>
@@ -363,7 +363,7 @@ function homeView() {
           <div class="preview-meta">#${el.n} · mass ${esc(el.m)}</div>
         </div>
       </div>
-      <div class="preview-cat" style="color:color-mix(in srgb, ${CATEGORIES[el.c].color} 45%, #16294d)">${esc(CATEGORIES[el.c].label)}</div>
+      <div class="preview-cat" style="color:color-mix(in srgb, ${CATEGORIES[el.c].color} 45%, var(--text))">${esc(CATEGORIES[el.c].label)}</div>
       <div class="preview-power"><span class="sp-label">SUPERPOWER</span>${esc(kid.superpower)}</div>
       <p class="muted">Click the tile for the full story ${icon('arrow-right')}</p>
     `;

@@ -249,6 +249,18 @@ t('SEO: document.title updates per route', async () => {
   assert.match(await page.title(), /Gold/);
 });
 
+t('dark mode follows the system color-scheme preference', async () => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto(BASE + '/#/learn');
+  await page.waitForSelector('.chapter');
+  const darkBg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  assert.equal(darkBg, 'rgb(14, 18, 38)'); // --bg #0e1226
+
+  await page.emulateMedia({ colorScheme: 'light' });
+  const lightBg = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
+  assert.equal(lightBg, 'rgb(238, 242, 249)'); // --bg #eef2f9
+});
+
 t('no console or page errors across the whole run', async () => {
   assert.deepEqual(consoleErrors, []);
 });

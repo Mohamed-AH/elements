@@ -5,18 +5,21 @@
    transform/opacity-only animations for tablet performance. */
 
 :root {
+  color-scheme: light dark;
   --bg: #eef2f9;          /* page: pale institutional blue-gray */
   --bg-raised: #e1e8f4;   /* chips, secondary buttons, inputs */
   --bg-card: #ffffff;     /* cards */
   --text: #16294d;        /* dark science navy */
   --text-dim: #4d5f85;
-  --accent: #0033a0;      /* CERN blue (Pantone 286-like) */
-  --sun: #a05e00;         /* amber for highlight TEXT on light bg */
+  --accent: #0033a0;      /* CERN blue — button/sidebar SURFACES */
+  --accent-ink: #0033a0;  /* CERN blue — text, links, icons */
+  --sun: #a05e00;         /* amber for highlight TEXT */
   --sun-bg: #ffd166;      /* amber for pill/badge backgrounds */
   --pink: #c2186b;        /* science magenta, dark enough for text */
-  --green: #157f40;       /* success green, dark enough for text */
+  --green: #157f40;       /* success green */
+  --violet: #7a4dcc;      /* mystery/lab purple */
   --danger: #c62828;
-  --line: rgba(22, 41, 77, 0.12);   /* hairline borders on light */
+  --line: rgba(22, 41, 77, 0.12);   /* hairline borders */
   --radius: 18px;
   --tap: 48px;
 
@@ -92,7 +95,7 @@ button { font: inherit; color: inherit; }
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--accent-ink);
   outline-offset: 2px;
 }
 
@@ -113,7 +116,7 @@ button { font: inherit; color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 
-.app-title { font-size: 1.3rem; margin: 0; letter-spacing: 0.02em; color: var(--accent); }
+.app-title { font-size: 1.3rem; margin: 0; letter-spacing: 0.02em; color: var(--accent-ink); }
 
 .back-btn {
   min-width: var(--tap);
@@ -162,7 +165,7 @@ button { font: inherit; color: inherit; }
   font-weight: 700;
 }
 .tab-icon { font-size: 1.35rem; }
-.tab.active { color: var(--accent); background: rgba(0, 51, 160, 0.09); }
+.tab.active { color: var(--accent-ink); background: color-mix(in srgb, var(--accent-ink) 10%, transparent); }
 
 /* ---------- Nova mascot ---------- */
 
@@ -304,7 +307,7 @@ button { font: inherit; color: inherit; }
   font-size: 0.82rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-ink);
 }
 .card.metaphor h3 { color: var(--pink); }
 .card.metaphor { background: #faf1f9; font-style: italic; }
@@ -601,10 +604,10 @@ button { font: inherit; color: inherit; }
 /* ---------- Scientists ---------- */
 
 .sci-link {
-  color: var(--accent);
+  color: var(--accent-ink);
   font-weight: 700;
   text-decoration: none;
-  border-bottom: 1.5px dotted rgba(0, 51, 160, 0.45);
+  border-bottom: 1.5px dotted color-mix(in srgb, var(--accent-ink) 45%, transparent);
 }
 .sci-link:hover { border-bottom-style: solid; }
 
@@ -730,7 +733,7 @@ button { font: inherit; color: inherit; }
   border-radius: var(--radius);
   padding: 18px;
 }
-.stat-value { font-size: 1.8rem; font-weight: 900; color: var(--accent); }
+.stat-value { font-size: 1.8rem; font-weight: 900; color: var(--accent-ink); }
 .stat-label { font-weight: 800; font-size: 0.85rem; margin-top: 2px; }
 .stat-note { color: var(--text-dim); font-size: 0.75rem; margin-top: 2px; }
 
@@ -783,7 +786,7 @@ button { font: inherit; color: inherit; }
 
 .section-title { font-size: 1.15rem; margin: 20px 0 10px; }
 .muted { color: var(--text-dim); font-size: 0.92rem; line-height: 1.5; }
-.text-link { color: var(--accent); font-weight: 700; text-decoration: none; }
+.text-link { color: var(--accent-ink); font-weight: 700; text-decoration: none; }
 .text-link:hover { text-decoration: underline; }
 
 /* ---------- Inline icon system (Lucide) ---------- */
@@ -799,8 +802,8 @@ button { font: inherit; color: inherit; }
 .tab-icon { display: flex; }
 .tab-icon svg { width: 22px; height: 22px; }
 .back-btn .icon { width: 22px; height: 22px; vertical-align: middle; }
-.hub-emoji .icon { width: 34px; height: 34px; color: var(--accent); }
-.chapter-emoji { color: var(--accent); display: flex; padding-top: 2px; }
+.hub-emoji .icon { width: 34px; height: 34px; color: var(--accent-ink); }
+.chapter-emoji { color: var(--accent-ink); display: flex; padding-top: 2px; }
 .chapter-emoji .icon { width: 30px; height: 30px; }
 .chapter.locked .chapter-emoji { color: var(--text-dim); }
 .badge-emoji .icon { width: 42px; height: 42px; color: var(--sun); }
@@ -810,7 +813,7 @@ button { font: inherit; color: inherit; }
 .intro-art { display: flex; justify-content: center; gap: 18px; }
 .intro-art .icon { width: 38px; height: 38px; }
 .intro-banner-go .icon { width: 22px; height: 22px; }
-.mystery-props .icon { color: #7a4dcc; }
+.mystery-props .icon { color: var(--violet); }
 .exp-safety .icon { color: var(--sun); }
 .big-btn .icon { width: 18px; height: 18px; vertical-align: -0.22em; }
 
@@ -863,6 +866,10 @@ button { font: inherit; color: inherit; }
 .dot.on { background: var(--accent); transform: scale(1.35); }
 
 .atom-svg { width: 170px; height: 170px; margin: 0 auto; display: block; }
+.atom-svg .atom-p { fill: #e8447e; stroke: rgba(0, 0, 0, 0.25); }
+.atom-svg .atom-n { fill: #8a95ad; stroke: rgba(0, 0, 0, 0.25); }
+.atom-svg .atom-e { fill: #0055d4; }
+.atom-svg .atom-shell { fill: none; stroke: rgba(0, 51, 160, 0.3); stroke-width: 1.5; }
 .tag {
   display: inline-block;
   padding: 1px 9px;
@@ -873,7 +880,7 @@ button { font: inherit; color: inherit; }
 }
 .tag-pink { background: rgba(194, 24, 107, 0.1); color: var(--pink); }
 .tag-gray { background: rgba(77, 95, 133, 0.12); color: #44567e; }
-.tag-cyan { background: rgba(0, 51, 160, 0.09); color: var(--accent); }
+.tag-cyan { background: color-mix(in srgb, var(--accent-ink) 10%, transparent); color: var(--accent-ink); }
 
 .proton-controls {
   display: flex;
@@ -916,7 +923,7 @@ button { font: inherit; color: inherit; }
   font-size: 0.95rem;
   line-height: 1.45;
 }
-.intro-banner-go { margin-left: auto; font-size: 1.3rem; color: var(--accent); }
+.intro-banner-go { margin-left: auto; font-size: 1.3rem; color: var(--accent-ink); }
 
 .journey-progress { margin: 4px 0 22px; }
 .journey-progress-label {
@@ -1072,7 +1079,7 @@ button { font: inherit; color: inherit; }
 }
 .tl-item:hover { background: var(--bg-raised); }
 .tl-item.tl-locked { color: var(--text-dim); opacity: 0.6; }
-.tl-item .tl-icon { color: var(--accent); display: flex; }
+.tl-item .tl-icon { color: var(--accent-ink); display: flex; }
 .tl-item.tl-locked .tl-icon { color: var(--text-dim); }
 .tl-title { display: block; font-weight: 800; font-size: 0.88rem; line-height: 1.25; }
 .tl-count { display: block; font-size: 0.72rem; color: var(--text-dim); font-weight: 700; }
@@ -1295,4 +1302,64 @@ button { font: inherit; color: inherit; }
   .badge-card h3 { font-size: 1.15rem; }
   .badge-card p { font-size: 0.92rem; }
   .badge-card .badge-progress { font-size: 0.9rem; margin-top: 12px; }
+}
+
+/* ==================== DARK MODE (system preference) ==================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1226;          /* deep institutional navy */
+    --bg-raised: #1e2745;
+    --bg-card: #161d36;
+    --text: #e9edfb;
+    --text-dim: #a3aed2;
+    --accent: #2f61c9;      /* surfaces: brighter institution blue */
+    --accent-ink: #8fb3ff;  /* text/links/icons: readable on navy */
+    --sun: #ffc76a;
+    --pink: #ff85bd;
+    --green: #27a45c;
+    --violet: #c9a7ff;
+    --danger: #ff7b7b;
+    --line: rgba(233, 237, 251, 0.14);
+  }
+
+  body::before {
+    background:
+      radial-gradient(1100px 500px at 50% -18%, rgba(63, 108, 210, 0.14), transparent 65%),
+      radial-gradient(800px 500px at 100% 115%, rgba(0, 119, 200, 0.08), transparent 60%);
+  }
+
+  .app-header { background: rgba(14, 18, 38, 0.92); }
+  .tabbar { background: rgba(16, 21, 44, 0.96); }
+
+  .bar { background: #242e52; }
+  .bar > span { background: linear-gradient(90deg, #3d73e0, #31a3e8); }
+
+  .card.metaphor { background: #241d3e; }
+  .chip-btn:hover { background: #2a3558; }
+  .match-card.selected { background: #1d3560; }
+
+  .exp-safety {
+    background: #33260a;
+    border-color: #b98200;
+    color: #ffe3a3;
+  }
+
+  .journey-el:hover { border-color: rgba(143, 179, 255, 0.45); }
+  .versus-card:hover { border-color: rgba(143, 179, 255, 0.45); }
+
+  .dot { background: rgba(233, 237, 251, 0.28); }
+  .series-tag { border-color: rgba(233, 237, 251, 0.3); }
+  .tag-gray { background: rgba(163, 174, 210, 0.14); color: #b9c3e4; }
+  .admin-table td { border-bottom-color: rgba(233, 237, 251, 0.08); }
+
+  /* Success states: dark ink on the brighter dark-mode green */
+  .option-btn.correct { color: #06281a; }
+  .match-card.matched { color: #06281a; }
+  .match-card.matched .mc-sub { color: #0d3d26; }
+  .met-tick { color: #06281a; }
+
+  /* Intro atom diagram: brighter electrons/shells on navy */
+  .atom-svg .atom-e { fill: #6fc0ff; }
+  .atom-svg .atom-shell { stroke: rgba(143, 179, 255, 0.4); }
 }
